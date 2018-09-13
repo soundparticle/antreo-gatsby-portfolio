@@ -2,7 +2,7 @@ import React from "react";
 // import { Link } from "gatsby";
 import Header from "../components/header";
 import PortfolioSection from "../components/portfolioSection";
-
+import SkillsAside from "../components/skillsAside";
 
 export default () => (
   <body>
@@ -17,7 +17,13 @@ export default () => (
 
     <div class="page-container">
       <main>
-       <PortfolioSection/>   
+        <PortfolioSection/>
+
+      <aside>
+        <nav>
+          <SkillsAside/>
+        </nav>  
+      </aside>   
 
       </main>
     </div>
