@@ -1,23 +1,27 @@
 import React from "react";
 // import { Link } from "gatsby";
 import Header from "../components/header";
-
-// export default () => <div>Hello World</div>
-
+import PortfolioSection from "../components/portfolioSection";
 
 
 export default () => (
-  <div>
-
-    
+  <body>
+  
   {/* <Link to="/contact/">Contact</Link> */}
-  <Header headerText="Hello Gatsby!" />
-  <p>What a world.</p>
-  {/* <img src="https://source.unsplash.com/random/400x200" alt="mountains with clouds trapped"/> */}
+  <Header headerText1="Antreo Pukay" />
+  <Header headerText2="Full-Stack Developer" />
+  <Header headerText3="Email: acrosswalker at yahoo.com" />
+  <hr/>
+  {/* <Header headerText2="Hello Antreo!" /> */}
+  {/* <p>What a world.</p> */}
 
-  
+    <div class="page-container">
+      <main>
+       <PortfolioSection/>   
 
+      </main>
+    </div>
   
-  </div>
+  </body>
 )
 
