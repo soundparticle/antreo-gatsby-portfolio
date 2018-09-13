@@ -3,6 +3,8 @@ import React from "react";
 import Header from "../components/header";
 import PortfolioSection from "../components/portfolioSection";
 import SkillsAside from "../components/skillsAside";
+import AboutSection from "../components/aboutSection";
+
 
 export default () => (
   <body>
@@ -23,7 +25,9 @@ export default () => (
         <nav>
           <SkillsAside/>
         </nav>  
-      </aside>   
+      </aside>  
+
+        <AboutSection/> 
 
       </main>
     </div>
