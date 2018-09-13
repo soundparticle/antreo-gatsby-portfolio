@@ -1,4 +1,6 @@
 import React from "react";
+import styles from "./aboutSection.module.css"
+console.log(styles)
 
 export default props =>
 

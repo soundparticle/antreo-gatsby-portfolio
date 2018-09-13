@@ -1,0 +1,24 @@
+* {
+  box-sizing: border-box;
+  
+}
+
+h1, h2, h3, h4 {
+  // font-family: Bookman, Copperplate, Copperplate Gothic Light;
+  flex-wrap: wrap;  
+}
+
+html {
+  background-color: rgba(187, 231, 249, 0.667);
+  margin: 0;
+  padding: 0;
+}
+
+hr {
+  border: none;
+  height: 20px;
+  color: #333; /* old IE */
+  background-color: rgb(243, 133, 74); 
+  margin: 0;
+  padding: 0;
+}

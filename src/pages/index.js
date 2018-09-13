@@ -4,10 +4,14 @@ import Header from "../components/header";
 import PortfolioSection from "../components/portfolioSection";
 import SkillsAside from "../components/skillsAside";
 import AboutSection from "../components/aboutSection";
+import styles from "./index.module.css"
+console.log(styles)
+
+
 
 
 export default () => (
-  <body>
+  <div>
   
   {/* <Link to="/contact/">Contact</Link> */}
   <Header headerText1="Antreo Pukay" />
@@ -17,7 +21,7 @@ export default () => (
   {/* <Header headerText2="Hello Antreo!" /> */}
   {/* <p>What a world.</p> */}
 
-    <div class="page-container">
+    <div className="page-container">
       <main>
         <PortfolioSection/>
 
@@ -27,11 +31,11 @@ export default () => (
         </nav>  
       </aside>  
 
-        <AboutSection/> 
+        <AboutSection className="about"/> 
 
       </main>
     </div>
   
-  </body>
+  </div>
 )
 
