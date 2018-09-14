@@ -1,0 +1,22 @@
+* {
+  box-sizing: border-box; 
+}
+
+aside {
+  grid-column: 1;
+  grid-row: 2;
+  // background-color: #F0F0F2;
+  padding: 5px 10px;
+}
+
+.skills {
+  text-align: left;
+  padding-left: 40px;
+}
+h5 {
+  // font-family: Bookman, Copperplate, Copperplate Gothic Light;
+  flex-wrap: wrap; 
+  text-align: left;
+  padding-left: 40px;
+}
+

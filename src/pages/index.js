@@ -18,24 +18,35 @@ export default () => (
   <Header headerText2="Full-Stack Developer" />
   <Header headerText3="Email: acrosswalker at yahoo.com" />
   <hr/>
-  {/* <Header headerText2="Hello Antreo!" /> */}
-  {/* <p>What a world.</p> */}
 
-    <div className="page-container">
-      <main>
+    
+      <main className="pageContainer">
+      <section>
         <PortfolioSection/>
-
-      <aside>
-        <nav>
-          <SkillsAside/>
-        </nav>  
-      </aside>  
-
-        <AboutSection className="about"/> 
-
+      </section>
+        <SkillsAside className="skills"/>
+        {/* <aside>
+          <nav>
+            <h3>Skills</h3>
+              <ul>
+                <li>NodeJS</li>
+                <li>VueJS</li>
+                <li>React</li>
+                <li>Redux</li>
+                <li>JavaScript</li>
+                <li>HTML, CSS</li>
+                <li>MongoDB</li>
+                <li>Mongoose</li>
+              </ul>
+          </nav>
+        </aside> */}
+        <section>
+          <AboutSection className="about"/> 
+        </section>
+  
       </main>
     </div>
   
-  </div>
+
 )
 

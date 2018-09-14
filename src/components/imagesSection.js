@@ -29,9 +29,15 @@ export default () => (
 }
     render={data => (
       <div>
-        <img src={data.allContentfulAntreoPortfolio.edges[0].node.imageLinks[0].file.url} alt="Alchemy Companion App screenshot"/>
-        <img src={data.allContentfulAntreoPortfolio.edges[0].node.imageLinks[1].file.url} alt="Alchemy Companion App screenshot"/>
-        <img src={data.allContentfulAntreoPortfolio.edges[0].node.imageLinks[2].file.url} alt="Alchemy Companion App screenshot"/>
+        <a href="https://github.com/team-denim">
+          <img src={data.allContentfulAntreoPortfolio.edges[0].node.imageLinks[0].file.url} alt="Alchemy Companion App screenshot"/>
+        </a>
+        <a href="https://github.com/soundparticle/ripe-banana">
+          <img src={data.allContentfulAntreoPortfolio.edges[0].node.imageLinks[1].file.url} alt="Alchemy Companion App screenshot"/>
+        </a>
+        <a href="https://github.com/Markalope/search-all-the-things">
+          <img src={data.allContentfulAntreoPortfolio.edges[0].node.imageLinks[2].file.url} alt="Alchemy Companion App screenshot"/>        
+        </a>
       </div>  
     )}
   />
