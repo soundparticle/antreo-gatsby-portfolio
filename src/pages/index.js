@@ -19,8 +19,8 @@ export default () => (
   <Header headerText3="Email: acrosswalker at yahoo.com" />
   <hr/>
 
-    
-      <main className="pageContainer">
+    <main>
+      <div className="pageContainer">
       <section>
         <PortfolioSection/>
       </section>
@@ -44,7 +44,9 @@ export default () => (
           <AboutSection className="about"/> 
         </section>
   
-      </main>
+      </div>
+    </main>
+
     </div>
   
 

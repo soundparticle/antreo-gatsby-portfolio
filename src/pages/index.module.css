@@ -2,6 +2,10 @@
   box-sizing: border-box;
 }
 
+.pageContainer {
+  // background-image: src('../../assets/Leaves_of_Tree.mov')
+}
+
 h1, h2 {
   // font-family: Bookman, Copperplate, Copperplate Gothic Light;
   text-align: center;
@@ -50,7 +54,7 @@ hr {
   border: none;
   height: 20px;
   color: #333; /* old IE */
-  background-color: rgb(243, 133, 74); 
+  background-color: rgb(255, 113, 37); 
   margin: 0;
   padding: 0;
 }
