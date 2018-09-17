@@ -6,9 +6,9 @@ export default props =>
 
 <div>
   <h4>About Me</h4>
-  <p>I'm originally from Florida where I grew up in a treehouse along the Suwannee River. I moved west after I finished high school. I graduated from The Evergreen State College in Washington with a BA in Sound Engineering. I've been a freelance recording engineer in Portland, OR since 2007. Highlights included engineering and mixing a song on a Grammy nominated album. Since then I've sought a more stable career field that is still interesting and rewarding. Having many friends involved in the tech field as developers, I discovered web development as the perfect career choice!</p>
-  <p>I completed this transition after completing the career track at The Alchemy Code Lab which involved 800+ hours of intensive learning and I'm now a skilled full-stack web developer!</p>
+  <p>I grew up in a treehouse along the Suwannee River in Florida, around artists and creative thinkers. I enjoy and thrive working collaboratively with others. Besides being a developer, I've been a recording engineer in Portland, OR since 2007. One highlight was engineering and mixing a song on a Grammy nominated album. Since then I've shifted towards web-development and contributing my skills to help create cool new things!</p>
+  <p>Recently, I've refined and evolved my skills after completing the full career track at The Alchemy Code Lab, which involved 800+ hours of intensive learning.</p>
 
-  <p>I love being involved in the front-end side of development and working with others as a team. Work which impacts the world positively is something I'm always looking out for. I seek to use my tech and people skills in combination with others to create things that move and impact people.
-  I'm a musician and experienced recording/mixing/mastering engineer on the side as well, and as a developer, I love getting involved with projects that touch on these fields! I also offer a unique and valuable mix of skills that I bring to any team I'm part of.</p>
+  <p>I love being involved in the front-end side of development and collaborating with others as a team. I seek to work together with others to create things that move and impact people in positive ways.
+  I'm a musician and experienced recording/mixing/mastering engineer on the side as well, and as a developer, I love getting involved with projects that touch on both these fields!</p>
 </div>
