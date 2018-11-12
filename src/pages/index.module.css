@@ -2,33 +2,30 @@
   box-sizing: border-box;
 }
 
-.pageContainer {
-  // background-image: src('../../assets/Leaves_of_Tree.mov')
-}
-
-h1, h2 {
+h1 {
   // font-family: Bookman, Copperplate, Copperplate Gothic Light;
+  font-size: 40px;
   text-align: center;
+  margin-top: 0;
+  margin-bottom: 10px;
+  margin: 0;
   flex-wrap: wrap;  
 }
 
 h2 {
-  // line-height: 2px;
+  font-size: 18px;
   text-align: center;
-  
+  line-height: 0px;  
   margin-bottom: 10px;
-  margin-top: 10px;
+  margin: 0px;
+  flex-wrap: wrap;
 }
 
 h3 {
-  font-size: 14px;
-}
-
-h1 {
-  font-size: 40px;
-  margin-top: 0;
-  margin-bottom: 10px;
-  // line-height: 8px;
+  font-size: 16px;
+  margin: 0;
+  line-height: 0px; 
+  flex-wrap: wrap;
 }
 
 html {
