@@ -2,40 +2,41 @@
   box-sizing: border-box;
 }
 
-.pageContainer {
-  // background-image: src('../../assets/Leaves_of_Tree.mov')
+html {
+  background-image: url("../assets/meadow-1080x2280.jpg");
+  background-repeat: no-repeat;
+  position: fixed;
+  background-size: contain;
+  margin: 0;
+  padding: 0;
 }
 
-h1, h2 {
+h1 {
   // font-family: Bookman, Copperplate, Copperplate Gothic Light;
+  font-size: 40px;
   text-align: center;
+  margin-top: 0;
+  margin-bottom: 10px;
+  margin: 0;
   flex-wrap: wrap;  
 }
 
 h2 {
-  // line-height: 2px;
+  font-size: 18px;
   text-align: center;
-  
+  line-height: 0px;  
   margin-bottom: 10px;
-  margin-top: 10px;
+  margin: 0px;
+  flex-wrap: wrap;
 }
 
 h3 {
-  font-size: 14px;
-}
-
-h1 {
-  font-size: 40px;
-  margin-top: 0;
-  margin-bottom: 10px;
-  // line-height: 8px;
-}
-
-html {
-  background-color: rgba(187, 240, 249, 0.838);
+  font-size: 16px;
   margin: 0;
-  padding: 0;
+  line-height: 0px; 
+  flex-wrap: wrap;
 }
+
 
 .pageContainer {
   height: 100vh;
@@ -49,13 +50,14 @@ html {
   "content  content"                     
   "footer  footer";
 }
-
+// remove <hr> rule before production
 hr {
   border: none;
   height: 20px;
   color: #333; /* old IE */
-  background-color: rgb(255, 113, 37); 
-  margin: 0;
+  background-color: rgb(255, 113, 37);
+  width: 1000%;
+  margin-left: -500%; 
   padding: 0;
 }
 
