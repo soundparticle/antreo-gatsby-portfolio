@@ -11,13 +11,13 @@ console.log(styles)
 
 
 export default () => (
-  <div>
+  <div className="app-container">
   
   {/* <Link to="/contact/">Contact</Link> */}
   <Header headerText1="Antreo Pukay" />
   <Header headerText2="Full-Stack Developer" />
   <Header headerText3="Email: acrosswalker at yahoo.com" />
-  <hr/>
+  {/* <hr/> */}
 
     <main>
       <div className="pageContainer">

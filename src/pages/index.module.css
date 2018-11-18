@@ -2,6 +2,15 @@
   box-sizing: border-box;
 }
 
+html {
+  background-image: url("../assets/meadow-1080x2280.jpg");
+  background-repeat: no-repeat;
+  position: fixed;
+  background-size: contain;
+  margin: 0;
+  padding: 0;
+}
+
 h1 {
   // font-family: Bookman, Copperplate, Copperplate Gothic Light;
   font-size: 40px;
@@ -28,11 +37,6 @@ h3 {
   flex-wrap: wrap;
 }
 
-html {
-  background-color: rgba(187, 231, 249, 0.667);
-  margin: 0;
-  padding: 0;
-}
 
 .pageContainer {
   height: 100vh;
@@ -46,7 +50,7 @@ html {
   "content  content"                     
   "footer  footer";
 }
-
+// remove <hr> rule before production
 hr {
   border: none;
   height: 20px;
