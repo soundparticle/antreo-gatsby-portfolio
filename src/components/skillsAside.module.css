@@ -1,5 +1,7 @@
 * {
   box-sizing: border-box; 
+  color: rgb(0, 145, 255);
+
 }
 
 aside {
@@ -13,6 +15,7 @@ aside {
 h5 {
   // font-family: Bookman, Copperplate, Copperplate Gothic Light;
   flex-wrap: wrap; 
+  color: rgb(0, 145, 255);
   text-align: left;
   padding-left: 40px;
 }
