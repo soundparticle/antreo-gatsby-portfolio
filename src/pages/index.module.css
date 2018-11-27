@@ -1,19 +1,23 @@
 * {
   box-sizing: border-box;
+  color: rgba(0, 145, 255, 0.845);
 }
 
 html {
-  background-image: url("../assets/meadow-1080x2280.jpg");
+  background-image: url("../assets/vintage-lines-vert.jpg");
   background-repeat: no-repeat;
   position: fixed;
-  background-size: contain;
+  background-size: cover;
+  height: 100%;
   margin: 0;
   padding: 0;
+  
 }
 
 h1 {
   // font-family: Bookman, Copperplate, Copperplate Gothic Light;
   font-size: 40px;
+  color: rgba(0, 145, 255, 0.845);
   text-align: center;
   margin-top: 0;
   margin-bottom: 10px;
@@ -23,6 +27,7 @@ h1 {
 
 h2 {
   font-size: 18px;
+  color: rgba(0, 145, 255, 0.845);
   text-align: center;
   line-height: 0px;  
   margin-bottom: 10px;
@@ -31,10 +36,16 @@ h2 {
 }
 
 h3 {
-  font-size: 16px;
+  font-size: 13px;
+  color: rgba(0, 145, 255, 0.845);
   margin: 0;
   line-height: 0px; 
   flex-wrap: wrap;
+}
+
+h4 {
+  text-align: center;
+  color: rgba(0, 145, 255, 0.845);
 }
 
 
@@ -76,4 +87,11 @@ aside {
   padding-left: 40px;
   text-align: left;
 
+}
+
+@media (min-width: 768px) {
+  html {
+    left: 50%;
+    margin-left: -512px;   /* 50% */  
+  }  
 }
