@@ -9,10 +9,7 @@ aside {
   padding: 5px 10px;
 }
 
-.skills {
-  text-align: left;
-  padding-left: 40px;
-}
+
 h5 {
   // font-family: Bookman, Copperplate, Copperplate Gothic Light;
   flex-wrap: wrap; 

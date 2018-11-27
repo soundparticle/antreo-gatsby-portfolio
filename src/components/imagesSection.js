@@ -27,7 +27,7 @@ export default () => (
     `
 }
     render={data => (
-      <div>
+      <div className="container">
         <a href="https://github.com/team-denim">
           <img src={data.allContentfulAntreoPortfolio.edges[0].node.imageLinks[0].file.url} alt="Alchemy Companion App screenshot"/>
         </a>

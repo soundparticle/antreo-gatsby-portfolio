@@ -16,7 +16,7 @@ export default () => (
   {/* <Link to="/contact/">Contact</Link> */}
   <Header headerText1="Antreo Pukay" />
   <Header headerText2="Full-Stack Developer" />
-  <Header headerText3="Email: acrosswalker at yahoo.com" />
+  <Header headerText3="acrosswalker at yahoo.com" />
   {/* <hr/> */}
 
     <main>
