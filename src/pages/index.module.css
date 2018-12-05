@@ -9,6 +9,8 @@ html {
   position: fixed;
   background-size: cover;
   height: 100%;
+  // width: 1661px;
+  // height: 2420px;
   margin: 0;
   padding: 0;
   
@@ -81,21 +83,4 @@ section {
   justify-content: center;
 }
 
-aside {
-  grid-column: 1;
-  grid-row: 2;
-  // background-color: #F0F0F2;
-  padding: 5px 10px;
-}
-.skills {
-  padding-left: 40px;
-  text-align: left;
 
-}
-
-@media (min-width: 768px) {
-  html {
-    left: 50%;
-    margin-left: -512px;   /* 50% */  
-  }  
-}
