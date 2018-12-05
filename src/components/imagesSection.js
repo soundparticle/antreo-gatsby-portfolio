@@ -1,6 +1,6 @@
 import React from "react";
-import styles from "./imageSection.module.css"
-import { StaticQuery, graphql } from "gatsby"
+import styles from "./imageSection.module.css";
+import { StaticQuery, graphql } from "gatsby";
 console.log(styles)
 
 

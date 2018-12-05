@@ -4,7 +4,7 @@ import Header from "../components/header";
 import PortfolioSection from "../components/portfolioSection";
 import SkillsAside from "../components/skillsAside";
 import AboutSection from "../components/aboutSection";
-import styles from "./index.module.css"
+import styles from "./index.module.css";
 console.log(styles)
 
 
@@ -21,34 +21,18 @@ export default () => (
 
     <main>
       <div className="pageContainer">
-      <section>
-        <PortfolioSection/>
-      </section>
+        <section>
+          <PortfolioSection/>
+        </section>
+          
         <SkillsAside className="skills"/>
-        {/* <aside>
-          <nav>
-            <h3>Skills</h3>
-              <ul>
-                <li>NodeJS</li>
-                <li>VueJS</li>
-                <li>React</li>
-                <li>Redux</li>
-                <li>JavaScript</li>
-                <li>HTML, CSS</li>
-                <li>MongoDB</li>
-                <li>Mongoose</li>
-              </ul>
-          </nav>
-        </aside> */}
+          
         <section>
           <AboutSection className="about"/> 
-        </section>
-  
+        </section> 
       </div>
     </main>
 
-    </div>
-  
-
+  </div>  
 )
 
