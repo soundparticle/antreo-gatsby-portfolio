@@ -4,16 +4,14 @@
 }
 
 html {
-  background-image: url("../assets/vintage-lines-vert.jpg");
-  background-repeat: no-repeat;
+  background: url("../assets/vintage-lines-vert.jpg");
+  background-position: center;
+  // background-repeat: no-repeat;
   position: fixed;
   background-size: cover;
   height: 100%;
-  // width: 1661px;
-  // height: 2420px;
   margin: 0;
-  padding: 0;
-  
+  padding: 0;  
 }
 
 h1 {
@@ -50,6 +48,16 @@ h4 {
   color: rgba(0, 145, 255, 0.845);
 }
 
+.images {
+  display: flex;
+  justify-content: center;
+  margin: 0 auto;
+}
+
+.images a {
+  max-width: 170px;
+}
+
 p {
   font-size: 24px;
 }
@@ -76,11 +84,6 @@ hr {
   width: 1000%;
   margin-left: -500%; 
   padding: 0;
-}
-
-section {
-  display: inline-block;
-  justify-content: center;
 }
 
 

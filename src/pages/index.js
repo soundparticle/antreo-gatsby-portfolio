@@ -5,6 +5,7 @@ import PortfolioSection from "../components/portfolioSection";
 import SkillsAside from "../components/skillsAside";
 import AboutSection from "../components/aboutSection";
 import styles from "./index.module.css";
+
 console.log(styles)
 
 
@@ -12,6 +13,7 @@ console.log(styles)
 
 export default () => (
   <div className="app-container">
+    <div className="background">&nbsp;</div>
   
   {/* <Link to="/contact/">Contact</Link> */}
   <Header headerText1="Antreo Pukay" />
