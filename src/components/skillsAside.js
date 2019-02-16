@@ -6,9 +6,9 @@ console.log(styles)
 
 export default props =>
 
-<div className="skills">
+<div>
   <h5>Skills</h5>
-    <ul>
+    <ul className="skills">
       <li>NodeJS</li>
       <li>VueJS</li>
       <li>React</li>

@@ -1,29 +1,19 @@
 * {
   box-sizing: border-box; 
   color: rgb(0, 145, 255);
-
 }
 
 div {
   grid-column: 1;
   grid-row: 2;
   // background-color: #F0F0F2;
-  padding: 5px 10px;
+  // padding: 5px 10px;
 }
 
-
-h5 {
+.skills {
   // font-family: Bookman, Copperplate, Copperplate Gothic Light;
   flex-wrap: wrap; 
   color: rgb(0, 145, 255);
   text-align: left;
   padding-left: 40px;
-}
-
-.skills {
-  display: flex;
-  flex-direction: row;
-  padding-left: 40px;
-  text-align: left;
-  font-size: 16px;
 }
