@@ -43,7 +43,7 @@ h3 {
   flex-wrap: wrap;
 }
 
-h4 {
+h4, h5 {
   text-align: center;
   color: rgba(0, 145, 255, 0.845);
 }
