@@ -1,6 +1,6 @@
 * {
-  box-sizing: border-box; 
-  color: rgb(0, 145, 255);
+  box-sizing: border-box;
+  color: rgb(84, 180, 253); 
 }
 
 div {
@@ -12,12 +12,11 @@ div {
 
 .skills {
   // font-family: Bookman, Copperplate, Copperplate Gothic Light;
-  // flex-wrap: wrap; 
   display: flex;
-  justify-content: space-evenly;
-  align-content: space-around;
-  color: rgb(0, 145, 255);
-  // text-align: left;
+  justify-content: center;
+  flex-wrap: wrap; 
+  // align-content: center;
+  // text-align: center;
 }
 
 span {
