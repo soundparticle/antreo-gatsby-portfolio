@@ -8,7 +8,9 @@ h4 {
   text-align: center
 }
 
-div {
+#about-section {
+  background-color: black;
+  padding: 20px;
   // padding-right: 10px;
   // padding-left: 10px;
 }
@@ -18,5 +20,5 @@ p {
 }
 
 .about {
-  padding: 20px;
+  // padding: 20px;
 }

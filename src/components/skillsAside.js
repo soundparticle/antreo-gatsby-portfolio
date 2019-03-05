@@ -8,14 +8,14 @@ export default props =>
 
 <div>
   <h5>Skills</h5>
-    <section className="skills">
-      <span>NodeJS</span>
-      <span>VueJS</span>
-      <span>React</span>
-      <span>Redux</span>
-      <span>JavaScript</span>
-      <span>HTML, CSS</span>
-      <span>MongoDB</span>
-      <span>Mongoose</span>
+    <section className="skills-container">
+      <span className="skills">NodeJS</span>
+      <span className="skills">VueJS</span>
+      <span className="skills">React</span>
+      <span className="skills">Redux</span>
+      <span className="skills">JavaScript</span>
+      <span className="skills">HTML, CSS</span>
+      <span className="skills">MongoDB</span>
+      <span className="skills">Mongoose</span>
     </section>
 </div>
