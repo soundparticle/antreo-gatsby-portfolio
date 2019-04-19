@@ -1,7 +1,7 @@
 * {
   box-sizing: border-box;
-  
 }
+
 h4 {
   display: flex;
   flex-direction: column;
@@ -9,16 +9,23 @@ h4 {
 }
 
 #about-section {
-  background-color: black;
-  padding: 20px;
+  // background-color: black;
+  // padding: 20px;
   // padding-right: 10px;
-  // padding-left: 10px;
+  // margin-left: 10px;
 }
 
 p {
   font-size: 12pt;
+  margin: 20px;
 }
 
 .about {
   // padding: 20px;
+}
+
+// browser sizing only
+@media only screen and (min-width: 768px) {
+
+  
 }

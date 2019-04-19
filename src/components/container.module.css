@@ -4,8 +4,8 @@
 }
 
 .container {
-  margin: 3rem auto;
-  max-width: 600px;
+  // margin: 3rem auto;
+  // max-width: 600px;
 }
 
 // html, body {
@@ -15,3 +15,7 @@
 //   padding: 0;
 // }
 
+// BROWSER
+@media only screen and (min-width: 768px) {
+
+}
