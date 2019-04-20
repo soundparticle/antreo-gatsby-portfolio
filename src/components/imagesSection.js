@@ -32,10 +32,10 @@ export default () => (
           <img src={data.allContentfulAntreoPortfolio.edges[0].node.imageLinks[0].file.url} alt="Alchemy Companion App screenshot"/>
         </a>
         <a href="https://github.com/Markalope/search-all-the-things">
-          <img src={data.allContentfulAntreoPortfolio.edges[0].node.imageLinks[1].file.url} alt="Alchemy Companion App screenshot"/>
+          <img src={data.allContentfulAntreoPortfolio.edges[0].node.imageLinks[1].file.url} alt="Movie Search Popcorn and Film Reel"/>
         </a>
         <a href="https://github.com/soundparticle/goals">
-          <img src={data.allContentfulAntreoPortfolio.edges[0].node.imageLinks[2].file.url} alt="Alchemy Companion App screenshot"/>        
+          <img src={data.allContentfulAntreoPortfolio.edges[0].node.imageLinks[2].file.url} alt="Goal Tracker Finish Line"/>        
         </a>
       </div>  
     )}
