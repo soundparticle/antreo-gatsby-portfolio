@@ -8,7 +8,7 @@ export default props =>
 
 <section>
   <h5>Skills</h5>
-    <section id="skills-container">
+    <section className={styles.skillsContainer}>
       <span className="skills">NodeJS</span>
       <span className="skills">VueJS</span>
       <span className="skills">React</span>

@@ -2,6 +2,18 @@
   box-sizing: border-box; 
 }
 
+.images {
+  display: flex;
+  justify-content: space-around;
+  margin-left: 200px;
+  margin-right: 200px;
+}
+
+img {
+  padding: 60px;
+  max-width: 200px;
+}
+
 @media (min-width: 768px) {
 
   
@@ -12,23 +24,12 @@
   .images {
     display: flex;
     justify-content: space-around;
-    border-style: solid;
-    border-color: orange;
-    border-width: 1px;
+    margin-left: 200px;
+    margin-right: 200px;
   }
   
   img {
-    // float: left;
-    // align-content: center;
-    // width: 33.33%;
-    border-style: solid;
-    border-color: yellowgreen;
-    border-width: 1px;
-
     padding: 60px;
     max-width: 200px;
-    // max-height: auto;
-    // min-height: 100px;
-    // max-width: 200px, auto;
   }
 }
