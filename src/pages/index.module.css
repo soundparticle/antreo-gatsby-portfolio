@@ -1,97 +1,96 @@
-* {
-  box-sizing: border-box;
-  color: rgba(0, 145, 255, 0.845);
-}
 
 html {
-  background-image: url("../assets/vintage-lines-vert.jpg");
-  background-repeat: no-repeat;
-  position: fixed;
+  background: url("../assets/vintage-lines-vert.jpg") no-repeat center center fixed;
+  background-position: center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
   background-size: cover;
-  height: 100%;
-  margin: 0;
-  padding: 0;
-  
+  background-size: cover;
 }
 
 h1 {
   // font-family: Bookman, Copperplate, Copperplate Gothic Light;
   font-size: 40px;
-  color: rgba(0, 145, 255, 0.845);
+  color: rgb(84, 180, 253);
   text-align: center;
-  margin-top: 0;
-  margin-bottom: 10px;
   margin: 0;
-  flex-wrap: wrap;  
 }
 
 h2 {
-  font-size: 18px;
-  color: rgba(0, 145, 255, 0.845);
+  font-size: 16px;
+  color: rgb(84, 180, 253);
   text-align: center;
   line-height: 0px;  
-  margin-bottom: 10px;
   margin: 0px;
-  flex-wrap: wrap;
 }
 
 h3 {
-  font-size: 13px;
-  color: rgba(0, 145, 255, 0.845);
+  font-size: 16px;
+  color: rgb(84, 180, 253);
   margin: 0;
   line-height: 0px; 
-  flex-wrap: wrap;
 }
 
-h4 {
+h4, h5 {
+  // Maybe move to skillsAside module
   text-align: center;
-  color: rgba(0, 145, 255, 0.845);
+  color: rgb(84, 180, 253);
 }
 
-
-.pageContainer {
-  height: 100vh;
-  max-height: 100vh;
-  display: grid;
-  overflow-x: hidden;
+@media only screen and (min-width: 768px) {
+  * {
+    box-sizing: border-box;
+    // color: rgb(84, 180, 253);
+  }
   
-  grid-template-columns: 1fr 3fr;
-  grid-template-rows: min-content auto auto min-content;
-  grid-template-areas: "header  header"
-  "content  content"                     
-  "footer  footer";
-}
-// remove <hr> rule before production
-hr {
-  border: none;
-  height: 20px;
-  color: #333; /* old IE */
-  background-color: rgb(255, 113, 37);
-  width: 1000%;
-  margin-left: -500%; 
-  padding: 0;
-}
-
-section {
-  display: inline-block;
-  justify-content: center;
-}
-
-aside {
-  grid-column: 1;
-  grid-row: 2;
-  // background-color: #F0F0F2;
-  padding: 5px 10px;
-}
-.skills {
-  padding-left: 40px;
-  text-align: left;
-
-}
-
-@media (min-width: 768px) {
   html {
-    left: 50%;
-    margin-left: -512px;   /* 50% */  
-  }  
+    background: url("../assets/vintage-lines-vert.jpg") no-repeat center center fixed;
+    background-position: center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    background-size: cover;
+  }
+  .pageContainer {
+    // height: 100vh;
+    // max-height: 100vh;
+    // display: grid;
+    // overflow-x: hidden;
+    
+    // grid-template-columns: 1fr 3fr;
+    // grid-template-rows: min-content auto auto min-content;
+    // grid-template-areas: "header  header"
+    // "content  content"                     
+    // "footer  footer";
+  }
+
+  h1 {
+    // font-family: Bookman, Copperplate, Copperplate Gothic Light;
+    font-size: 40px;
+    color: rgb(84, 180, 253);
+    text-align: center;
+    margin: 0;
+  }
+  
+  h2 {
+    font-size: 16px;
+    color: rgb(84, 180, 253);
+    text-align: center;
+    line-height: 0px;  
+    margin: 0px;
+  }
+  
+  h3 {
+    font-size: 16px;
+    color: rgb(84, 180, 253);
+    margin: 0;
+    line-height: 0px; 
+  }
+
+  h4, h5 {
+    text-align: center;
+    color: rgb(84, 180, 253);
+  }
 }

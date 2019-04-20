@@ -1,6 +1,6 @@
 import React from "react";
-import styles from "./imageSection.module.css"
-import { StaticQuery, graphql } from "gatsby"
+import styles from "./imageSection.module.css";
+import { StaticQuery, graphql } from "gatsby";
 console.log(styles)
 
 
@@ -27,15 +27,15 @@ export default () => (
     `
 }
     render={data => (
-      <div className="container">
+      <div className={styles.images}>
         <a href="https://github.com/team-denim">
           <img src={data.allContentfulAntreoPortfolio.edges[0].node.imageLinks[0].file.url} alt="Alchemy Companion App screenshot"/>
         </a>
         <a href="https://github.com/Markalope/search-all-the-things">
-          <img src={data.allContentfulAntreoPortfolio.edges[0].node.imageLinks[1].file.url} alt="Alchemy Companion App screenshot"/>
+          <img src={data.allContentfulAntreoPortfolio.edges[0].node.imageLinks[1].file.url} alt="Movie Search Popcorn and Film Reel"/>
         </a>
         <a href="https://github.com/soundparticle/goals">
-          <img src={data.allContentfulAntreoPortfolio.edges[0].node.imageLinks[2].file.url} alt="Alchemy Companion App screenshot"/>        
+          <img src={data.allContentfulAntreoPortfolio.edges[0].node.imageLinks[2].file.url} alt="Goal Tracker Finish Line"/>        
         </a>
       </div>  
     )}
