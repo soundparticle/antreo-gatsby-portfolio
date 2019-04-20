@@ -1,12 +1,12 @@
 import React from "react";
-import styles from "./skillsAside.module.css"
+import styles from "./skills.module.css"
 console.log(styles)
 
 
 
 export default props =>
 
-<div>
+<section>
   <h5>Skills</h5>
     <section className="skills-container">
       <span className="skills">NodeJS</span>
@@ -18,4 +18,4 @@ export default props =>
       <span className="skills">MongoDB</span>
       <span className="skills">Mongoose</span>
     </section>
-</div>
+</section>

@@ -9,24 +9,23 @@
     box-sizing: border-box; 
   }
 
-  .images {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    align-content: center;
-  }
-
+  
   img {
     // float: left;
     // align-content: center;
     // width: 33.33%;
-
-    // padding: 5px; 
+    
     padding: 60px;
     max-width: 200px;
-    max-height: auto;
-
+    // max-height: auto;
+    
     // min-height: 100px;
     // max-width: 200px, auto;
+  }
+  div.images {
+    display: flex;
+    justify-content: center;
+    // align-items: center;
+    // align-content: center;
   }
 }
