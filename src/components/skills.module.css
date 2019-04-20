@@ -11,18 +11,24 @@ div {
   // padding: 5px 10px;
 }
 
-.skills-container {
+section {
   // font-family: Bookman, Copperplate, Copperplate Gothic Light;
-  display: flex;
-  margin: 20px;
+  // display: flex;
+  // margin: 20px;
+
   // justify-content: center;
   // flex-wrap: wrap; 
   // align-content: center;
   // text-align: center;
+
+  border-style: solid;
+  border-color: yellowgreen;
+  border-width: 1px;
 }
 
 .skills {
-  text-align: center;
+  // text-align: center;
+  
 }
 
 span {
@@ -30,10 +36,15 @@ span {
   padding-left: 70px;
   padding-bottom: 20px;
   // font-size: 18px;
+
+  border-style: solid;
+  border-color: yellowgreen;
+  border-width: 1px;
 }
 
 @media only screen and (min-width: 768px) {
   .skills {
-    text-align: center;
+    // text-align: center;
+    
   }
 }

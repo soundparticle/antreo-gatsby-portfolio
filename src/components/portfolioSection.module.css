@@ -2,6 +2,20 @@
     // box-sizing: border-box;    
 }
 
+.portfolio-container {
+  border-style: solid;
+  border-color: yellowgreen;
+  border-width: 1px;
+}
+
 @media only screen and (min-width: 768px) {
+
+  .portfolio-container {
+    display: flex;
     
+    border-style: solid;
+    border-color: yellowgreen;
+    border-width: 1px;
+  }
+
 }
