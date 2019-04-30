@@ -17,6 +17,7 @@ h4 {
 
 p {
   font-size: 12pt;
+  color: rgb(84, 180, 253); 
   margin-left: 150px;
   margin-right: 150px;
 }
@@ -25,7 +26,6 @@ p {
   // padding: 20px;
 }
 
-// browser sizing only
 @media only screen and (min-width: 768px) {
 
   

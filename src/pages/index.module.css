@@ -1,3 +1,6 @@
+* {
+  box-sizing: border-box;
+}
 
 html {
   background: url("../assets/vintage-lines-vert.jpg") no-repeat center center fixed;
@@ -10,7 +13,7 @@ html {
 }
 
 h1 {
-  // font-family: Bookman, Copperplate, Copperplate Gothic Light;
+  font-family: Bookman, Copperplate, Copperplate Gothic Light;
   font-size: 40px;
   color: rgb(84, 180, 253);
   text-align: center;
@@ -34,7 +37,6 @@ h3 {
 }
 
 h4, h5 {
-  // Maybe move to skillsAside module
   text-align: center;
   color: rgb(84, 180, 253);
 }
@@ -42,7 +44,6 @@ h4, h5 {
 @media only screen and (min-width: 768px) {
   * {
     box-sizing: border-box;
-    // color: rgb(84, 180, 253);
   }
   
   html {
@@ -92,7 +93,7 @@ h4, h5 {
   }
 
   h4, h5 {
-    text-align: center;
-    color: rgb(84, 180, 253);
+    // text-align: center;
+    // color: rgb(84, 180, 253);
   }
 }

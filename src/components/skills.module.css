@@ -1,18 +1,9 @@
 * {
   box-sizing: border-box;
-  color: rgb(84, 180, 253); 
 }
 
 h5 {
   text-align: center;
-}
-
-div {
-  // grid-column: 1;
-  // grid-row: 2;
-
-  // background-color: #F0F0F2;
-  // padding: 5px 10px;
 }
 
 section {
@@ -29,6 +20,8 @@ span {
   display: inline-block;
   text-align: center;
   // display: flex;
+  color: rgb(84, 180, 253); 
+
   // padding-left: 70px;
   // padding-bottom: 5px;
   // font-size: 18px;
