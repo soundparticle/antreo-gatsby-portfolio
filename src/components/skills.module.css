@@ -3,6 +3,10 @@
   color: rgb(84, 180, 253); 
 }
 
+h5 {
+  text-align: center;
+}
+
 div {
   // grid-column: 1;
   // grid-row: 2;
@@ -12,15 +16,13 @@ div {
 }
 
 section {
-  // font-family: Bookman, Copperplate, Copperplate Gothic Light;
-  // display: flex;
+  font-family: Bookman, Copperplate, Copperplate Gothic Light;
+  display: flex;
   // margin: 20px;
-
-  // justify-content: center;
-  // flex-wrap: wrap; 
+  justify-content: center;
+  flex-wrap: wrap; 
   // align-content: center;
   // text-align: center;
-
 }
 
 span {
@@ -28,7 +30,7 @@ span {
   text-align: center;
   // display: flex;
   // padding-left: 70px;
-  padding-bottom: 20px;
+  // padding-bottom: 5px;
   // font-size: 18px;
 
   border-style: solid;

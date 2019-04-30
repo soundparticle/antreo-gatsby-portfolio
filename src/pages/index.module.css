@@ -28,6 +28,7 @@ h2 {
 h3 {
   font-size: 16px;
   color: rgb(84, 180, 253);
+  text-align: center;
   margin: 0;
   line-height: 0px; 
 }
@@ -53,6 +54,7 @@ h4, h5 {
     background-size: cover;
     background-size: cover;
   }
+  
   .pageContainer {
     // height: 100vh;
     // max-height: 100vh;
