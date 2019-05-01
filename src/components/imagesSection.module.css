@@ -2,34 +2,45 @@
   box-sizing: border-box; 
 }
 
+@-webkit-keyframes greenPulse {
+  from { background-color: #749a02; -webkit-box-shadow: 0 0 9px #333; }
+  50% { background-color: #91bd09; -webkit-box-shadow: 0 0 18px #91bd09; }
+  to { background-color: #749a02; -webkit-box-shadow: 0 0 9px #333; }
+}
+
 .images {
   display: flex;
-  justify-content: space-around;
-  margin-left: 200px;
-  margin-right: 200px;
+  justify-content: center;
+  // flex-direction: column;
+  // margin-left: 200px;
+  // margin-right: 200px;
+}
+
+a {
+  // -webkit-animation: burn 1.5s linear infinite alternate;
+
+  // -webkit-animation-name: greenPulse;
+  // -webkit-animation-duration: 2s;
+  // -webkit-animation-iteration-count: infinite;
+
+  // padding: 20px;
+  // max-width: auto;
+  // border-radius: 100%;
 }
 
 img {
-  padding: 40px;
-  max-width: 200px;
+  padding: 10px;
+  max-width: 90%;
+  border-radius: 100%;
 }
 
-@media (min-width: 768px) {
+@media only screen and (min-width: 768px) {
 
-  
   * {
     box-sizing: border-box; 
-  }
-
-  .images {
-    display: flex;
-    justify-content: space-around;
-    margin-left: 200px;
-    margin-right: 200px;
   }
   
   img {
     padding: 40px;
-    max-width: 200px;
   }
 }

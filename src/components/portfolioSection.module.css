@@ -13,8 +13,8 @@ h4 {
   text-align: center;
   
   border-style: solid;
-  border-color: rgb(255, 217, 0);
-  // border-width: 1px;
+  border-color: rgb(255, 225, 0);
+  border-width: 1px;
 }
 
 @media only screen and (min-width: 768px) {
