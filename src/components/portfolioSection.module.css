@@ -12,9 +12,9 @@ h4 {
   flex-direction: column;
   text-align: center;
   
-  border-style: solid;
-  border-color: rgb(255, 225, 0);
-  border-width: 1px;
+  // border-style: solid;
+  // border-color: rgb(255, 225, 0);
+  // border-width: 1px;
 }
 
 @media only screen and (min-width: 768px) {

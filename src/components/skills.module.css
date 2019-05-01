@@ -18,11 +18,13 @@ section {
 
 span {
   display: inline-block;
+  // justify-content: space-around;
   text-align: center;
+  padding: 8px;
   // display: flex;
   color: rgb(84, 180, 253); 
 
-  // padding-left: 70px;
+  // padding: 70px;
   // padding-bottom: 5px;
   // font-size: 18px;
 
