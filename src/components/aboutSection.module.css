@@ -2,10 +2,12 @@
   box-sizing: border-box;
 }
 
-h4 {
+h6 {
   display: flex;
   flex-direction: column;
-  text-align: center
+  text-align: center;
+  text-align: center;
+  color: rgb(84, 180, 253);
 }
 
 #about-section {
