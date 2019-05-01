@@ -36,11 +36,6 @@ h3 {
   line-height: 0px; 
 }
 
-h4, h5 {
-  text-align: center;
-  color: rgb(84, 180, 253);
-}
-
 @media only screen and (min-width: 768px) {
   * {
     box-sizing: border-box;
@@ -67,33 +62,5 @@ h4, h5 {
     // grid-template-areas: "header  header"
     // "content  content"                     
     // "footer  footer";
-  }
-
-  h1 {
-    // font-family: Bookman, Copperplate, Copperplate Gothic Light;
-    font-size: 40px;
-    color: rgb(84, 180, 253);
-    text-align: center;
-    margin: 0;
-  }
-  
-  h2 {
-    font-size: 16px;
-    color: rgb(84, 180, 253);
-    text-align: center;
-    line-height: 0px;  
-    margin: 0px;
-  }
-  
-  h3 {
-    font-size: 16px;
-    color: rgb(84, 180, 253);
-    margin: 0;
-    line-height: 0px; 
-  }
-
-  h4, h5 {
-    // text-align: center;
-    // color: rgb(84, 180, 253);
   }
 }
