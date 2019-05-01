@@ -5,8 +5,9 @@
 .portfolioContainer {
   display: flex;
   justify-content: center;
+  
   border-style: solid;
-  // border-color: red;
+  border-color: rgb(255, 217, 0);
   // border-width: 1px;
 }
 
