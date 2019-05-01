@@ -36,6 +36,13 @@ h3 {
   line-height: 0px; 
 }
 
+
+
+#link {
+  text-align: center;
+  color: lime;
+}
+
 @media only screen and (min-width: 768px) {
   * {
     box-sizing: border-box;

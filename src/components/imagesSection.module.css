@@ -12,9 +12,9 @@ a {
   margin: 10px;
   height: 100px;
   border-radius: 100%;
-  border-style: solid;
-  border-color: lime;
-  border-width: 1px;
+  // border-style: solid;
+  // border-color: lime;
+  // border-width: 1px;
 }
 
 img {
