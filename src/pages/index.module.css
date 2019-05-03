@@ -36,9 +36,16 @@ h3 {
   line-height: 0px; 
 }
 
-
+nav {
+  border-style: solid;
+  border-color: rgb(255, 225, 0);
+  border-width: 2px;
+  
+}
 
 #link {
+  // display: block;
+  // margin-bottom: 0px;
   text-align: center;
   color: lime;
 }
