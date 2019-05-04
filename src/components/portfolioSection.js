@@ -7,6 +7,6 @@ console.log(styles)
 export default props =>
 
 <div className={styles.portfolioContainer}>
-  <h4>Portfolio</h4>
+  {/* <h4>Portfolio</h4> */}
   <ImagesSection imagesSectionText="image link tiles here"/>
 </div>

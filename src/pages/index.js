@@ -14,15 +14,17 @@ export default () => (
     <Header headerText1="Antreo Pukay" />
     <Header headerText2="Full-Stack Developer" />
     <Header headerText3="acrosswalker at yahoo.com" />
-  <nav id={styles.link}>
-    <Link to="/about/"><p id={styles.link}>About</p></Link>    
+    
+    <Link to="/about/" id={styles.link}>About</Link>    
+  <nav>
+    {/* <span id={styles.link}> */}
+    {/* </span> */}
   </nav>
 
     <main>
       <div className={styles.pageContainer}>        
           <PortfolioSection/>
           <Skills/>
-          {/* <AboutSection/>  */}
       </div>
     </main>
 
