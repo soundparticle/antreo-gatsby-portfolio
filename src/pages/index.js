@@ -16,10 +16,6 @@ export default () => (
     <Header headerText3="acrosswalker at yahoo.com" />
     
     <Link to="/about/" id={styles.link}>About</Link>    
-  <nav>
-    {/* <span id={styles.link}> */}
-    {/* </span> */}
-  </nav>
 
     <main>
       <div className={styles.pageContainer}>        
