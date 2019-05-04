@@ -12,7 +12,7 @@ export default () => (
     <Header headerText2="Full-Stack Developer" />
     <Header headerText3="acrosswalker at yahoo.com" />
     <nav>
-      <Link to="/"><p id={styles.link}>Home</p></Link>    
+      <Link to="/"><p id={styles.link}>Home</p>Home</Link>    
     </nav>
     <AboutSection/> 
   </div>
