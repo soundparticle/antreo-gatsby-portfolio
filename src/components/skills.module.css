@@ -4,41 +4,44 @@
 
 h5 {
     color: rgb(84, 180, 253);
+    text-align: center;
+    // padding-top: 0px;
   }
   
 section {
   font-family: Bookman, Copperplate, Copperplate Gothic Light;
   display: flex;
-  // flex-direction: column;
   justify-content: center;
-  flex-wrap: wrap; 
+  flex-wrap: wrap;
+  // margin-top: 0px; 
 }
 
 span {
   display: inline-block;
-  // justify-content: space-around;
   text-align: center;
   padding: 8px;
-  // display: flex;
   color: rgb(84, 180, 253); 
-
-  // padding: 70px;
-  // padding-bottom: 5px;
-  font-size: 12px;
+  // font-size: 12px;
 
   border-style: solid;
-  // border-color: red;
+  border-color: red;
   border-width: 1px;
 }
 
 @media only screen and (min-width: 768px) {
-  
+  * {
+    box-sizing: border-box;
+  }
+
+  h5 {
+    text-align: center;
+  }
   section {
     font-family: Bookman, Copperplate, Copperplate Gothic Light;
     display: flex;
-    // flex-direction: column;
     justify-content: center;
-    flex-wrap: wrap; 
+    flex-wrap: wrap;
+    // margin-top: 0px; 
   }
 
   .skillsContainer {

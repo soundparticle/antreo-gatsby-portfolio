@@ -36,15 +36,23 @@ h3 {
   line-height: 0px; 
 }
 
-nav {
-  // text-align: center;
+.linkWrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 #link {
   height: 10px;
-  padding-bottom: 100px;
+  display: inline-block;
+  padding-bottom: 50px;
   text-align: center;
   color: lime;
+}
+
+hr {
+  height: 20px;
+  background-color: rgb(214, 153, 214);
 }
 
 @media only screen and (min-width: 768px) {
@@ -61,7 +69,7 @@ nav {
     background-size: cover;
     background-size: cover;
   }
-  
+
   .pageContainer {
     // height: 100vh;
     // max-height: 100vh;

@@ -11,9 +11,11 @@ export default () => (
     <Header headerText1="Antreo Pukay" />
     <Header headerText2="Full-Stack Developer" />
     <Header headerText3="acrosswalker at yahoo.com" />
-    <nav>
-      <Link to="/"><p id={styles.link}>Home</p>Home</Link>    
-    </nav>
+    <div className={styles.linkWrapper}>
+      <Link to="/" id={styles.link}>Home</Link>    
+    </div>
+    <hr/>
+    
     <AboutSection/> 
   </div>
 )
