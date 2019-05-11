@@ -17,7 +17,7 @@ export default () => (
     <div className={styles.linkWrapper}>
       <Link to="/about/" id={styles.link}>About</Link>    
     </div>
-    <hr/>
+    {/* <hr /> */}
     <main>
       <div className={styles.pageContainer}>        
           <PortfolioSection/>

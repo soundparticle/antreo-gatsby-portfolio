@@ -40,19 +40,32 @@ h3 {
   display: flex;
   justify-content: center;
   align-items: center;
+  height: 35px;
+  padding-bottom: 20px;
+
+
+  border-color: black;
+  border-style: solid;
+  border-width: 1px;
+  background-color: rgb(244, 245, 219, 0.3);
 }
 
 #link {
+  font-family: Bookman, Copperplate, Copperplate Gothic Light;
   height: 10px;
   display: inline-block;
+  font-size: 21px;
   padding-bottom: 50px;
+  padding-top: 40px;
   text-align: center;
-  color: lime;
+  font-weight: bold;
+  // color: black;
+  color: rgb(202, 205, 50);
 }
 
 hr {
   height: 20px;
-  background-color: rgb(214, 153, 214);
+  background-color: rgb(228, 162, 228);
 }
 
 @media only screen and (min-width: 768px) {
