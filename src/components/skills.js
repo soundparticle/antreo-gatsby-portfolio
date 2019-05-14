@@ -9,6 +9,7 @@ export default props =>
 <section>
   <h5>Skills</h5>
   {/* consider creating a skills array to populate span skills */}
+  <div className={styles.skillsBackground}>
     <section className={styles.skillsContainer}>
       <span className="skills">Agile</span>
       <span className="skills">Node</span>
@@ -24,6 +25,7 @@ export default props =>
       <span className="skills">PostgresQL</span>
       <span className="skills">TDD</span>
       <span className="skills">Mocha</span>
-      <span className="skills">Jest</span>
+      <span className="skills">Jest</span>        
     </section>
+  </div>
 </section>

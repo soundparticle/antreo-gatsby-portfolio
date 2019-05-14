@@ -11,9 +11,8 @@ h5 {
 section {
   font-family: Bookman, Copperplate, Copperplate Gothic Light;
   display: flex;
-  justify-content: center;
+  justify-content: space-around;
   flex-wrap: wrap;
-  // margin-top: 0px; 
 }
 
 span {
@@ -21,11 +20,20 @@ span {
   text-align: center;
   padding: 8px;
   color: rgb(84, 180, 253); 
-  // font-size: 12px;
-
   border-style: solid;
-  border-color: red;
+  border-color: rgb(202, 205, 50);
   border-width: 1px;
+  // background-color: rgb(244, 245, 219, 0.25);
+}
+
+.skillsContainer {
+  display: flex;
+  justify-content: space-evenly;
+  // border-style: solid;
+  // border-color: rgb(63, 205, 50);
+  border-width: 1px;
+  padding-bottom: 58px;
+  // background-color: rgb(43, 0, 43);
 }
 
 @media only screen and (min-width: 768px) {
@@ -34,24 +42,29 @@ span {
   }
 
   h5 {
+    font-family: Bookman, Copperplate, Copperplate Gothic Light;
     text-align: center;
+    font-size: 16px;
+    // text-decoration: underline;
   }
   section {
     font-family: Bookman, Copperplate, Copperplate Gothic Light;
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
-    // margin-top: 0px; 
   }
 
+  .skillsBackground {
+    // background-color: rgb(43, 0, 43);
+  }
   .skillsContainer {
     display: flex;
     justify-content: space-evenly;
     margin-left: 200px;
     margin-right: 200px;
-    border-style: solid;
-    border-color: rgb(63, 205, 50);
-    border-width: 1px;
-    padding-bottom: 40px;
+    // border-style: solid;
+    // border-color: rgb(63, 205, 50);
+    // border-width: 1px;
+    // padding-bottom: 90px;
   }
 }
