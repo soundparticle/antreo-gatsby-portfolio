@@ -8,7 +8,15 @@
 }
 
 .imageLinks {
+  // display: block;
+  border-radius: 100%;
+  border-width: 1px;
+  height: 21vw;
+  border-style: solid;
+}
 
+.imageLinks:hover {
+  
 }
 
 a {
@@ -29,8 +37,53 @@ img {
   border-width: 1px;
 }
 
+
+
+@media only screen and (min-width: 480px) {
+  .imageLinks {
+    // display: block;
+    border-radius: 100%;
+    border-width: 1px;
+    height: 22.5vw;
+    border-style: solid;
+  }
+}
+
+
+
 @media only screen and (min-width: 768px) {
   * {
     box-sizing: border-box; 
+  }
+
+  .images {
+    display: flex;
+    justify-content: center;
+  }
+
+  .imageLinks {
+    // display: block;
+    border-radius: 100%;
+    border-width: 1px;
+    height: 23.5vw;
+    border-style: solid;
+  }
+
+  a {
+    display: block;
+    margin: 10px;
+    border-radius: 80%;
+  
+    // border-style: solid;
+    // border-color: lime;
+    // border-width: 1px;
+  }
+  
+  img {
+    border-radius: 80%;
+  
+    border-style: solid;
+    border-color: indianred;
+    border-width: 1px;
   }
 }
