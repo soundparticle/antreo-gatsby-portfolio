@@ -1,5 +1,5 @@
 import React from "react";
-import styles from "./skills.module.css"
+import styles from "./skills.module.scss"
 console.log(styles)
 
 
@@ -11,7 +11,7 @@ export default props =>
   {/* consider creating a skills array to populate span skills */}
   <div className={styles.skillsBackground}>
     <section className={styles.skillsContainer}>
-      <span className="skills">Agile</span>
+      <span href="#" className={styles.skills}>Agile</span>
       <span className="skills">Node</span>
       <span className="skills">Vue</span>
       <span className="skills">React</span>
