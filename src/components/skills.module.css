@@ -1,0 +1,86 @@
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+h5 {
+  color: #54b4fd;
+  text-align: center;
+}
+
+section {
+  font-family: Bookman, Copperplate, Copperplate Gothic Light;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+span {
+  display: inline-block;
+  text-align: center;
+  padding: 8px;
+  color: #54b4fd;
+  border-style: solid;
+  border-color: #cacd32;
+  border-width: 1px;
+}
+
+span:hover {
+  z-index: 10;
+  background: #cacd32;
+}
+
+.skills {
+  width: 160px;
+  position: relative;
+  margin-right: -1px;
+}
+
+.skillsContainer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  border-width: 1px;
+  padding-bottom: 58px;
+}
+
+@media only screen and (min-width: 768px) {
+  * {
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+  }
+  h5 {
+    font-family: Bookman, Copperplate, Copperplate Gothic Light;
+    text-align: center;
+    font-size: 16px;
+  }
+  section {
+    font-family: Bookman, Copperplate, Copperplate Gothic Light;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .skillsContainer {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+    margin-left: 200px;
+    margin-right: 200px;
+  }
+}
+/*# sourceMappingURL=skills.module.css.map */
