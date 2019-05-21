@@ -22,7 +22,10 @@ section {
 span {
   display: inline-block;
   text-align: center;
+  // font-size: 10px;
   padding: 8px;
+  // margin-left: 20px;
+  // margin-right: 20px;
   color: #54b4fd;
   border-style: solid;
   border-color: #cacd32;
@@ -35,9 +38,8 @@ span:hover {
 }
 
 .skills {
-  width: 160px;
-  position: relative;
-  margin-right: -1px;
+  // position: relative;
+  // margin-right: -1px;
 }
 
 .skillsContainer {

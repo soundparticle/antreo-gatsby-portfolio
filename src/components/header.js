@@ -5,7 +5,7 @@ console.log(styles)
 export default props => 
 
 <div>
-  <hgroup className="header-container">
+  <hgroup className={styles.headerContainer}>
     <h1>
       {props.headerText1}
     </h1>

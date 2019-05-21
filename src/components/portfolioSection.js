@@ -4,7 +4,7 @@ import ImagesSection from "../components/imagesSection";
 console.log(styles)
 
 
-export default props =>
+export default () =>
 
 <div className={styles.portfolioContainer}>
   {/* <h4>Portfolio</h4> */}

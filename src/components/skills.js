@@ -4,14 +4,14 @@ console.log(styles)
 
 
 
-export default props =>
+export default () =>
 
 <section>
   <h5>Skills</h5>
   {/* consider creating a skills array to populate span skills */}
   <div className={styles.skillsBackground}>
     <section className={styles.skillsContainer}>
-      <span href="#" className={styles.skills}>Agile</span>
+      <span className={styles.skills}>Agile</span>
       <span className={styles.skills}>Node</span>
       <span className={styles.skills}>Vue</span>
       <span className={styles.skills}>React</span>

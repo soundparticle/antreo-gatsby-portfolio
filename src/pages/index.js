@@ -3,7 +3,6 @@ import { Link } from "gatsby";
 import Header from "../components/header";
 import PortfolioSection from "../components/portfolioSection";
 import Skills from "../components/skills";
-// import AboutSection from "../components/aboutSection";
 
 import styles from "./index.module.css";
 
@@ -17,7 +16,6 @@ export default () => (
     <div className={styles.linkWrapper}>
       <Link to="/about/" id={styles.link}>About</Link>    
     </div>
-    {/* <hr /> */}
     <main>
       <div className={styles.pageContainer}>        
           <PortfolioSection/>
