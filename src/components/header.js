@@ -4,9 +4,8 @@ console.log(styles)
 
 export default props => 
 
-<div>
-  <hgroup className={styles.headerContainer}>
-    <h1>
+<header className={styles.headerContainer}>
+    <h1 className={styles.headerOne}>
       {props.headerText1}
     </h1>
     <h2>
@@ -15,8 +14,9 @@ export default props =>
     <h3>
       {props.headerText3}
     </h3>
+  <hgroup>
   </hgroup>
-</div>
+</header>
 
 
 

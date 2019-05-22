@@ -5,10 +5,10 @@
 .images {
   display: flex;
   justify-content: center;
+  padding-top: 80px;
 }
 
 a {
-  // display: block;
   margin: 10px;
   // height: 20vw;
   // border-radius: 100%;
@@ -59,8 +59,7 @@ img {
   }
 
   .images {
-    // display: flex;
-    // justify-content: center;
+    padding-bottom: 70px;
   }
 
   .imageLinks {
@@ -102,7 +101,7 @@ img {
     // border-style: solid;
   }
 
-  a {
-    // height: 302px;
+  .images {
+    // padding-bottom: 50px;
   }
 }
