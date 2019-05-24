@@ -14,7 +14,7 @@ export default () => (
     <Header headerText2="Full-Stack Developer" />
     <Header headerText3="acrosswalker at yahoo.com" />
     <div className={styles.linkWrapper}>
-      <Link to="/about/" id={styles.link}>About</Link>    
+      <Link to="/about/" id={styles.link} className={styles.glow}>About</Link>    
     </div>
     <main>
       <div className={styles.pageContainer}>        

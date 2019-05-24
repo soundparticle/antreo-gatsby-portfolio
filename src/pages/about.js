@@ -13,7 +13,7 @@ export default () => (
     <Header headerText3="acrosswalker at yahoo.com" />
     
     <div className={styles.linkWrapper}>
-      <Link to="/" id={styles.link}>Home</Link>    
+      <Link to="/" id={styles.link} className={styles.glow}>Home</Link>    
     </div>
   
     <AboutSection/> 

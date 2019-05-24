@@ -10,16 +10,11 @@
 
 a {
   margin: 10px;
-  // height: 20vw;
-  // border-radius: 100%;
-  
-  // border-style: solid;
-  // border-color: lime;
-  // border-width: 1px;
 }
 
 .imageLinks {
   // display: block;
+  
   border-radius: 100%;
   border-width: 1px;
   height: 20vw;

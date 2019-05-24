@@ -17,8 +17,3 @@ export default props =>
   <hgroup>
   </hgroup>
 </header>
-
-
-
-
-
