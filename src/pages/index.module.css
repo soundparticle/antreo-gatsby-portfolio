@@ -12,14 +12,29 @@ html {
   background-size: cover;
 }
 
+.glow {
+  font-size: 80px;
+  color: rgb(103, 242, 245);
+  text-align: center;
+  -webkit-animation: glow 1s ease-in-out infinite alternate;
+  -moz-animation: glow 1s ease-in-out infinite alternate;
+  animation: glow 1s ease-in-out infinite alternate;
+}
+
+@-webkit-keyframes glow {
+  from {
+    text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #e60073, 0 0 40px #e60073, 0 0 50px #e60073, 0 0 60px #e60073, 0 0 70px #e60073;
+  }
+  to {
+    text-shadow: 0 0 20px #fff, 0 0 30px #ff4da6, 0 0 40px #ff4da6, 0 0 50px #ff4da6, 0 0 60px #ff4da6, 0 0 70px #ff4da6, 0 0 80px #ff4da6;
+  }
+}
+
 .linkWrapper {
   display: flex;
   justify-content: center;
   align-items: center;
   height: 30px;
-  padding-bottom: 20px;
-
-
   border-color: black;
   border-style: solid;
   border-width: 1px;
@@ -28,20 +43,13 @@ html {
 
 #link {
   font-family: Bookman, Copperplate, Copperplate Gothic Light;
-  height: 10px;
   display: inline-block;
   font-size: 19px;
-  padding-bottom: 50px;
-  padding-top: 38px;
   text-align: center;
+  height: 30px;
   font-weight: bold;
-  // color: black;
-  color: rgb(205, 182, 50);
-}
-
-hr {
-  // height: 18px;
-  // background-color: rgb(228, 162, 228);
+  // border-style: solid;
+  color: rgb(250, 243, 46);
 }
 
 @media only screen and (min-width: 768px) {
