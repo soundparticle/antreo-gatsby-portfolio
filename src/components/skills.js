@@ -11,21 +11,21 @@ export default () =>
   {/* consider creating a skills array to populate span skills */}
   <div className={styles.skillsBackground}>
     <section className={styles.skillsContainer}>
-      <span className={styles.skills}>Agile</span>
-      <span className={styles.skills}>Node</span>
-      <span className={styles.skills}>Vue</span>
-      <span className={styles.skills}>React</span>
-      <span className={styles.skills}>Redux</span>
-      <span className={styles.skills}>Express</span>
-      <span className={styles.skills}>JavaScript</span>
-      <span className={styles.skills}>HTML</span>
-      <span className={styles.skills}>CSS</span>
-      <span className={styles.skills}>MongoDB</span>
-      <span className={styles.skills}>Mongoose</span>
-      <span className={styles.skills}>PostgresQL</span>
-      <span className={styles.skills}>TDD</span>
-      <span className={styles.skills}>Mocha</span>
-      <span className={styles.skills}>Jest</span>        
+      <button className={styles.skills} className={styles.glowingBorder}>Agile</button>
+      <button className={styles.skills} className={styles.glowingBorder}>Node</button>
+      <button className={styles.skills} className={styles.glowingBorder}>Vue</button>
+      <button className={styles.skills} className={styles.glowingBorder}>React</button>
+      <button className={styles.skills} className={styles.glowingBorder}>Redux</button>
+      <button className={styles.skills} className={styles.glowingBorder}>Express</button>
+      <button className={styles.skills} className={styles.glowingBorder}>JavaScript</button>
+      <button className={styles.skills} className={styles.glowingBorder}>HTML</button>
+      <button className={styles.skills} className={styles.glowingBorder}>CSS</button>
+      <button className={styles.skills} className={styles.glowingBorder}>MongoDB</button>
+      <button className={styles.skills} className={styles.glowingBorder}>Mongoose</button>
+      <button className={styles.skills} className={styles.glowingBorder}>PostgresQL</button>
+      <button className={styles.skills} className={styles.glowingBorder}>TDD</button>
+      <button className={styles.skills} className={styles.glowingBorder}>Mocha</button>
+      <button className={styles.skills} className={styles.glowingBorder}>Jest</button>        
     </section>
   </div>
 </section>
