@@ -18,7 +18,12 @@ h5 {
     // padding-top: 0px;
 }
 
-span {
+.skillsContainer {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+button {
   display: inline-block;
   text-align: center;
   font-size: 16px;
@@ -30,14 +35,28 @@ span {
   border-width: 1px;
   background-color: rgb(43, 0, 43);
   &:hover {
-    z-index: 10;
-    background: rgb(234, 236, 69);
+    // z-index: 10;
+    // background: rgb(176, 194, 56);
+    outline: none;
+    border-color: #9ecaed;
+    box-shadow: 0 0 30px #9ecaed; 
+  }
+  &:focus {
+    outline: none;
+    border-color: #9ecaed;
+    box-shadow: 0 0 30px rgb(250, 243, 46);   
   }
 }
 
-.skillsContainer {
-  display: flex;
-  justify-content: space-evenly;
+.glowingBorder {
+  // border: 2px solid  rgb(202, 205, 50);
+  // border-radius: 7px;
+}
+
+.glowingBorder:focus { 
+  // outline: none;
+  // border-color: #9ecaed;
+  // box-shadow: 0 0 30px #9ecaed;
 }
 
 @media only screen and (min-width: 746px) {
