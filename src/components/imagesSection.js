@@ -1,5 +1,5 @@
 import React from "react";
-import styles from "./imagesSection.module.css";
+import styles from "./imagesSection.module.scss";
 import { StaticQuery, graphql } from "gatsby";
 console.log(styles)
 
