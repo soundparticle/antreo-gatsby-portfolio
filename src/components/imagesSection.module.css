@@ -79,7 +79,7 @@ img {
   height: 20vw;
   border-style: solid;
   border-color: indianred;
-  border-width: 1px;
+  border-width: 3px;
 }
 
 @media only screen and (min-width: 768px) {

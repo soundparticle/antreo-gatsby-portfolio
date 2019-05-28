@@ -30,7 +30,10 @@ a {
   border-radius: 100%;
   border-width: 1px;
   height: 20vw;
+  // width: 400px;
   border-style: solid;
+  background-color: rgba(43, 0, 43, 0.2);
+  
   &:hover {
     background: linear-gradient(0deg, #000, #272727);
     &:before, &:after {
@@ -60,7 +63,7 @@ img {
   
   border-style: solid;
   border-color: indianred;
-  border-width: 1px;
+  border-width: 2px;
 }
 
 @media only screen and (min-width: 480px) {
