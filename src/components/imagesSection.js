@@ -33,7 +33,7 @@ export default () => (
           <img src={data.allContentfulAntreoPortfolio.edges[0].node.imageLinks[0].file.url} alt="Alchemy Companion App screenshot"/>
         </a>
         <a href="https://github.com/soundparticle/budget-tracker" className={styles.imageLinks} target="_blank" rel="noopener noreferrer">
-          <img src={data.allContentfulAntreoPortfolio.edges[0].node.imageLinks[2].file.url} alt="Movie Search Popcorn and Film Reel"/>
+          <img src={data.allContentfulAntreoPortfolio.edges[0].node.imageLinks[2].file.url} alt="Budget bar graph and dollar sign"/>
         </a>
         <a href="https://github.com/soundparticle/goals" className={styles.imageLinks} target="_blank" rel="noopener noreferrer">
           <img src={data.allContentfulAntreoPortfolio.edges[0].node.imageLinks[1].file.url} alt="Goal Tracker Finish Line"/>        
