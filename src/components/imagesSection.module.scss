@@ -53,14 +53,18 @@ a {
   border-radius: 100%;
   border-width: 1px;
   height: 20vw;
-  border-style: solid;
+  max-height: 200px;
+
+  // max-width: 200px;
+  // max-height: 200px auto;
+  // border-style: solid;
   background-color: rgba(43, 0, 43, 0.2);
   
   // width: 400px;
 
   
   &:hover {
-    background: linear-gradient(0deg, #000, #272727);
+    background: linear-gradient(0deg, rgb(101, 93, 141), #272727);
     &:before, &:after {
       content: '';
       position: absolute;
@@ -87,7 +91,7 @@ img {
   height: 20vw;
   
   border-style: solid;
-  // border-color: indianred;
+  border-color: indianred;
   border-width: 1px;
 
   // animation: glow-grow 3s ease-out infinite;
@@ -103,6 +107,13 @@ img {
 
   .images {
     padding-bottom: 70px;
+  }
+  
+  img {
+    height: 18vw;
+
+    max-height: 200px;
+
   }
 }
 
