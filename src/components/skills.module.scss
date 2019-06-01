@@ -21,14 +21,16 @@ h5 {
 .skillsContainer {
   display: flex;
   justify-content: space-evenly;
+  padding-bottom: 40px;
 }
 
-button {
+.skills {
   display: inline-block;
   text-align: center;
   font-size: 16px;
   border-radius: 10%;
   padding: 5px;
+  margin: 0px;
   color: rgb(84, 180, 253); 
   border-style: solid;
   border-color: rgb(202, 205, 50);
@@ -37,6 +39,7 @@ button {
   &:hover {
     // z-index: 10;
     // background: rgb(176, 194, 56);
+
     outline: none;
     border-color: #9ecaed;
     box-shadow: 0 0 30px #9ecaed; 
@@ -46,6 +49,31 @@ button {
     border-color: #9ecaed;
     box-shadow: 0 0 30px rgb(250, 243, 46);   
   }
+}
+
+.preview {
+  display: none; 
+  width: 100%;
+
+}
+
+a {
+  display: block;
+  color: rgb(84, 180, 253);
+  // height: 20vw;
+  // width: 100%;
+  // border-style: solid;
+  // border-color: orange;
+  border-width: fill;
+}
+
+a:hover + .preview, .preview:hover {
+  display: block;
+  position: relative;
+  width: 100%;
+
+  color: rgb(202, 205, 50);  
+  z-index: 100;
 }
 
 .glowingBorder {
@@ -82,6 +110,6 @@ button {
     justify-content: space-evenly;
     margin-left: 150px;
     margin-right: 150px;
-    padding-bottom: 30px;
+    padding-bottom: 40px;
   }
 }

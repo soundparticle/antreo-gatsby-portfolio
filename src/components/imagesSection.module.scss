@@ -2,10 +2,6 @@
   box-sizing: border-box; 
 }
 
-a {
-  margin: 10px;
-}
-
 .images {
   display: flex;
   justify-content: center;
@@ -49,6 +45,8 @@ a {
 
 .imageLinks {
   // display: block;
+  margin: 10px;
+
   position: relative;
   border-radius: 100%;
   border-width: 1px;
@@ -58,10 +56,8 @@ a {
   // max-width: 200px;
   // max-height: 200px auto;
   // border-style: solid;
-  background-color: rgba(43, 0, 43, 0.2);
-  
-  // width: 400px;
-
+  color: rgb(84, 180, 253);
+  border-color: indianred;  
   
   &:hover {
     background: linear-gradient(0deg, rgb(101, 93, 141), #272727);
@@ -91,9 +87,8 @@ img {
   height: 20vw;
   
   border-style: solid;
-  border-color: indianred;
+  background-color: rgba(43, 0, 43, 0.2);
   border-width: 1px;
-
   // animation: glow-grow 3s ease-out infinite;
 }
 
