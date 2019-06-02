@@ -3,7 +3,7 @@
 }
 
 section {
-  font-family: Bookman, Copperplate, Copperplate Gothic Light;
+  // font-family: Bookman, Copperplate, Copperplate Gothic Light;
   display: flex;
   justify-content: space-around;
   flex-wrap: wrap;
@@ -15,7 +15,10 @@ h5 {
     color: rgb(84, 214, 253);
     font-size: 18px;
     text-align: center;
-    // padding-top: 0px;
+}
+
+a {
+  text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
 }
 
 .skillsContainer {
@@ -31,17 +34,18 @@ h5 {
   border-radius: 10%;
   padding: 5px;
   margin: 0px;
-  color: rgb(84, 180, 253); 
   border-style: solid;
   border-color: rgb(202, 205, 50);
-  border-width: 1px;
+  border-width: 2px;
   background-color: rgb(43, 0, 43);
   &:hover {
-    // z-index: 10;
-    // background: rgb(176, 194, 56);
-
+    z-index: 10;
+    // width: 100vw;
+    background-color: rgba(244, 245, 219, 0.25);
     outline: none;
-    border-color: #9ecaed;
+    border: solid;
+    border-width: 2px;
+    border-color: rgb(250, 243, 46);
     box-shadow: 0 0 30px #9ecaed; 
   }
   &:focus {
@@ -51,27 +55,74 @@ h5 {
   }
 }
 
+.skillsWrapper {
+  display: inline-block;
+  // background-color: rgba(244, 245, 219, 0.2);
+  // outline: none;
+  padding: 5px;
+  width: 100%;
+  height: 100%;
+}
+.skillWrapper:hover {
+  // display: inline-block;
+  // background-color: rgba(244, 245, 219, 0.2);
+
+  // outline: none;
+  // border: solid;
+  border-color: #9ecaed;
+  // box-shadow: 0 0 30px #9ecaed; 
+  // margin: 0px;
+  // padding: 5px;
+  width: 100%;
+  height: 100%;
+}
+
+.agile {
+  color: rgb(84, 180, 253);
+}
+
+.agile:hover {
+  display: block;
+  width: 100vw;
+  color: rgb(84, 180, 253);
+}
+
 .preview {
   display: none; 
-  width: 100%;
+  text-align: center;
+  align-content: center;
+  width: 100vh;
+  border-style: solid;
+  border-color: yellow;
+}
 
+iframe {
+  display: block;
+  padding-left: 20vw;
+  padding-right: 20vw;
+  width: 100vw;
+  // border: none;
+  border-color: pink;
 }
 
 a {
-  display: block;
   color: rgb(84, 180, 253);
+  display: block;
   // height: 20vw;
-  // width: 100%;
   // border-style: solid;
   // border-color: orange;
   border-width: fill;
+
+  // border-style: solid;
+  // border-color: green;
+  &:hover {
+    color: rgb(84, 180, 253);
+  }
 }
 
 a:hover + .preview, .preview:hover {
   display: block;
-  position: relative;
   width: 100%;
-
   color: rgb(202, 205, 50);  
   z-index: 100;
 }
@@ -101,7 +152,6 @@ a:hover + .preview, .preview:hover {
   section {
     font-family: Bookman, Copperplate, Copperplate Gothic Light;
     display: block;
-    justify-content: center;
     flex-wrap: wrap;
   }
 
