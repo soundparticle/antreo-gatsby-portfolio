@@ -55,7 +55,7 @@
 
   // max-width: 200px;
   // max-height: 200px auto;
-  // border-style: solid;
+  border-style: solid;
   color: rgb(84, 180, 253);
   border-color: indianred;  
   
@@ -105,7 +105,7 @@ img {
   }
   
   img {
-    height: 18vw;
+    height: 20vw;
 
     max-height: 200px;
 
@@ -113,5 +113,11 @@ img {
 }
 
 @media only screen and (min-width: 1270px) {
-
+  
+  img {
+    height: 18vw;
+  
+    max-height: 200px;
+  
+  }
 }
