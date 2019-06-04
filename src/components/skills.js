@@ -17,7 +17,7 @@ export default () =>
             Agile
           </a>
           <div className={styles.preview}>
-            <iframe title="linkPreview" src="https://en.wikipedia.org/wiki/Agile_software_development" width = "300px" height = "200px"></iframe>
+            <embed title="linkPreview" src="https://en.wikipedia.org/wiki/Agile_software_development" width = "300px" height = "200px"></embed>
           </div>        
         </div>
       </button>
@@ -26,6 +26,9 @@ export default () =>
           <a className={styles.node}href="https://nodejs.org/en/about/">
             Node
           </a>
+          <div className={styles.preview}>
+            <embed title="linkPreview" src="https://nodejs.org/en/about/" width = "300px" height = "200px"></embed>
+          </div>
         </div>
       </button>
       <button className={styles.skills}>
