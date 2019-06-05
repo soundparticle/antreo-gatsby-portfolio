@@ -1,7 +1,15 @@
 import React from "react";
-import styles from "./skills.module.scss"
-console.log(styles)
+import ReactHover from "./ReactHover";
 
+// import './component.css';
+import styles from "./skills.module.scss";
+console.log(styles);
+
+const optionsCursorTrueWithMargin = {
+  followCursor: true,
+  shiftX: -140,
+  shiftY: -160
+}
 
 
 export default () =>
@@ -11,7 +19,26 @@ export default () =>
   {/* consider creating a skills array to populate span skills */}
   <div className={styles.skillsBackground}>
     <section className={styles.skillsContainer}>
-      <button className={styles.skills}>            
+
+          <ReactHover options={optionsCursorTrueWithMargin}>
+            <ReactHover.Trigger type='trigger'>
+              <button className={styles.skills}>        
+                <div className={styles.skillWrapper}>
+                  <a className={styles.agile} href="https://en.wikipedia.org/wiki/Agile_software_development">
+                    AGILE
+                  </a>
+                </div>
+              </button>
+            </ReactHover.Trigger>
+            <ReactHover.Hover type='hover'>
+              <div>
+                <embed  alt="" src="https://en.wikipedia.org/wiki/Agile_software_development" />
+                {/* <blockquote > Two things are infinite: the universe and human stupidity; and I'm not sure about the universe. </blockquote>
+                <p >--Albert Einstein</p> */}
+              </div>
+            </ReactHover.Hover>
+          </ReactHover>       
+      {/* <button className={styles.skills}>            
         <div className={styles.skillWrapper}>
           <a className={styles.agile} href="https://en.wikipedia.org/wiki/Agile_software_development">
             Agile
@@ -20,7 +47,8 @@ export default () =>
             <embed title="linkPreview" src="https://en.wikipedia.org/wiki/Agile_software_development" width = "300px" height = "200px"></embed>
           </div>        
         </div>
-      </button>
+      </button> */}
+
       <button className={styles.skills}>
         <div className={styles.skillWrapper}>
           <a className={styles.node}href="https://nodejs.org/en/about/">
