@@ -16,38 +16,25 @@ export default () =>
 
 <section>
   <h5>Skills</h5>
-  {/* consider creating a skills array to populate span skills */}
+  {/* consider creating a skills array to populate button skills */}
   <div className={styles.skillsBackground}>
     <section className={styles.skillsContainer}>
-
-          <ReactHover options={optionsCursorTrueWithMargin}>
-            <ReactHover.Trigger type='trigger'>
-              <button className={styles.skills}>        
-                <div className={styles.skillWrapper}>
-                  <a className={styles.agile} href="https://en.wikipedia.org/wiki/Agile_software_development">
-                    AGILE
-                  </a>
-                </div>
-              </button>
-            </ReactHover.Trigger>
-            <ReactHover.Hover type='hover'>
-              <div>
-                <embed  alt="" src="https://en.wikipedia.org/wiki/Agile_software_development" />
-                {/* <blockquote > Two things are infinite: the universe and human stupidity; and I'm not sure about the universe. </blockquote>
-                <p >--Albert Einstein</p> */}
-              </div>
-            </ReactHover.Hover>
-          </ReactHover>       
-      {/* <button className={styles.skills}>            
-        <div className={styles.skillWrapper}>
-          <a className={styles.agile} href="https://en.wikipedia.org/wiki/Agile_software_development">
-            Agile
-          </a>
-          <div className={styles.preview}>
-            <embed title="linkPreview" src="https://en.wikipedia.org/wiki/Agile_software_development" width = "300px" height = "200px"></embed>
-          </div>        
-        </div>
-      </button> */}
+      <ReactHover options={optionsCursorTrueWithMargin}>
+        <ReactHover.Trigger type='trigger'>
+          <button className={styles.skills}>        
+            <div className={styles.skillWrapper}>
+              <a className={styles.agile} href="https://en.wikipedia.org/wiki/Agile_software_development">
+                AGILE
+              </a>
+            </div>
+          </button>
+        </ReactHover.Trigger>
+        <ReactHover.Hover type='hover'>
+          <div>
+            <embed alt="Agile Software Development Wikipedia Entry" src="https://en.wikipedia.org/wiki/Agile_software_development"/>                
+          </div>
+        </ReactHover.Hover>
+      </ReactHover>       
 
       <button className={styles.skills}>
         <div className={styles.skillWrapper}>
