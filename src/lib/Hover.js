@@ -1,5 +1,5 @@
-import React, { Component } from 'react'
-import PropTypes from 'prop-types'
+import React, { Component } from 'react';
+import PropTypes from 'prop-types';
 
 export default class Hover extends Component {
   static propTypes = {
@@ -11,7 +11,7 @@ export default class Hover extends Component {
   };
 
   render () {
-    const { styles } = this.props.children.props
+    const { styles } = this.props.children.props;
     return (
       <div
         onMouseOver={this.onMouseOver.bind(this)}
@@ -25,17 +25,17 @@ export default class Hover extends Component {
   }
 
   onMouseOver () {
-    const { setVisibility } = this.props.children.props
-    setVisibility(true)
+    const { setVisibility } = this.props.children.props;
+    setVisibility(true);
   }
 
   onMouseOut () {
-    const { setVisibility } = this.props.children.props
-    setVisibility(false)
+    const { setVisibility } = this.props.children.props;
+    setVisibility(false);
   }
 
   onMouseMove (e) {
-    const { getCursorPos } = this.props.children.props
-    getCursorPos(e)
+    const { getCursorPos } = this.props.children.props;
+    getCursorPos(e);
   }
 }

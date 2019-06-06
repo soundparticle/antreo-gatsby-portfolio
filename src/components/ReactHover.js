@@ -1,7 +1,7 @@
-import React, { Component } from 'react'
-import Hover from '../lib/Hover'
-import Trigger from '../lib/Trigger'
-import PropTypes from 'prop-types'
+import React, { Component } from 'react';
+import Hover from '../lib/Hover';
+import Trigger from '../lib/Trigger';
+import PropTypes from 'prop-types';
 
 class ReactHover extends Component {
   static propTypes = {
@@ -38,8 +38,8 @@ class ReactHover extends Component {
   }
 
   render () {
-    const { hoverComponentStyle } = this.state
-    let childrenWithProps = []
+    const { hoverComponentStyle } = this.state;
+    let childrenWithProps = [];
     for (let child of this.props.children) {
       if (child.props) {
         if (child.type.name === 'Trigger' || child.props.type === 'trigger') {
@@ -65,8 +65,8 @@ class ReactHover extends Component {
   }
 
   setVisibility (flag) {
-    let { hoverComponentStyle } = this.state
-    let updatedStyles = null
+    let { hoverComponentStyle } = this.state;
+    let updatedStyles = null;
     if (flag) {
       updatedStyles = { ...hoverComponentStyle, display: 'block' }
     } else {
@@ -78,19 +78,19 @@ class ReactHover extends Component {
   }
 
   getCursorPos (e) {
-    const cursorX = e.pageX
-    const cursorY = e.pageY
-    let { options: { followCursor, shiftX, shiftY } } = this.props
-    let { hoverComponentStyle } = this.state
-    let updatedStyles = null
+    const cursorX = e.pageX;
+    const cursorY = e.pageY;
+    let { options: { followCursor, shiftX, shiftY } } = this.props;
+    let { hoverComponentStyle } = this.state;
+    let updatedStyles = null;
     if (!followCursor) {
-      return
+      return;
     }
     if (isNaN(shiftX)) {
-      shiftX = 0
+      shiftX = 0;
     }
     if (isNaN(shiftY)) {
-      shiftY = 0
+      shiftY = 0;
     }
     updatedStyles = { ...hoverComponentStyle, top: cursorY + shiftY, left: cursorX + shiftX }
     this.setState({
@@ -99,7 +99,7 @@ class ReactHover extends Component {
   }
 }
 
-ReactHover.Trigger = Trigger
-ReactHover.Hover = Hover
+ReactHover.Trigger = Trigger;
+ReactHover.Hover = Hover;
 
-export default ReactHover
+export default ReactHover;

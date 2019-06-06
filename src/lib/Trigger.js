@@ -1,5 +1,5 @@
-import React, { Component } from 'react'
-import PropTypes from 'prop-types'
+import React, { Component } from 'react';
+import PropTypes from 'prop-types';
 
 export default class Trigger extends Component {
   static propTypes = {
@@ -45,27 +45,27 @@ export default class Trigger extends Component {
   }
 
   onMouseOver () {
-    const { setVisibility } = this.props.children.props
-    setVisibility(true)
+    const { setVisibility } = this.props.children.props;
+    setVisibility(true);
   }
 
   onMouseOut () {
-    const { setVisibility } = this.props.children.props
-    setVisibility(false)
+    const { setVisibility } = this.props.children.props;
+    setVisibility(false);
   }
 
   onMouseMove (e) {
-    const { getCursorPos } = this.props.children.props
-    getCursorPos(e)
+    const { getCursorPos } = this.props.children.props;
+    getCursorPos(e);
   }
 
   onTouchStart () {
-    const { setVisibility } = this.props.children.props
-    setVisibility(true)
+    const { setVisibility } = this.props.children.props;
+    setVisibility(true);
   }
 
   onTouchEnd () {
-    const { setVisibility } = this.props.children.props
-    setVisibility(false)
+    const { setVisibility } = this.props.children.props;
+    setVisibility(false);
   }
 }
