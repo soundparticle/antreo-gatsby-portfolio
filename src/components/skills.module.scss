@@ -103,7 +103,7 @@ a {
   max-height: 100vw;
   // padding-left: 20vw;
   // padding-right: 20vw;
-  width: calc(50vw - 35px);;
+  // width: calc(50vw - 35px);;
   // height: 18vh;
   border: solid;
   border-color: pink;
@@ -112,6 +112,7 @@ a {
 embed {
   max-width: 100vh; 
   max-height: 100vw;
+  // right: 150px;
   border: solid;
   border-color: red;
 }
