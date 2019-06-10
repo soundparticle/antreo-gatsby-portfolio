@@ -11,6 +11,15 @@ const optionsCursorTrueWithMargin = {
   shiftY: -200
 }
 
+let w = window.innerWidth || document.documentElement.clientWidth || document.body.clientWidth;
+let h = window.innerHeight || document.documentElement.clientHeight || document.body.clientHeight;
+console.log('** viewport width', w);
+console.log('** viewport height', h);
+
+let hoverWindow = document.getElementById('embedId');
+let windowWidth = hoverWindow.getBoundingClientRect();
+console.log('* embed wrapper *', hoverWindow);
+console.log('* width *', windowWidth);
 
 export default () =>
 
@@ -31,7 +40,7 @@ export default () =>
           </button>
         </ReactHover.Trigger>
         <ReactHover.Hover type='hover'>
-          <div className={styles.embedWindow}>
+          <div className={styles.embedWindow} id="embedId">
             <embed alt="Agile Software Development Wikipedia Entry" src="https://en.wikipedia.org/wiki/Agile_software_development"/>                
           </div>
         </ReactHover.Hover>
