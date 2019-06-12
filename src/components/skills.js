@@ -5,21 +5,29 @@ import ReactHover from "./ReactHover";
 import styles from "./skills.module.scss";
 console.log(styles);
 
-const optionsCursorTrueWithMargin = {
-  followCursor: true,
-  shiftX: -140,
-  shiftY: -200
+
+let hoverWindow = document.getElementById('embedId');
+let windowWidth;
+
+if (hoverWindow) {
+  windowWidth = hoverWindow.getBoundingClientRect();
 }
+
+console.log('* embed wrapper *', hoverWindow);
+console.log('* width *', windowWidth);
 
 let w = window.innerWidth || document.documentElement.clientWidth || document.body.clientWidth;
 let h = window.innerHeight || document.documentElement.clientHeight || document.body.clientHeight;
 console.log('** viewport width', w);
 console.log('** viewport height', h);
 
-let hoverWindow = document.getElementById('embedId');
-let windowWidth = hoverWindow.getBoundingClientRect();
-console.log('* embed wrapper *', hoverWindow);
-console.log('* width *', windowWidth);
+
+const optionsCursorTrueWithMargin = {
+  followCursor: true,
+  shiftX: -140,
+  shiftY: -200
+}
+
 
 export default () =>
 
