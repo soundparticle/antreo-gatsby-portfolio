@@ -81,6 +81,7 @@ class ReactHover extends Component {
 
   getCursorPos (e) {
     const cursorX = e.pageX;
+    // console.log('*** cursor X', cursorX);
     const cursorY = e.pageY;
     let { options: { followCursor, shiftX, shiftY } } = this.props;
     let { hoverComponentStyle } = this.state;

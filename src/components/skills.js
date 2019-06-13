@@ -6,15 +6,6 @@ import styles from "./skills.module.scss";
 console.log(styles);
 
 
-let hoverWindow = document.getElementById('embedId');
-let windowWidth;
-
-if (hoverWindow) {
-  windowWidth = hoverWindow.getBoundingClientRect();
-}
-
-console.log('* embed wrapper *', hoverWindow);
-console.log('* width *', windowWidth);
 
 let w = window.innerWidth || document.documentElement.clientWidth || document.body.clientWidth;
 let h = window.innerHeight || document.documentElement.clientHeight || document.body.clientHeight;
@@ -22,10 +13,34 @@ console.log('** viewport width', w);
 console.log('** viewport height', h);
 
 
+
+let hoverWindow = document.getElementById('embedId');
+let hoverWinSpecs;
+let hoverWinLeft;
+let hoverWinRight;
+
+if (hoverWindow) {
+  hoverWinSpecs = hoverWindow.getBoundingClientRect();
+  hoverWinLeft = hoverWinSpecs.left;
+  hoverWinRight = hoverWinSpecs.right;
+}
+
+// console.log('** Window Bounding **', window.screenX);
+// console.log('* Bounding *', hoverWinSpecs);
+console.log('* HovWin Left *', hoverWinLeft);
+console.log('* HovWin Right *', hoverWinRight);
+
+// getCursorPos(e);
+
+// if (hoverWidth.left < 0) {
+//   shiftX: 
+
+// } else shiftX: 0;
+
 const optionsCursorTrueWithMargin = {
   followCursor: true,
   shiftX: -140,
-  shiftY: -200
+  shiftY: -200,
 }
 
 
