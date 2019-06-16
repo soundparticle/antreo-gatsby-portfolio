@@ -1,9 +1,20 @@
-import React from "react";
+import React, { Component } from "react";
+
 import ReactHover from "./ReactHover";
+import PropTypes from 'prop-types';
+// import { getCursorPos } from "./ReactHover";
 
 // import './component.css';
 import styles from "./skills.module.scss";
 console.log(styles);
+
+
+// onMouseMove (e) {
+//   const { getCursorPos } = this.props.children.props;
+//   getCursorPos(e);
+// }
+
+
 
 
 
@@ -12,36 +23,46 @@ let h = window.innerHeight || document.documentElement.clientHeight || document.
 console.log('** viewport width', w);
 console.log('** viewport height', h);
 
-
-
-let hoverWindow = document.getElementById('embedId');
+let hoverWin = document.getElementById('embedId');
 let hoverWinSpecs;
-let hoverWinLeft;
-let hoverWinRight;
+let hoverWinBorderLeft;
+let hoverWinBorderRight;
 
-if (hoverWindow) {
-  hoverWinSpecs = hoverWindow.getBoundingClientRect();
-  hoverWinLeft = hoverWinSpecs.left;
-  hoverWinRight = hoverWinSpecs.right;
+if (hoverWin) {
+  hoverWinSpecs = hoverWin.getBoundingClientRect();
+  hoverWinBorderLeft = hoverWinSpecs.left;
+  hoverWinBorderRight = hoverWinSpecs.right;
 }
+
 
 // console.log('** Window Bounding **', window.screenX);
 // console.log('* Bounding *', hoverWinSpecs);
-console.log('* HovWin Left *', hoverWinLeft);
-console.log('* HovWin Right *', hoverWinRight);
+
+// console.log('*** cursor X', event.pageX);
+console.log('* HovWin Left *', hoverWinBorderLeft);
+console.log('* HovWin Right *', hoverWinBorderRight);
 
 // getCursorPos(e);
-
-// if (hoverWidth.left < 0) {
-//   shiftX: 
-
-// } else shiftX: 0;
+onmousemove = function(e){
+  let x = e.clientX;
+  let y = e.clientY;
+  console.log("mouse x:", x);
+  console.log("mouse y:", y);
+}
 
 const optionsCursorTrueWithMargin = {
   followCursor: true,
   shiftX: -140,
   shiftY: -200,
 }
+
+if (hoverWin, onmousemove) {
+  if (hoverWinBorderLeft < 0) {
+    optionsCursorTrueWithMargin.shiftX = 100; 
+  } 
+}
+
+console.log('{{}}', optionsCursorTrueWithMargin);
 
 
 export default () =>

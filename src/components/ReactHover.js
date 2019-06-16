@@ -72,7 +72,7 @@ class ReactHover extends Component {
     } else {
       // TODO: set display back to none!!!!!
       // display should be: none
-      updatedStyles = { ...hoverComponentStyle, display: 'block' }
+      updatedStyles = { ...hoverComponentStyle, display: 'none' }
     }
     this.setState({
       hoverComponentStyle: updatedStyles
@@ -81,8 +81,8 @@ class ReactHover extends Component {
 
   getCursorPos (e) {
     const cursorX = e.pageX;
-    // console.log('*** cursor X', cursorX);
     const cursorY = e.pageY;
+    console.log('*** cursor X', cursorX);
     let { options: { followCursor, shiftX, shiftY } } = this.props;
     let { hoverComponentStyle } = this.state;
     let updatedStyles = null;
@@ -101,6 +101,9 @@ class ReactHover extends Component {
     })
   }
 }
+
+// const cursorX = e.pageX;
+
 
 ReactHover.Trigger = Trigger;
 ReactHover.Hover = Hover;
