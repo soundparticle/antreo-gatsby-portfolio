@@ -1,21 +1,13 @@
-import React, { Component } from "react";
+import React from 'react';
+import ReactHover from './ReactHover';
 
-import ReactHover from "./ReactHover";
-import PropTypes from 'prop-types';
+import styles from './skills.module.scss';
+// let events = require('events');
+let EventEmitter = require('events');
+// import event from "event-module";
 // import { getCursorPos } from "./ReactHover";
 
-// import './component.css';
-import styles from "./skills.module.scss";
 console.log(styles);
-
-
-// onMouseMove (e) {
-//   const { getCursorPos } = this.props.children.props;
-//   getCursorPos(e);
-// }
-
-
-
 
 
 let w = window.innerWidth || document.documentElement.clientWidth || document.body.clientWidth;
@@ -34,21 +26,12 @@ if (hoverWin) {
   hoverWinBorderRight = hoverWinSpecs.right;
 }
 
-
 // console.log('** Window Bounding **', window.screenX);
 // console.log('* Bounding *', hoverWinSpecs);
-
 // console.log('*** cursor X', event.pageX);
 console.log('* HovWin Left *', hoverWinBorderLeft);
 console.log('* HovWin Right *', hoverWinBorderRight);
 
-// getCursorPos(e);
-onmousemove = function(e){
-  let x = e.clientX;
-  let y = e.clientY;
-  console.log("mouse x:", x);
-  console.log("mouse y:", y);
-}
 
 const optionsCursorTrueWithMargin = {
   followCursor: true,
@@ -56,7 +39,30 @@ const optionsCursorTrueWithMargin = {
   shiftY: -200,
 }
 
-if (hoverWin, onmousemove) {
+// onmousemove = function(e){
+//   let x = e.clientX;
+//   let y = e.clientY;
+//   console.log('x', x);
+// }  
+
+// console.log("xCord", xCord);
+
+// onmousemove = function(e){
+//   let xCord = e.clientX;
+//   console.log('xCord', xCord); 
+// }
+
+
+let ee = new EventEmitter();
+ee.on('mouseMove', function() {
+
+  console.log("*** EVENT TRIGGERED");
+});
+
+ee.emit('mouseMove');
+
+
+if (hoverWin) {
   if (hoverWinBorderLeft < 0) {
     optionsCursorTrueWithMargin.shiftX = 100; 
   } 
