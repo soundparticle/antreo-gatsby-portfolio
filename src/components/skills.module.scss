@@ -24,6 +24,7 @@ a {
 .skillsContainer {
   display: flex;
   justify-content: space-evenly;
+  padding-top: 80px;
   padding-bottom: 40px;
 }
 
@@ -180,6 +181,7 @@ a:hover + .preview, .preview:hover {
     justify-content: space-evenly;
     margin-left: 150px;
     margin-right: 150px;
+    padding-top: 50px;
     padding-bottom: 40px;
   }
 }

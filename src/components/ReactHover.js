@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import Hover from '../lib/Hover';
 import Trigger from '../lib/Trigger';
 import PropTypes from 'prop-types';
+// import skills from './skills';
 
 class ReactHover extends Component {
   static propTypes = {
@@ -78,6 +79,7 @@ class ReactHover extends Component {
       hoverComponentStyle: updatedStyles
     })
   }
+
 
   getCursorPos (e) {
     const cursorX = e.pageX;

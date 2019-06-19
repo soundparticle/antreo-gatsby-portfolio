@@ -10,7 +10,7 @@ export default class Trigger extends Component {
   }
 
   constructor (props) {
-    super(props)
+    super(props);
     this.state = {
       styles: {}
     }
@@ -24,7 +24,7 @@ export default class Trigger extends Component {
         height: childStyles.height,
         margin: childStyles.margin
       }
-    })
+    });
   }
 
   render () {
@@ -41,7 +41,7 @@ export default class Trigger extends Component {
       >
         {this.props.children.props.children}
       </div>
-    )
+    );
   }
 
   onMouseOver () {

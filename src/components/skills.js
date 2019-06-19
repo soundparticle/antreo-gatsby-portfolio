@@ -1,13 +1,15 @@
 import React from 'react';
 import ReactHover from './ReactHover';
+// import PropTypes from 'prop-types';
+
 
 import styles from './skills.module.scss';
 // let events = require('events');
-let EventEmitter = require('events');
+// let EventEmitter = require('events');
 // import event from "event-module";
-// import { getCursorPos } from "./ReactHover";
 
 console.log(styles);
+
 
 
 let w = window.innerWidth || document.documentElement.clientWidth || document.body.clientWidth;
@@ -27,7 +29,7 @@ if (hoverWin) {
 }
 
 // console.log('** Window Bounding **', window.screenX);
-// console.log('* Bounding *', hoverWinSpecs);
+console.log('* Bounding *', hoverWinSpecs);
 // console.log('*** cursor X', event.pageX);
 console.log('* HovWin Left *', hoverWinBorderLeft);
 console.log('* HovWin Right *', hoverWinBorderRight);
@@ -39,27 +41,26 @@ const optionsCursorTrueWithMargin = {
   shiftY: -200,
 }
 
-// onmousemove = function(e){
-//   let x = e.clientX;
-//   let y = e.clientY;
-//   console.log('x', x);
-// }  
+console.log('options shiftX', optionsCursorTrueWithMargin.shiftX);
 
-// console.log("xCord", xCord);
+onmousemove = function(e){
+    let xCord = e.clientX;
+    // return xCord;
+    console.log('xCord', xCord); 
+}
 
-// onmousemove = function(e){
-//   let xCord = e.clientX;
-//   console.log('xCord', xCord); 
+// let ee = new EventEmitter();
+
+// if (hoverWin) {
+//     ee.on('hover', function() {
+
+//       console.log("*** EVENT TRIGGERED");
+//       console.log('xCord', xCord); 
+
+//     });
+//   // ee.emit('hover');
 // }
 
-
-let ee = new EventEmitter();
-ee.on('mouseMove', function() {
-
-  console.log("*** EVENT TRIGGERED");
-});
-
-ee.emit('mouseMove');
 
 
 if (hoverWin) {
@@ -68,13 +69,13 @@ if (hoverWin) {
   } 
 }
 
-console.log('{{}}', optionsCursorTrueWithMargin);
+console.log('{{*}}', optionsCursorTrueWithMargin);
 
 
 export default () =>
 
 <section>
-  <h5>Skills</h5>
+  {/* <h5>Skills</h5> */}
   {/* consider creating a skills array to populate button skills */}
   <div className={styles.skillsBackground}>
     <section className={styles.skillsContainer}>
