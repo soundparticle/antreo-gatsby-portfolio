@@ -24,6 +24,8 @@ a {
 .skillsContainer {
   display: flex;
   justify-content: space-evenly;
+  // object-fit: scale-down;
+
   padding-top: 80px;
   padding-bottom: 40px;
 }
@@ -94,13 +96,21 @@ a {
   // }
 }
 
+// .embedWindowContainer {
+//   margin-left: 20vw;
+// }
+
 .embedWindow {
-  display: block;
+  display: flex;
+  justify-content: center;
+
   // position: relative;
-  width: 50vh;
-  height: 20vw;
-  max-width: 100vh; 
-  max-height: 100vw;
+  width: 40vw;
+  height: 20vh;
+  margin-left: 10%;
+  margin-right: 30%; 
+  // max-width: 100vh; 
+  // max-height: 100vw;
   // padding-left: 20vw;
   // padding-right: 20vw;
   // height: 18vh;
@@ -112,12 +122,13 @@ embed {
   // min-width: 300px;
   // max-width: 50%;
   // left: 50%;
-  // margin-left: -25%;
+  // margin-left: 35%;
+  // margin-right: 50%;
   // margin-right: -25%;
-  width: 50vh;
-  height: 20vw;
-  max-width: 100vh; 
-  max-height: 100vw;
+  width: inherit;
+  height: inherit;
+  // max-width: 100vh; 
+  // max-height: 100vw;
   // min-width: 100vh; 
   // min-height: 100vw;
   // width: calc(50vw - 35px);
