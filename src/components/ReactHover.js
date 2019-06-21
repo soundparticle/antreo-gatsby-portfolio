@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import Hover from '../lib/Hover';
 import Trigger from '../lib/Trigger';
 import PropTypes from 'prop-types';
+// import skills from './skills';
 
 class ReactHover extends Component {
   static propTypes = {
@@ -70,6 +71,8 @@ class ReactHover extends Component {
     if (flag) {
       updatedStyles = { ...hoverComponentStyle, display: 'block' }
     } else {
+      // TODO: set display back to none!!!!!
+      // display should be: none
       updatedStyles = { ...hoverComponentStyle, display: 'none' }
     }
     this.setState({
@@ -77,9 +80,11 @@ class ReactHover extends Component {
     })
   }
 
+
   getCursorPos (e) {
     const cursorX = e.pageX;
     const cursorY = e.pageY;
+    // console.log('*** cursor X', cursorX);
     let { options: { followCursor, shiftX, shiftY } } = this.props;
     let { hoverComponentStyle } = this.state;
     let updatedStyles = null;
@@ -98,6 +103,9 @@ class ReactHover extends Component {
     })
   }
 }
+
+// const cursorX = e.pageX;
+
 
 ReactHover.Trigger = Trigger;
 ReactHover.Hover = Hover;

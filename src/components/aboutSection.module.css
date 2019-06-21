@@ -16,8 +16,6 @@ h6 {
   padding-top: 0px;
   border-color: orange;
   border-style: solid;
-  // border-radius: 20px;
-
   border-width: 1px;
 }
 
@@ -35,5 +33,4 @@ p {
     margin-left: 150px;
     margin-right: 150px;
   }
-  
 }

@@ -24,6 +24,7 @@ a {
 .skillsContainer {
   display: flex;
   justify-content: space-evenly;
+  padding-top: 80px;
   padding-bottom: 40px;
 }
 
@@ -32,7 +33,6 @@ a {
   text-align: center;
   font-size: 16px;
   border-radius: 10%;
-  padding: 5px;
   margin: 0px;
   border-style: solid;
   border-color: rgb(202, 205, 50);
@@ -41,8 +41,8 @@ a {
   &:hover {
     display: flex;
     justify-content: center;
+    margin: 0px;
     z-index: 10;
-    // width: 100vw;
     background-color: rgba(244, 245, 219, 0.25);
     outline: none;
     border: none;
@@ -59,81 +59,42 @@ a {
 
 .skillWrapper {
   display: inline-block;
-  // background-color: rgba(244, 245, 219, 0.2);
-  // outline: none;
-  // padding: 5px;
   width: 100%;
   height: 100%;
 }
+
 .skillWrapper:hover {
-  // display: inline-block;
-  // background-color: rgba(244, 245, 219, 0.2);
-
-  // outline: none;
-  // border: solid;
   border-color: #9ecaed;
-  // box-shadow: 0 0 30px #9ecaed; 
-  // margin: 0px;
-  // padding: 5px;
   width: 100%;
   height: 100%;
 }
 
-.agile .node {
-  display: block;
-  height: 100%;
-  width: 100%;
-  color: rgb(84, 180, 253);
-  border: solid;
-  border-color: red;
-  &:hover {
-    display: block;
-    width: 100vw;
-    color: rgb(84, 180, 253);  
-  }
-}
-
-.preview {
-  display: none; 
-  text-align: center;
+.embedWindow {
+  display: flex;
+  justify-content: center;
   align-content: center;
-  width: 100vh;
-  
-  // border-style: solid;
-  // border-color: yellow;
+  width: 150px;
+  height: 100px;
+  margin-right: 100vw; 
+  border: solid;
+  border-color: pink;
+  box-shadow: 0 0 30px #010c14;
+  border-radius: 10px;
 }
 
-#screenshot{
-	// position:absolute;
-	// border:1px solid #ccc;
-	// background:#333;
-	// padding:5px;
-	// display:none;
-	// color:#fff;
-  }
-  
 embed {
-  display: block;
-  padding-left: 20vw;
-  padding-right: 20vw;
-  width: 100vw;
-
-  border: none;
-  // border-color: pink;
+  width: inherit;
+  height: inherit;
+  border: solid;
+  border-radius: inherit;
+  border-color: red;
 }
 
 a {
   color: rgb(84, 180, 253);
   display: block;
-  // height: 20vw;
-  // border-style: solid;
-  // border-color: orange;
   border-width: fill;
-
-  // border-style: solid;
-  // border-color: green;
   &:hover {
-    // border:solid;
     color: rgb(84, 180, 253);
   }
 }
@@ -141,20 +102,9 @@ a {
 a:hover + .preview, .preview:hover {
   display: block;
   width: 100%;
-  // color: rgb(202, 205, 50);  
   z-index: 100;
 }
 
-.glowingBorder {
-  // border: 2px solid  rgb(202, 205, 50);
-  // border-radius: 7px;
-}
-
-.glowingBorder:focus { 
-  // outline: none;
-  // border-color: #9ecaed;
-  // box-shadow: 0 0 30px #9ecaed;
-}
 
 @media only screen and (min-width: 746px) {
   * {
@@ -178,6 +128,7 @@ a:hover + .preview, .preview:hover {
     justify-content: space-evenly;
     margin-left: 150px;
     margin-right: 150px;
+    padding-top: 50px;
     padding-bottom: 40px;
   }
 }

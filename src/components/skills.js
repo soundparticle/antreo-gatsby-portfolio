@@ -1,38 +1,78 @@
-import React from "react";
-import ReactHover from "./ReactHover";
+import React from 'react';
+import ReactHover from './ReactHover';
 
-// import './component.css';
-import styles from "./skills.module.scss";
+import styles from './skills.module.scss';
+// const EventEmitter = require('events');
+
 console.log(styles);
 
-const optionsCursorTrueWithMargin = {
-  followCursor: true,
-  shiftX: -140,
-  shiftY: -160
+
+let w = window.innerWidth || document.documentElement.clientWidth || document.body.clientWidth;
+let h = window.innerHeight || document.documentElement.clientHeight || document.body.clientHeight;
+console.log('** viewport width', w);
+console.log('** viewport height', h);
+
+let hoverWin = document.getElementById('embedId');
+let view = document.getElementById('skillsWrapper');
+
+console.log('view', view);
+
+let hoverWinSpecs;
+let winSpecs;
+let hoverWinBorderLeft;
+let hoverWinBorderRight;
+
+if (hoverWin) {
+  hoverWinSpecs = hoverWin.getBoundingClientRect();
+  winSpecs = view.getBoundingClientRect();
+  hoverWinBorderLeft = hoverWinSpecs.left;
+  hoverWinBorderRight = hoverWinSpecs.right;
 }
+
+console.log('* Bounding *', hoverWinSpecs);
+console.log('* Window Bounding *', winSpecs);
+
+console.log('* HovWin Left *', hoverWinBorderLeft);
+console.log('* HovWin Right *', hoverWinBorderRight);
+
+
+let optionsCursorTrueWithMargin = {
+  followCursor: true,
+  shiftX: -75,
+  shiftY: -120,
+}
+
+// onmousemove = function(e){
+//     let xCord = e.clientX;
+//     console.log('>> xCord Inside', xCord); 
+// }
+
+
+console.log('{{*}}', optionsCursorTrueWithMargin);
 
 
 export default () =>
 
 <section>
-  <h5>Skills</h5>
   {/* consider creating a skills array to populate button skills */}
   <div className={styles.skillsBackground}>
-    <section className={styles.skillsContainer}>
+    <section className={styles.skillsContainer} id="skillsWrapper">
       {/* AGILE */}
       <ReactHover options={optionsCursorTrueWithMargin}>
         <ReactHover.Trigger type='trigger'>
           <button className={styles.skills}>        
             <div className={styles.skillWrapper}>
-              <a className={styles.agile} href="https://en.wikipedia.org/wiki/Agile_software_development">
+              <a className={styles.skillLinks} href="https://en.wikipedia.org/wiki/Agile_software_development">
                 Agile
               </a>
             </div>
           </button>
         </ReactHover.Trigger>
         <ReactHover.Hover type='hover'>
-          <div>
-            <embed alt="Agile Software Development Wikipedia Entry" src="https://en.wikipedia.org/wiki/Agile_software_development"/>                
+          <div >
+            <div className={styles.embedWindow} id="embedId">
+              <embed alt="Agile Software Development Wikipedia Entry" src="https://en.wikipedia.org/wiki/Agile_software_development"/>                
+            </div>
           </div>
         </ReactHover.Hover>
       </ReactHover>       
@@ -41,14 +81,14 @@ export default () =>
         <ReactHover.Trigger type='trigger'>
           <button className={styles.skills}>
             <div className={styles.skillWrapper}>
-              <a className={styles.node} href="https://nodejs.org/en/about/">
+              <a className={styles.skillLinks} href="https://nodejs.org/en/about/">
                 Node
               </a>
             </div>
           </button>
         </ReactHover.Trigger>
         <ReactHover.Hover type='hover'>
-            <div>
+            <div className={styles.embedWindow} id="embedId">
                 <embed alt="NodeJS Website" src="https://nodejs.org/en/about/"/>                
             </div>
         </ReactHover.Hover>
@@ -58,14 +98,14 @@ export default () =>
         <ReactHover.Trigger type='trigger'>
           <button className={styles.skills}>
             <div className={styles.skillWrapper}>
-              <a className={styles.vue} href="https://vuejs.org/v2/guide/">
+              <a className={styles.skillLinks} href="https://vuejs.org/v2/guide/">
                 Vue
               </a>
             </div>
           </button>
         </ReactHover.Trigger>
         <ReactHover.Hover type='hover'>
-            <div>
+            <div className={styles.embedWindow} id="embedId">
                 <embed alt="VueJS Website" src="https://vuejs.org/v2/guide/"/>                
             </div>
         </ReactHover.Hover>
@@ -75,14 +115,14 @@ export default () =>
         <ReactHover.Trigger type='trigger'>
           <button className={styles.skills}>
             <div className={styles.skillWrapper}>
-              <a className={styles.react} href="https://en.wikipedia.org/wiki/React_(JavaScript_library)">
+              <a className={styles.skillLinks} href="https://en.wikipedia.org/wiki/React_(JavaScript_library)">
                 React
               </a>
             </div>
           </button>
         </ReactHover.Trigger>
         <ReactHover.Hover type='hover'>
-            <div>
+            <div className={styles.embedWindow} id="embedId">
                 <embed alt="React Wikipedia Entry" src="https://en.wikipedia.org/wiki/React_(JavaScript_library)"/>                
             </div>
         </ReactHover.Hover>
@@ -92,14 +132,14 @@ export default () =>
         <ReactHover.Trigger type='trigger'>
           <button className={styles.skills}>
             <div className={styles.skillWrapper}>
-              <a className={styles.redux} href="https://redux.js.org/">
+              <a className={styles.skillLinks} href="https://redux.js.org/">
                 Redux
               </a>
             </div>
           </button>
         </ReactHover.Trigger>
         <ReactHover.Hover type='hover'>
-            <div>
+            <div className={styles.embedWindow} id="embedId">
                 <embed alt="Redux Website" src="https://redux.js.org/"/>                
             </div>
         </ReactHover.Hover>
@@ -109,14 +149,14 @@ export default () =>
         <ReactHover.Trigger type='trigger'>
           <button className={styles.skills}>
             <div className={styles.skillWrapper}>
-              <a className={styles.express} href="https://expressjs.com/">
+              <a className={styles.skillLinks} href="https://expressjs.com/">
                 Express
               </a>
             </div>
           </button>
         </ReactHover.Trigger>
         <ReactHover.Hover type='hover'>
-            <div>
+            <div className={styles.embedWindow} id="embedId">
                 <embed alt="Redux Website" src="https://expressjs.com/"/>                
             </div>
         </ReactHover.Hover>
@@ -126,14 +166,14 @@ export default () =>
         <ReactHover.Trigger type='trigger'>
           <button className={styles.skills}>
             <div className={styles.skillWrapper}>
-              <a className={styles.javascript} href="https://en.wikipedia.org/wiki/JavaScript">
+              <a className={styles.skillLinks} href="https://en.wikipedia.org/wiki/JavaScript">
                 Javascript
               </a>
             </div>
           </button>
         </ReactHover.Trigger>
         <ReactHover.Hover type='hover'>
-            <div>
+            <div className={styles.embedWindow} id="embedId">
                 <embed alt="Javascript Wikipedia entry" src="https://en.wikipedia.org/wiki/JavaScript"/>                
             </div>
         </ReactHover.Hover>
@@ -143,14 +183,14 @@ export default () =>
         <ReactHover.Trigger type='trigger'>
           <button className={styles.skills}>
             <div className={styles.skillWrapper}>
-              <a className={styles.html} href="https://en.wikipedia.org/wiki/JavaScript">
+              <a className={styles.skillLinks} href="https://en.wikipedia.org/wiki/JavaScript">
                 HTML5
               </a>
             </div>
           </button>
         </ReactHover.Trigger>
         <ReactHover.Hover type='hover'>
-            <div>
+            <div className={styles.embedWindow} id="embedId">
                 <embed alt="Javascript Wikipedia entry" src="https://en.wikipedia.org/wiki/JavaScript"/>                
             </div>
         </ReactHover.Hover>
@@ -160,14 +200,14 @@ export default () =>
         <ReactHover.Trigger type='trigger'>
           <button className={styles.skills}>
             <div className={styles.skillWrapper}>
-              <a className={styles.css} href="https://en.wikipedia.org/wiki/Cascading_Style_Sheets">
+              <a className={styles.skillLinks} href="https://en.wikipedia.org/wiki/Cascading_Style_Sheets">
                 CSS3
               </a>
             </div>
           </button>
         </ReactHover.Trigger>
         <ReactHover.Hover type='hover'>
-            <div>
+            <div className={styles.embedWindow} id="embedId">
                 <embed alt="CSS Wikipedia entry" src="https://en.wikipedia.org/wiki/Cascading_Style_Sheets"/>                
             </div>
         </ReactHover.Hover>
@@ -177,14 +217,14 @@ export default () =>
         <ReactHover.Trigger type='trigger'>
           <button className={styles.skills}>
             <div className={styles.skillWrapper}>
-              <a className={styles.mongo} href="https://en.wikipedia.org/wiki/MongoDB">
+              <a className={styles.skillLinks} href="https://en.wikipedia.org/wiki/MongoDB">
                 MongoDB
               </a>
             </div>
           </button>
         </ReactHover.Trigger>
         <ReactHover.Hover type='hover'>
-            <div>
+            <div className={styles.embedWindow} id="embedId">
                 <embed alt="MongoDB Wikipedia Entry" src="https://en.wikipedia.org/wiki/MongoDB"/>                
             </div>
         </ReactHover.Hover>
@@ -194,14 +234,14 @@ export default () =>
         <ReactHover.Trigger type='trigger'>
           <button className={styles.skills}>
             <div className={styles.skillWrapper}>
-              <a className={styles.mongoose} href="https://www.freecodecamp.org/news/introduction-to-mongoose-for-mongodb-d2a7aa593c57/">
+              <a className={styles.skillLinks} href="https://www.freecodecamp.org/news/introduction-to-mongoose-for-mongodb-d2a7aa593c57/">
                 Mongoose
               </a>
             </div>
           </button>
         </ReactHover.Trigger>
         <ReactHover.Hover type='hover'>
-            <div>
+            <div className={styles.embedWindow} id="embedId">
                 <embed alt="Introduction to Mongoose from FreeCodeCamp.org" src="https://www.freecodecamp.org/news/introduction-to-mongoose-for-mongodb-d2a7aa593c57/"/>                
             </div>
         </ReactHover.Hover>
@@ -211,14 +251,14 @@ export default () =>
         <ReactHover.Trigger type='trigger'>
           <button className={styles.skills}>
             <div className={styles.skillWrapper}>
-              <a className={styles.postgresql} href="https://en.wikipedia.org/wiki/PostgreSQL">
+              <a className={styles.skillLinks} href="https://en.wikipedia.org/wiki/PostgreSQL">
                 PostgresQL
               </a>
             </div>
           </button>
         </ReactHover.Trigger>
         <ReactHover.Hover type='hover'>
-            <div>
+            <div className={styles.embedWindow} id="embedId">
                 <embed alt="PostgresQL Wikipedia entry" src="https://en.wikipedia.org/wiki/PostgreSQL"/>                
             </div>
         </ReactHover.Hover>
@@ -228,14 +268,14 @@ export default () =>
         <ReactHover.Trigger type='trigger'>
           <button className={styles.skills}>
             <div className={styles.skillWrapper}>
-              <a className={styles.tdd} href="https://en.wikipedia.org/wiki/Test-driven_development">
+              <a className={styles.skillLinks} href="https://en.wikipedia.org/wiki/Test-driven_development">
                 TDD
               </a>
             </div>
           </button>
         </ReactHover.Trigger>
         <ReactHover.Hover type='hover'>
-            <div>
+            <div className={styles.embedWindow} id="embedId">
                 <embed alt="PostgresQL Wikipedia entry" src="https://en.wikipedia.org/wiki/Test-driven_development"/>                
             </div>
         </ReactHover.Hover>
@@ -245,14 +285,14 @@ export default () =>
         <ReactHover.Trigger type='trigger'>
           <button className={styles.skills}>
             <div className={styles.skillWrapper}>
-              <a className={styles.jest} href="https://jestjs.io/">
+              <a className={styles.skillLinks} href="https://jestjs.io/">
                 Jest
               </a>
             </div>
           </button>
         </ReactHover.Trigger>
         <ReactHover.Hover type='hover'>
-            <div>
+            <div className={styles.embedWindow} id="embedId">
                 <embed alt="Jest" src="https://jestjs.io/"/>                
             </div>
         </ReactHover.Hover>
@@ -262,14 +302,14 @@ export default () =>
         <ReactHover.Trigger type='trigger'>
           <button className={styles.skills}>
             <div className={styles.skillWrapper}>
-              <a className={styles.mocha} href="https://en.wikipedia.org/wiki/Mocha_(JavaScript_framework)">
+              <a className={styles.skillLinks} href="https://en.wikipedia.org/wiki/Mocha_(JavaScript_framework)">
                 Mocha
               </a>
             </div>
           </button>
         </ReactHover.Trigger>
         <ReactHover.Hover type='hover'>
-            <div>
+            <div className={styles.embedWindow} id="embedId">
                 <embed alt="Mocha Wikipedia Entry" src="https://en.wikipedia.org/wiki/Mocha_(JavaScript_framework)"/>                
             </div>
         </ReactHover.Hover>
@@ -279,14 +319,14 @@ export default () =>
         <ReactHover.Trigger type='trigger'>
           <button className={styles.skills}>
             <div className={styles.skillWrapper}>
-              <a className={styles.qunit} href="https://qunitjs.com/">
+              <a className={styles.skillLinks} href="https://qunitjs.com/">
                 QUnit
               </a>
             </div>
           </button>
         </ReactHover.Trigger>
         <ReactHover.Hover type='hover'>
-            <div>
+            <div className={styles.embedWindow} id="embedId">
                 <embed alt="QUnit Website" src="https://qunitjs.com/"/>                
             </div>
         </ReactHover.Hover>

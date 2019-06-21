@@ -31,6 +31,8 @@ export default class Hover extends Component {
 
   onMouseOut () {
     const { setVisibility } = this.props.children.props;
+    // TODO: change setInvisibility back to false!!!!
+    // setVisibility(false);
     setVisibility(false);
   }
 
