@@ -6,7 +6,7 @@
 .headerContainer {
   display: flex;
   justify-content: center;
-  // border-style: solid;
+  border-style: solid;
   // border-color: lime;
   // border-width: 1px;
 }
@@ -16,8 +16,6 @@ h1 {
   font-size: 40px;
   color: rgb(84, 180, 253);
   text-align: center;
-  // padding-top: 10px;
-  // line-height: 0px;
   margin: 0;
   // border-style: solid;
   // border-color: red;

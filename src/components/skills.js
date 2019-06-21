@@ -1,15 +1,10 @@
 import React from 'react';
 import ReactHover from './ReactHover';
-// import PropTypes from 'prop-types';
-
 
 import styles from './skills.module.scss';
 // const EventEmitter = require('events');
 
-// import event from "event-module";
-
 console.log(styles);
-
 
 
 let w = window.innerWidth || document.documentElement.clientWidth || document.body.clientWidth;
@@ -34,7 +29,6 @@ if (hoverWin) {
   hoverWinBorderRight = hoverWinSpecs.right;
 }
 
-// console.log('** Window Bounding **', window.screenX);
 console.log('* Bounding *', hoverWinSpecs);
 console.log('* Window Bounding *', winSpecs);
 
@@ -44,62 +38,15 @@ console.log('* HovWin Right *', hoverWinBorderRight);
 
 let optionsCursorTrueWithMargin = {
   followCursor: true,
-  shiftX: -140,
-  shiftY: -200,
+  shiftX: -75,
+  shiftY: -120,
 }
 
-if (hoverWinBorderLeft < 40) {
-    console.log('hover border left', hoverWinBorderLeft);
-    optionsCursorTrueWithMargin.shiftX = 40;
-} 
-
-if (hoverWinBorderRight) {
-    console.log('hover border right', hoverWinBorderRight);
-
-}
-console.log('options shiftX', optionsCursorTrueWithMargin.shiftX);
-
-
-// function getMousePos(window, mousemove) {
-//   var rect = window.getBoundingClientRect();
-//   return {
-//     x: mousemove.clientX - rect.left,
-//     // y: evt.clientY - rect.top
-//   };
-// }
-
-// let xCord;
 // onmousemove = function(e){
 //     let xCord = e.clientX;
 //     console.log('>> xCord Inside', xCord); 
 // }
 
-  // console.log('xCord', xCord); 
-
-// class MyEmitter extends EventEmitter {};
-// const  ee = new MyEmitter();
-
-// console.log('ee', ee);
-
-// ee.on('event', (window, mousemove) => {
-  // let rect = window.getBoundingClientRect();
-  // console.log("*** EVENT TRIGGERED");
-  // return {
-  //   x: mousemove.clientX - rect.left,
-  //   y: evt.clientY - rect.top
-  // };
-// });
-
-// ee.emit('event');
-
-
-
-
-// if (hoverWin) {
-//   if (hoverWinBorderLeft < 0) {
-//     optionsCursorTrueWithMargin.shiftX = 100; 
-//   } 
-// }
 
 console.log('{{*}}', optionsCursorTrueWithMargin);
 
@@ -107,7 +54,6 @@ console.log('{{*}}', optionsCursorTrueWithMargin);
 export default () =>
 
 <section>
-  {/* <h5>Skills</h5> */}
   {/* consider creating a skills array to populate button skills */}
   <div className={styles.skillsBackground}>
     <section className={styles.skillsContainer} id="skillsWrapper">

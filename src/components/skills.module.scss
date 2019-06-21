@@ -24,8 +24,6 @@ a {
 .skillsContainer {
   display: flex;
   justify-content: space-evenly;
-  // object-fit: scale-down;
-
   padding-top: 80px;
   padding-bottom: 40px;
 }
@@ -35,7 +33,6 @@ a {
   text-align: center;
   font-size: 16px;
   border-radius: 10%;
-  // padding: 5px;
   margin: 0px;
   border-style: solid;
   border-color: rgb(202, 205, 50);
@@ -62,93 +59,42 @@ a {
 
 .skillWrapper {
   display: inline-block;
-  // background-color: rgba(244, 245, 219, 0.2);
-  // outline: none;
-  // padding: 5px;
   width: 100%;
   height: 100%;
 }
+
 .skillWrapper:hover {
-  // display: inline-block;
-  // background-color: rgba(244, 245, 219, 0.2);
-
-  // outline: none;
-  // border: solid;
   border-color: #9ecaed;
-  // box-shadow: 0 0 30px #9ecaed; 
-  // margin: 0px;
-  // padding: 5px;
   width: 100%;
   height: 100%;
 }
-
-.skillLinks {
-  // display: block;
-  // height: 100%;
-  // width: 100%;
-  // color: rgb(84, 180, 253);
-  // // border: solid;
-  // border-color: red;
-  // &:hover {
-  //   display: block;
-  //   width: 100vw;
-  //   color: rgb(84, 180, 253);  
-  // }
-}
-
-// .embedWindowContainer {
-//   margin-left: 20vw;
-// }
 
 .embedWindow {
   display: flex;
   justify-content: center;
-
-  // position: relative;
-  width: 40vw;
-  height: 20vh;
-  margin-left: 10%;
-  margin-right: 30%; 
-  // max-width: 100vh; 
-  // max-height: 100vw;
-  // padding-left: 20vw;
-  // padding-right: 20vw;
-  // height: 18vh;
+  align-content: center;
+  width: 150px;
+  height: 100px;
+  margin-right: 100vw; 
   border: solid;
   border-color: pink;
+  box-shadow: 0 0 30px #010c14;
+  border-radius: 10px;
 }
 
 embed {
-  // min-width: 300px;
-  // max-width: 50%;
-  // left: 50%;
-  // margin-left: 35%;
-  // margin-right: 50%;
-  // margin-right: -25%;
   width: inherit;
   height: inherit;
-  // max-width: 100vh; 
-  // max-height: 100vw;
-  // min-width: 100vh; 
-  // min-height: 100vw;
-  // width: calc(50vw - 35px);
-
   border: solid;
+  border-radius: inherit;
   border-color: red;
 }
 
 a {
   color: rgb(84, 180, 253);
   display: block;
-  // height: 20vw;
-  // border-style: solid;
-  // border-color: orange;
   border-width: fill;
-
-  // border-style: solid;
-  // border-color: green;
   &:hover {
-    // border:solid;
     color: rgb(84, 180, 253);
   }
 }
@@ -156,19 +102,9 @@ a {
 a:hover + .preview, .preview:hover {
   display: block;
   width: 100%;
-  // z-index: 100;
+  z-index: 100;
 }
 
-.glowingBorder {
-  // border: 2px solid  rgb(202, 205, 50);
-  // border-radius: 7px;
-}
-
-.glowingBorder:focus { 
-  // outline: none;
-  // border-color: #9ecaed;
-  // box-shadow: 0 0 30px #9ecaed;
-}
 
 @media only screen and (min-width: 746px) {
   * {
