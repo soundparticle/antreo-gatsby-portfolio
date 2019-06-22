@@ -34,15 +34,6 @@
   }
 }
 
-.linkWrapper {
-  // animation: glow-grow 3s ease-out infinite;
-  // border-color: rgb(84, 214, 253);
-  // border-style: solid;
-  // border-radius: 100%;
-  // border-width: 1px;
-  // height: 20vw;
-}
-
 .imageLinks {
   // display: block;
   margin: 10px;
@@ -52,10 +43,8 @@
   border-width: 1px;
   height: 20vw;
   max-height: 200px;
-
-  // max-width: 200px;
-  // max-height: 200px auto;
   border-style: solid;
+
   color: rgb(84, 180, 253);
   border-color: indianred;  
   
@@ -74,7 +63,13 @@
       height: calc(100% + 4px);
       z-index: -1;
       animation: steam 80s linear infinite;
+      transition: background 3s 1s;
+      transition: animation 3s 1s;
+      
+      // transition-property: transform;
     }  
+    transition: background 3s 1s;
+    transition: animation 3s 1s;
   }
 }
 

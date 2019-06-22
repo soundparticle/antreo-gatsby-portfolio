@@ -55,6 +55,7 @@ export default () =>
 
 <section>
   {/* consider creating a skills array to populate button skills */}
+  {/* randomize colors of each skill link's border on each page reload so they're always different */}
   <div className={styles.skillsBackground}>
     <section className={styles.skillsContainer} id="skillsWrapper">
       {/* AGILE */}

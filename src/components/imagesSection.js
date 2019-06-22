@@ -31,8 +31,6 @@ export default () => (
       {/* try giving height or width attributes to match anchor to img */}
         <a href="https://github.com/team-denim" className={styles.imageLinks} target="_blank" rel="noopener noreferrer">
           <img src={data.allContentfulAntreoPortfolio.edges[0].node.imageLinks[0].file.url} alt="Alchemy Companion App screenshot"/>
-          
-          <div className={styles.linkWrapper}></div>
         </a>
         <a href="https://github.com/soundparticle/budget-tracker" className={styles.imageLinks} target="_blank" rel="noopener noreferrer">
           <img src={data.allContentfulAntreoPortfolio.edges[0].node.imageLinks[2].file.url} alt="Budget bar graph and dollar sign"/>
