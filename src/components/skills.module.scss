@@ -1,3 +1,6 @@
+
+// USE translate3dor scale3d for all transformations!!! ...so GPU handles transformations.
+// translate3d() is a property of transform.
 * {
   box-sizing: border-box;
 }
@@ -12,9 +15,9 @@ section {
 }
 
 h5 {
-    color: rgb(84, 214, 253);
-    font-size: 18px;
-    text-align: center;
+  // color: rgb(84, 214, 253);
+  // font-size: 18px;
+  // text-align: center;
 }
 
 a {
@@ -44,10 +47,7 @@ a {
     margin: 0px;
     z-index: 10;
     background-color: rgba(244, 245, 219, 0.25);
-    outline: none;
     border: none;
-    border-width: 2px;
-    border-color: rgb(250, 243, 46);
     box-shadow: 0 0 30px #9ecaed; 
   }
   &:focus {

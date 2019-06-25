@@ -6,7 +6,7 @@
 .headerContainer {
   display: flex;
   justify-content: center;
-  border-style: solid;
+  // border-style: solid;
   // border-color: lime;
   // border-width: 1px;
 }
