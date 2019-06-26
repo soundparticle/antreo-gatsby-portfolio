@@ -7,34 +7,32 @@ import styles from './skills.module.scss';
 console.log(styles);
 
 
-let w = window.innerWidth || document.documentElement.clientWidth || document.body.clientWidth;
-let h = window.innerHeight || document.documentElement.clientHeight || document.body.clientHeight;
-console.log('** viewport width', w);
-console.log('** viewport height', h);
+// let w = window.innerWidth || document.documentElement.clientWidth || document.body.clientWidth;
+// let h = window.innerHeight || document.documentElement.clientHeight || document.body.clientHeight;
+// console.log('** viewport width', w);
+// console.log('** viewport height', h);
 
-let hoverWin = document.getElementById('embedId');
-let view = document.getElementById('skillsWrapper');
+// let hoverWin = document.getElementById('embedId');
+// let view = document.getElementById('skillsWrapper');
 
-console.log('view', view);
+// console.log('view', view);
 
-let hoverWinSpecs;
-let winSpecs;
-let hoverWinBorderLeft;
-let hoverWinBorderRight;
+// let hoverWinSpecs;
+// let winSpecs;
+// let hoverWinBorderLeft;
+// let hoverWinBorderRight;
 
-if (hoverWin) {
-  hoverWinSpecs = hoverWin.getBoundingClientRect();
-  winSpecs = view.getBoundingClientRect();
-  hoverWinBorderLeft = hoverWinSpecs.left;
-  hoverWinBorderRight = hoverWinSpecs.right;
-}
+// if (hoverWin) {
+//   hoverWinSpecs = hoverWin.getBoundingClientRect();
+//   winSpecs = view.getBoundingClientRect();
+//   hoverWinBorderLeft = hoverWinSpecs.left;
+//   hoverWinBorderRight = hoverWinSpecs.right;
+// }
 
-console.log('* Bounding *', hoverWinSpecs);
-console.log('* Window Bounding *', winSpecs);
-
-console.log('* HovWin Left *', hoverWinBorderLeft);
-console.log('* HovWin Right *', hoverWinBorderRight);
-
+// console.log('* Bounding *', hoverWinSpecs);
+// console.log('* Window Bounding *', winSpecs);
+// console.log('* HovWin Left *', hoverWinBorderLeft);
+// console.log('* HovWin Right *', hoverWinBorderRight);
 
 let optionsCursorTrueWithMargin = {
   followCursor: true,
@@ -42,14 +40,28 @@ let optionsCursorTrueWithMargin = {
   shiftY: -120,
 }
 
+// console.log('{{*}}', optionsCursorTrueWithMargin);
+
 // onmousemove = function(e){
 //     let xCord = e.clientX;
 //     console.log('>> xCord Inside', xCord); 
+
 // }
 
+// let skillBorderColor = [];
+const randomColor = () => {
+  let x = Math.floor(Math.random() * 256);
+  let y = Math.floor(Math.random() * 256);
+  let z = Math.floor(Math.random() * 256);
+  let borderColor = "rgb(" + x + "," + y + "," + z + ")";
+  console.log('***', borderColor);
+}
 
-console.log('{{*}}', optionsCursorTrueWithMargin);
+randomColor();
 
+for  (let i = 0; i > 0; i++) {
+
+}
 
 export default () =>
 
