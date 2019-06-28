@@ -48,20 +48,6 @@ let optionsCursorTrueWithMargin = {
 
 // }
 
-// let skillBorderColor = [];
-const randomColor = () => {
-  let x = Math.floor(Math.random() * 256);
-  let y = Math.floor(Math.random() * 256);
-  let z = Math.floor(Math.random() * 256);
-  let borderColor = "rgb(" + x + "," + y + "," + z + ")";
-  console.log('***', borderColor);
-}
-
-randomColor();
-
-for  (let i = 0; i > 0; i++) {
-
-}
 
 export default () =>
 
