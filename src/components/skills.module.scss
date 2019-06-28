@@ -5,6 +5,19 @@
   box-sizing: border-box;
 }
 
+@keyframes rot {
+	from {
+		transform: rotate(0deg)
+		           translate(-3px)
+		           rotate(0deg);
+	}
+	to {
+		transform: rotate(360deg)
+		           translate(-3px) 
+		           rotate(-360deg);
+	}
+}
+
 section {
   // font-family: Bookman, Copperplate, Copperplate Gothic Light;
   display: flex;
@@ -12,12 +25,6 @@ section {
   flex-wrap: wrap;
   margin-left: 20px;
   margin-right: 20px;
-}
-
-h5 {
-  // color: rgb(84, 214, 253);
-  // font-size: 18px;
-  // text-align: center;
 }
 
 a {
@@ -33,22 +40,28 @@ a {
 
 .skills {
   display: inline-block;
+  position: relative;
   text-align: center;
   font-size: 16px;
   border-radius: 10%;
   margin: 0px;
   border-style: solid;
-  border-color: rgb(202, 205, 50);
+  border-color: rgb(179, 205, 50);
   border-width: 2px;
   background-color: rgb(43, 0, 43);
+  // animation: rot 3s infinite linear;
+
   &:hover {
     display: flex;
+    position: relative;
     justify-content: center;
     margin: 0px;
     z-index: 10;
     background-color: rgba(244, 245, 219, 0.25);
     border: none;
     box-shadow: 0 0 30px #9ecaed; 
+    animation: none;
+
   }
   &:focus {
     outline: none;
