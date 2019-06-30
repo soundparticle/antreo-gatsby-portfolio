@@ -1,5 +1,5 @@
 
-// USE translate3dor scale3d for all transformations!!! ...so GPU handles transformations.
+// USE translate3d or scale3d for all transformations!!! ...so GPU handles transformations.
 // translate3d() is a property of transform.
 * {
   box-sizing: border-box;
@@ -8,12 +8,12 @@
 @keyframes rot {
 	from {
 		transform: rotate(0deg)
-		           translate(-3px)
+		           translate3d(-3px)
 		           rotate(0deg);
 	}
 	to {
 		transform: rotate(360deg)
-		           translate(-3px) 
+		           translate3d(-3px) 
 		           rotate(-360deg);
 	}
 }
@@ -39,28 +39,30 @@ a {
 }
 
 .skills {
-  display: inline-block;
+  display: flex;
   position: relative;
   text-align: center;
   font-size: 16px;
   border-radius: 10%;
-  margin: 0px;
+  margin: 2px;
   border-style: solid;
   border-color: rgb(179, 205, 50);
   border-width: 2px;
   background-color: rgb(43, 0, 43);
+  transition: all 1.2s ease-in-out; 
   // animation: rot 3s infinite linear;
 
   &:hover {
-    display: flex;
-    position: relative;
-    justify-content: center;
-    margin: 0px;
+    // display: flex;
+    // position: relative;
+    // justify-content: center;
+    // margin: 0px;
     z-index: 10;
+    border-style: none;
     background-color: rgba(244, 245, 219, 0.25);
     border: none;
     box-shadow: 0 0 30px #9ecaed; 
-    animation: none;
+    // animation: none;
 
   }
   &:focus {
@@ -89,8 +91,8 @@ a {
   width: 150px;
   height: 100px;
   margin-right: 100vw; 
-  border: solid;
-  border-color: pink;
+  // border: solid;
+  // border-color: pink;
   box-shadow: 0 0 30px #010c14;
   border-radius: 10px;
 }
@@ -100,8 +102,7 @@ embed {
   height: inherit;
   border: solid;
   border-radius: inherit;
-  border-color: red;
-}
+  border-color: rgb(10, 250, 166);}
 
 a {
   color: rgb(84, 180, 253);
@@ -134,13 +135,14 @@ a:hover + .preview, .preview:hover {
     font-family: Bookman, Copperplate, Copperplate Gothic Light;
     display: block;
     flex-wrap: wrap;
+    
   }
 
   .skillsContainer {
     display: flex;
     justify-content: space-evenly;
-    margin-left: 150px;
-    margin-right: 150px;
+    margin-left: 80px;
+    margin-right: 80px;
     padding-top: 50px;
     padding-bottom: 40px;
   }
