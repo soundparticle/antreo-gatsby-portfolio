@@ -2,13 +2,18 @@
   box-sizing: border-box;
 }
 
+@keyframes glow {
+  from {
+    text-shadow: 0 0 10px rgba(255, 255, 255, 0.769), 0 0 20px rgba(255, 255, 255, 0.625), 0 0 30px #e60073, 0 0 40px #e60073, 0 0 50px #e60073, 0 0 60px #e60073, 0 0 70px #e60073;
+  }
+  to {
+    text-shadow: 0 0 20px rgba(255, 255, 255, 0.673), 0 0 30px #ff4da6, 0 0 40px #ff4da6, 0 0 50px #ff4da6, 0 0 60px #ff4da6, 0 0 70px #ff4da6, 0 0 80px #ff4da6;
+  }
+}
+
 html {
   background: url("../assets/vintage-lines-vert.jpg") no-repeat center center fixed;
   background-position: center;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
   background-size: cover;
 }
 
@@ -16,18 +21,7 @@ html {
   font-size: 80px;
   color: rgb(103, 242, 245);
   text-align: center;
-  -webkit-animation: glow 1s ease-in-out infinite alternate;
-  -moz-animation: glow 1s ease-in-out infinite alternate;
   animation: glow 1s ease-in-out infinite alternate;
-}
-
-@-webkit-keyframes glow {
-  from {
-    text-shadow: 0 0 10px rgba(255, 255, 255, 0.769), 0 0 20px rgba(255, 255, 255, 0.625), 0 0 30px #e60073, 0 0 40px #e60073, 0 0 50px #e60073, 0 0 60px #e60073, 0 0 70px #e60073;
-  }
-  to {
-    text-shadow: 0 0 20px rgba(255, 255, 255, 0.673), 0 0 30px #ff4da6, 0 0 40px #ff4da6, 0 0 50px #ff4da6, 0 0 60px #ff4da6, 0 0 70px #ff4da6, 0 0 80px #ff4da6;
-  }
 }
 
 .linkWrapper {
@@ -60,10 +54,6 @@ html {
   html {
     background: url("../assets/vintage-lines-vert.jpg") no-repeat center center fixed;
     background-position: center;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
     background-size: cover;
   }
 
