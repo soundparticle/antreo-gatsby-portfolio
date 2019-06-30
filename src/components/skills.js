@@ -2,10 +2,8 @@ import React from 'react';
 import ReactHover from './ReactHover';
 
 import styles from './skills.module.scss';
-// const EventEmitter = require('events');
 
 console.log(styles);
-
 
 // let w = window.innerWidth || document.documentElement.clientWidth || document.body.clientWidth;
 // let h = window.innerHeight || document.documentElement.clientHeight || document.body.clientHeight;
@@ -29,18 +27,11 @@ console.log(styles);
 //   hoverWinBorderRight = hoverWinSpecs.right;
 // }
 
-// console.log('* Bounding *', hoverWinSpecs);
-// console.log('* Window Bounding *', winSpecs);
-// console.log('* HovWin Left *', hoverWinBorderLeft);
-// console.log('* HovWin Right *', hoverWinBorderRight);
-
 let optionsCursorTrueWithMargin = {
   followCursor: true,
   shiftX: -75,
   shiftY: -120,
 }
-
-// console.log('{{*}}', optionsCursorTrueWithMargin);
 
 // onmousemove = function(e){
 //     let xCord = e.clientX;
@@ -48,12 +39,10 @@ let optionsCursorTrueWithMargin = {
 
 // }
 
-
 export default () =>
 
 <section>
   {/* consider creating a skills array to populate button skills */}
-  {/* TODO: randomize colors of each skill link's border on each page reload so they're always different */}
   <div className={styles.skillsBackground}>
     <section className={styles.skillsContainer} id="skillsWrapper">
       {/* AGILE */}

@@ -27,15 +27,18 @@
   display: flex;
   justify-content: center;
   padding-top: 80px;
+  margin-left: 20px;
+  margin-right: 20px;
 }
 
 .imageLinks {
   background-image: linear-gradient(0deg, rgb(188, 250, 227), #28354e);
   margin: 10px;
+  margin-top: 50px;
   position: relative;
   border-radius: 100%;
-  border-color: rgb(84, 201, 243);  
   border-style: solid;
+  border-color: rgb(84, 201, 243);  
   border-width: 1px;
   height: 21vw;
   max-height: 200px;
@@ -68,21 +71,21 @@
 }
 
 #link1 {
-  animation: MoveUpDown 6.4s infinite linear;
+  animation: MoveUpDown 6.4s infinite ease-in-out;
   &:hover {
     animation-play-state: paused;
   }
 }
 
 #link2 {
-  animation: MoveUpDown 6.2s infinite linear;
+  animation: MoveUpDown 6.2s infinite ease-in-out;
   &:hover {
     animation-play-state: paused;
   }
 }
 
 #link3 {
-  animation: MoveUpDown 6.6s infinite linear;
+  animation: MoveUpDown 6.6s infinite ease-in-out;
   &:hover {
     animation-play-state: paused;
   }

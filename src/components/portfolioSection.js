@@ -7,6 +7,5 @@ console.log(styles)
 export default () =>
 
 <div className={styles.portfolioContainer}>
-  {/* <h4>Portfolio</h4> */}
   <ImagesSection imagesSectionText="image link tiles here"/>
 </div>
