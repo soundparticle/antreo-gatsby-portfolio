@@ -12,7 +12,9 @@
 }
 
 h1 {
+  // font-family: 'Monoton', cursive;
   font-family: Bookman, Copperplate, Copperplate Gothic Light;
+
   font-size: 40px;
   color: rgb(84, 180, 253);
   text-align: center;
