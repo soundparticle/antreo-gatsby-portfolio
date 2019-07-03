@@ -12,16 +12,12 @@
 }
 
 h1 {
-  // font-family: 'Monoton', cursive;
-  font-family: Bookman, Copperplate, Copperplate Gothic Light;
-
+  font-family: 'Monoton', cursive;
+  // font-family: Bookman, Copperplate, Copperplate Gothic Light;
   font-size: 40px;
   color: rgb(84, 180, 253);
   text-align: center;
   margin: 0;
-  // border-style: solid;
-  // border-color: red;
-  // border-width: 1px;
 }
 
 .headerOne {
