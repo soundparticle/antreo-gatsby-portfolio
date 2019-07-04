@@ -10,7 +10,7 @@ console.log(styles)
 
 export default () => (
   <div className={styles.appContainer}>
-    <Header headerText1="Antreo Pukay" />
+    <Header headerText1="ANTREO PUKAY" />
     <Header headerText2="Full-Stack Developer" />
     <Header headerText3="acrosswalker at yahoo.com" />
     <div className={styles.linkWrapper}>

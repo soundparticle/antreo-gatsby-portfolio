@@ -22,6 +22,14 @@ module.exports = {
             family: `Monoton`,
             subsets: [`latin`],
           },
+          {
+            family: `Candal`,
+            subsets: [`latin`],
+          },
+          {
+            family: `Mr Dafoe`,
+            subsets: [`latin`],
+          },
         ],
       },
     }
