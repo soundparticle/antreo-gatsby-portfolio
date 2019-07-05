@@ -31,6 +31,30 @@ h1 {
   padding-top: 20px;
 }
 
+h1::before {
+    // content: '';
+    // position: absolute;
+    // height: 2px;
+    // width: 170px;
+    // top: 38px;
+    // left: 230px;
+    // align-content: center;
+    // background: rgb(179, 205, 50);
+    // box-shadow: -8px 13px rgb(179, 205, 50);
+}
+
+h1::after {
+    // content: '';
+    // position: absolute;
+    // height: 2px;
+    // width: 170px;
+    // top: 58px;
+    // left: 230px;
+    // background: rgb(179, 205, 50);
+    // box-shadow: -4px 13px rgb(179, 205, 50);
+}
+
+
 
 h2 {
   margin: -10px;
@@ -80,10 +104,18 @@ h3 {
   .headerTwo {
     font-family: 'Mr Dafoe', cursive;
     color: rgb(179, 205, 50);
-    font-size: 24px;
-    margin-left: 59vw;
-    margin-top: -45px;
+    font-size: 25px;
+    margin-left: 58vw;
+    // margin-top: -55px;;
+    margin-top: -7vh;;
     line-height: 0px;
     transform:rotate(-15deg);
+  }
+
+  .headerThree {
+    padding-top: 50px;
+    // border-style: solid;
+    // border-color: lime;
+    // border-width: 1px;
   }
 }
