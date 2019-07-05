@@ -54,8 +54,6 @@ h1::after {
     // box-shadow: -4px 13px rgb(179, 205, 50);
 }
 
-
-
 h2 {
   margin: -10px;
   position: relative;
@@ -65,18 +63,12 @@ h2 {
   font-family: 'Mr Dafoe', cursive;
   color: rgb(179, 205, 50);
   font-size: 25px;
-  margin-left: 59vw;
-  margin-top: -6.2vw;
+  margin-left: 61vw;
+  margin-top: 1vw;
   line-height: 0px;
   transform:rotate(-15deg);
   // -webkit-text-stroke: .1px white;
 
-}
-
-#headerPair {
-  // border-style: solid;
-  // border-color: white;
-  // border-width: 1px;
 }
 
 h3 {
@@ -85,18 +77,18 @@ h3 {
   font-size: 15px;
   color: rgb(84, 180, 253);
   margin: 0;
-  line-height: 0px; 
+  line-height: 15px; 
 }
 
 .headerThree {
-  padding-top: 20px;
+  margin-top: 60px;
   // border-style: solid;
-  // border-color: lime;
+  // border-color: rgb(255, 217, 0);
   // border-width: 1px;
 }
 
 
-@media only screen and (min-width: 700px) {
+@media only screen and (min-width: 600px) {
   * {
     box-sizing: border-box;
   }
@@ -105,17 +97,88 @@ h3 {
     font-family: 'Mr Dafoe', cursive;
     color: rgb(179, 205, 50);
     font-size: 25px;
-    margin-left: 58vw;
-    // margin-top: -55px;;
-    margin-top: -7vh;;
+    margin-left: 59vw;
+    margin-top: -1vh;;
     line-height: 0px;
     transform:rotate(-15deg);
   }
 
   .headerThree {
-    padding-top: 50px;
-    // border-style: solid;
-    // border-color: lime;
-    // border-width: 1px;
+    margin-top: 70px;
+  }
+}
+
+@media only screen and (min-width: 820px) {
+  * {
+    box-sizing: border-box;
+  }
+
+  .headerTwo {
+    margin-left: 56vw;
+    margin-top: -3vh;; 
+  } 
+  
+  .headerThree {
+    margin-top: 80px;
+  }
+}
+
+@media only screen and (min-width: 950px) {
+  * {
+    box-sizing: border-box;
+  }
+
+  .headerTwo {
+    margin-left: 55vw;
+    margin-top: -4vh;; 
+  } 
+  
+  .headerThree {
+    margin-top: 100px;
+  }
+}
+
+@media only screen and (min-width: 1100px) {
+  * {
+    box-sizing: border-box;
+  }
+
+  .headerTwo {
+    margin-left: 55vw;
+    margin-top: -6vh;; 
+  }
+  
+  .headerThree {
+    margin-top: 110px;
+  }
+}
+
+@media only screen and (min-width: 1260px) {
+  * {
+    box-sizing: border-box;
+  }
+
+  .headerTwo {
+    margin-left: 54vw;
+    margin-top: -8vh;; 
+  } 
+  
+  .headerThree {
+    margin-top: 110px;
+  }
+}
+
+@media only screen and (min-width: 1500px) {
+  * {
+    box-sizing: border-box;
+  }
+
+  .headerTwo {
+    margin-left: 54vw;
+    margin-top: -11vh;; 
+  }  
+
+  .headerThree {
+    margin-top: 120px;
   }
 }
