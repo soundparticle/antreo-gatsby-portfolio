@@ -9,7 +9,7 @@ export default props =>
   <div id={styles.headerPair}>
     <h1 className={styles.headerOne}>ANTREO PUKAY</h1>
     <h2 className={styles.headerTwo}>Full-Stack Developer</h2>
-    <h3 className={styles.headerThree}>acrosswalker at yahoo.com</h3>
+    <h3 className={styles.headerThree}>Acrosswalker at yahoo.com</h3>
   </div>
   <hgroup>
   </hgroup>
