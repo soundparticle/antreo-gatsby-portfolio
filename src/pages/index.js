@@ -10,19 +10,16 @@ console.log(styles)
 
 export default () => (
   <div className={styles.appContainer}>
-    <Header headerText1="Antreo Pukay" />
-    <Header headerText2="Full-Stack Developer" />
-    <Header headerText3="acrosswalker at yahoo.com" />
+    <Header/>
     <div className={styles.linkWrapper}>
       <Link to="/about/" id={styles.link} className={styles.glow}>About</Link>    
     </div>
     <main>
       <div className={styles.pageContainer}>        
-          <PortfolioSection/>
-          <Skills/>
+        <PortfolioSection/>
+        <Skills/>
       </div>
     </main>
-
   </div>  
 )
 

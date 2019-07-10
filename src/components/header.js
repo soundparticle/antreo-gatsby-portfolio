@@ -5,15 +5,12 @@ console.log(styles)
 export default props => 
 
 <header className={styles.headerContainer}>
-    <h1 className={styles.headerOne}>
-      {props.headerText1}
-    </h1>
-    <h2>
-      {props.headerText2}
-    </h2>
-    <h3>
-      {props.headerText3}
-    </h3>
+  
+  <div id={styles.headerPair}>
+    <h1 className={styles.headerOne}>ANTREO PUKAY</h1>
+    <h2 className={styles.headerTwo}>Full-Stack Developer</h2>
+    <h3 className={styles.headerThree}>acrosswalker at yahoo.com</h3>
+  </div>
   <hgroup>
   </hgroup>
 </header>

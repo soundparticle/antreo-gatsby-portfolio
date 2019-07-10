@@ -8,9 +8,10 @@ import styles from "./index.module.css";
 
 export default () => (
   <div>
-    <Header headerText1="Antreo Pukay" />
+    <Header />
+    {/* <Header headerText1="Antreo Pukay" />
     <Header headerText2="Full-Stack Developer" />
-    <Header headerText3="acrosswalker at yahoo.com" />
+    <Header headerText3="acrosswalker at yahoo.com" /> */}
     
     <div className={styles.linkWrapper}>
       <Link to="/" id={styles.link} className={styles.glow}>Home</Link>    

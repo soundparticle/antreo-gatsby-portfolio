@@ -29,10 +29,10 @@ html {
   justify-content: center;
   align-items: center;
   height: 40px;
-  border-color: black;
+  border-top: rgb(221, 0, 255);
   border-style: solid;
   border-width: 1px;
-  background-color: rgb(244, 245, 219, 0.3);
+  background-color: rgb(244, 245, 219, 0.2);
 }
 
 #link {
