@@ -30,6 +30,10 @@ module.exports = {
             family: `Mr Dafoe`,
             subsets: [`latin`],
           },
+          {
+            family: `Oswald`,
+            subsets: [`latin`],
+          },
         ],
       },
     }
