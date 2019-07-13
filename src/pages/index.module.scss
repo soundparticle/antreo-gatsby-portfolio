@@ -1,0 +1,249 @@
+* {
+  box-sizing: border-box;
+}
+
+@keyframes glow {
+  from {
+    text-shadow: 0 0 10px rgba(255, 255, 255, 0.769), 0 0 20px rgba(255, 255, 255, 0.625), 0 0 30px #e60073, 0 0 40px #e60073, 0 0 50px #e60073, 0 0 60px #e60073, 0 0 70px #e60073;
+  }
+  to {
+    text-shadow: 0 0 20px rgba(255, 255, 255, 0.673), 0 0 30px #ff4da6, 0 0 40px #ff4da6, 0 0 50px #ff4da6, 0 0 60px #ff4da6, 0 0 70px #ff4da6, 0 0 80px #ff4da6;
+  }
+}
+
+@keyframes tail {
+  0% {
+    width: 0;
+  }
+  30% {
+    width: 100px;
+  }
+  100% {
+    width: 0;
+  }
+}
+
+@keyframes shining {
+  0% {
+    width: 0;
+  }
+  50% {
+    width: 30px;
+  }
+  100% {
+    width: 0;
+  }
+}
+
+@keyframes shooting {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(300px);
+  }
+}
+
+@keyframes sky {
+  0% {
+    transform: rotate(45deg);
+  }
+  100% {
+    transform: rotate(45 + 360deg);
+  }
+}
+
+@keyframes pulse {
+  0% {
+    transform: scale3d(1, 1, 1);
+  }
+
+  30% {
+    transform: scale3d(1.2, 1.2, 1.2);
+  }
+
+  70% {
+    transform: scale3d(0.2, 0.2, 0.2);
+  }
+
+  100% {
+    transform: scale3d(1, 1, 1);
+  }
+}
+
+@keyframes glowing {
+  0% {
+    opacity: var(--star-brightness, 1);
+  }
+
+  100% {
+    opacity: calc(var(--star-brightness, 1) * 0.5);
+  }
+}
+
+@keyframes orbitAnimation {
+  0% {
+    transform: translate(-125px, 0) rotate3d(0, 0, 1, 360deg);
+  }
+  100% {
+    transform: translate(-125px, 0) rotate3d(0, 0, 1, 270deg);
+  }
+}
+
+
+@keyframes shootStarGlow {
+  0% {
+    opacity: 0
+  }
+
+  50%, 50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+
+html {
+  background: url("../assets/vintage-lines-vert.jpg") no-repeat center center fixed;
+  background-position: center;
+  background-size: cover;
+  margin: 0;
+  max-width: 100%;
+  overflow-x: hidden;
+}
+
+.glow {
+  font-size: 80px;
+  color: rgb(103, 242, 245);
+  text-align: center;
+  animation: glow 1s ease-in-out infinite alternate;
+}
+
+.linkWrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  // width: 100%;
+  height: 40px;
+  border-color: rgb(221, 0, 255);
+  // border-top: rgb(221, 0, 255);
+  border-style: solid;
+  border-width: 1px;
+  background-color: rgba(244, 245, 219, 0.2);
+}
+
+#link {
+  font-family: Bookman, Copperplate, Copperplate Gothic Light;
+  display: inline-block;
+  font-size: 19px;
+  text-align: center;
+  height: 30px;
+  font-weight: bold;
+  // border-style: solid;
+  color: rgb(250, 243, 46);
+}
+
+#svgCanvas {
+  position: fixed;
+  // left: 0;
+  // right: 0;
+  height: 15vh;
+  border-style: solid;
+  border-color: pink;
+  border-width: 2px;
+}
+
+.shootingStar {
+  fill: white;
+  transform-origin: 125px 0;
+  animation: 5s orbitAnimation infinite linear, 5s shootStarGlow infinite;
+}
+
+// $shooting-time: 3000ms;
+
+.night {
+  // position: relative;
+  // width: 100%;
+  // height: 100%;
+  // transform: rotateZ(45deg);
+  // animation: sky 200000ms linear infinite;
+}
+
+.shooting_star {
+  // position: absolute;
+  // left: 50%;
+  // top: 50%;
+  // // width: 100px;
+  // height: 2px;
+  // background: linear-gradient(-45deg, rgba(95, 145, 255, 1), rgba(0, 0, 255, 0));
+  // border-radius: 999px;
+  // filter: drop-shadow(0 0 6px rgba(105, 155, 255, 1));
+  // animation:
+  //   tail $shooting-time ease-in-out infinite,
+  //   shooting $shooting-time ease-in-out infinite;
+  
+  // &::before {
+  //   content: '';
+  //   position: absolute;
+  //   top: calc(50% - 1px);
+  //   right: 0;
+  //   // width: 30px;
+  //   height: 2px;
+  //   background: linear-gradient(-45deg, rgba(0, 0, 255, 0), rgba(95, 145, 255, 1), rgba(0, 0, 255, 0));
+  //   transform: translateX(50%) rotateZ(45deg);
+  //   border-radius: 100%;
+  //   animation: shining $shooting-time ease-in-out infinite;
+  // }
+
+  // &::after {
+  //   @extend .shooting_star::before;
+  //   transform: translateX(50%) rotateZ(-45deg);
+  // }
+  
+  // @for $i from 1 through 20 {
+  //   &:nth-child(#{$i}) {
+  //     $delay: random(9999) + 0ms;
+  //     top: calc(50% - #{random(400) - 200px});
+  //     left: calc(50% - #{random(300) + 0px});
+  //     animation-delay: $delay;
+  //     // opacity: random(50) / 100 + 0.5;
+      
+  //     &::before,
+  //     &::after {
+  //       animation-delay: $delay;
+  //     }
+  //   }
+  // }
+}
+
+
+
+
+
+
+@media only screen and (min-width: 768px) {
+  * {
+    box-sizing: border-box;
+  }
+  
+  html {
+    background: url("../assets/vintage-lines-vert.jpg") no-repeat center center fixed;
+    background-position: center;
+    background-size: cover;
+  }
+
+  .pageContainer {
+    // height: 100vh;
+    // max-height: 100vh;
+    // display: grid;
+    // overflow-x: hidden;
+    
+    // grid-template-columns: 1fr 3fr;
+    // grid-template-rows: min-content auto auto min-content;
+    // grid-template-areas: "header  header"
+    // "content  content"                     
+    // "footer  footer";
+  }
+}
