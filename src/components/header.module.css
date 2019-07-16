@@ -16,7 +16,7 @@ h1 {
   font-family: 'Candal', Bookman, Copperplate, Copperplate Gothic Light;
   // font-family: 'Monoton', cursive;
   // font-family: Bookman, Copperplate, Copperplate Gothic Light;
-  font-size: 40px;
+  font-size: 42px;
   -webkit-text-stroke: .5px black;
   font-style: italic;
   text-shadow: -4px 2px 0px rgb(179, 205, 50);
@@ -62,6 +62,13 @@ h2 {
   // border-width: 1px;
 }
 
+#svgCanvas {
+  // position: fixed;
+  // height: 28vh;
+  // border-style: solid;
+  // border-color: pink;
+  // border-width: 1px;
+}
 
 @media only screen and (min-width: 600px) {
   * {

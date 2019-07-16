@@ -125,7 +125,7 @@ html {
   display: flex;
   justify-content: center;
   align-items: center;
-  // width: 100%;
+  width: 100%;
   height: 40px;
   border-color: rgb(221, 0, 255);
   // border-top: rgb(221, 0, 255);
@@ -149,10 +149,10 @@ html {
   position: fixed;
   // left: 0;
   // right: 0;
-  height: 15vh;
+  height: 165px;;
   border-style: solid;
   border-color: pink;
-  border-width: 2px;
+  border-width: 1px;
 }
 
 .shootingStar {

@@ -11,16 +11,17 @@ console.log(styles)
 export default () => (
   <div className={styles.appContainer}>
       
+      {/* Translate was originally 150, 150 */}
+    <svg id={styles.svgCanvas}  preserveAspectRatio="xMinYMin slice" width="100%">
+      <g id={styles.starGroup}></g>
+      <g transform="translate(40, 90)">
+        <circle className={styles.shootingStar} fill='white' cx="0" cy="0" r="2" radius="125" ></circle>
+      </g>
+    </svg>  
     <Header />
     <div className={styles.linkWrapper}>
       <Link to="/about/" id={styles.link} className={styles.glow}>About</Link>    
     </div>
-    <svg id={styles.svgCanvas}  preserveAspectRatio="xMinYMin slice" width="100%">
-      {/* Translate was originally 150, 150 */}
-      <g transform="translate(50, 60)">
-        <circle className={styles.shootingStar} fill='white' cx="0" cy="0" r="2" radius="125" ></circle>
-      </g>
-    </svg>  
 
 
     <main>
