@@ -90,7 +90,6 @@
   }
 }
 
-
 @keyframes shootStarGlow {
   0% {
     opacity: 0
@@ -103,7 +102,6 @@
     opacity: 0;
   }
 }
-
 
 html {
   background: url("../assets/vintage-lines-vert.jpg") no-repeat center center fixed;
@@ -128,7 +126,6 @@ html {
   width: 100%;
   height: 40px;
   border-color: rgb(221, 0, 255);
-  // border-top: rgb(221, 0, 255);
   border-style: solid;
   border-width: 1px;
   background-color: rgba(244, 245, 219, 0.2);
@@ -141,18 +138,7 @@ html {
   text-align: center;
   height: 30px;
   font-weight: bold;
-  // border-style: solid;
   color: rgb(250, 243, 46);
-}
-
-#svgCanvas {
-  position: fixed;
-  // left: 0;
-  // right: 0;
-  height: 165px;;
-  border-style: solid;
-  border-color: pink;
-  border-width: 1px;
 }
 
 .shootingStar {
@@ -160,67 +146,6 @@ html {
   transform-origin: 125px 0;
   animation: 5s orbitAnimation infinite linear, 5s shootStarGlow infinite;
 }
-
-// $shooting-time: 3000ms;
-
-.night {
-  // position: relative;
-  // width: 100%;
-  // height: 100%;
-  // transform: rotateZ(45deg);
-  // animation: sky 200000ms linear infinite;
-}
-
-.shooting_star {
-  // position: absolute;
-  // left: 50%;
-  // top: 50%;
-  // // width: 100px;
-  // height: 2px;
-  // background: linear-gradient(-45deg, rgba(95, 145, 255, 1), rgba(0, 0, 255, 0));
-  // border-radius: 999px;
-  // filter: drop-shadow(0 0 6px rgba(105, 155, 255, 1));
-  // animation:
-  //   tail $shooting-time ease-in-out infinite,
-  //   shooting $shooting-time ease-in-out infinite;
-  
-  // &::before {
-  //   content: '';
-  //   position: absolute;
-  //   top: calc(50% - 1px);
-  //   right: 0;
-  //   // width: 30px;
-  //   height: 2px;
-  //   background: linear-gradient(-45deg, rgba(0, 0, 255, 0), rgba(95, 145, 255, 1), rgba(0, 0, 255, 0));
-  //   transform: translateX(50%) rotateZ(45deg);
-  //   border-radius: 100%;
-  //   animation: shining $shooting-time ease-in-out infinite;
-  // }
-
-  // &::after {
-  //   @extend .shooting_star::before;
-  //   transform: translateX(50%) rotateZ(-45deg);
-  // }
-  
-  // @for $i from 1 through 20 {
-  //   &:nth-child(#{$i}) {
-  //     $delay: random(9999) + 0ms;
-  //     top: calc(50% - #{random(400) - 200px});
-  //     left: calc(50% - #{random(300) + 0px});
-  //     animation-delay: $delay;
-  //     // opacity: random(50) / 100 + 0.5;
-      
-  //     &::before,
-  //     &::after {
-  //       animation-delay: $delay;
-  //     }
-  //   }
-  // }
-}
-
-
-
-
 
 
 @media only screen and (min-width: 768px) {
@@ -232,18 +157,5 @@ html {
     background: url("../assets/vintage-lines-vert.jpg") no-repeat center center fixed;
     background-position: center;
     background-size: cover;
-  }
-
-  .pageContainer {
-    // height: 100vh;
-    // max-height: 100vh;
-    // display: grid;
-    // overflow-x: hidden;
-    
-    // grid-template-columns: 1fr 3fr;
-    // grid-template-rows: min-content auto auto min-content;
-    // grid-template-areas: "header  header"
-    // "content  content"                     
-    // "footer  footer";
   }
 }

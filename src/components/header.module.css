@@ -4,12 +4,7 @@
 }
 
 .headerContainer {
-  // display: flex;
   display: block;
-  // justify-content: center;
-  // border-style: solid;
-  // border-color: lime;
-  // border-width: 1px;
 }
 
 h1 {
@@ -31,7 +26,6 @@ h1 {
 }
 
 h2 {
-  // margin: -10px;
   position: relative;
 }
 
@@ -65,9 +59,9 @@ h2 {
 #svgCanvas {
   // position: fixed;
   // height: 28vh;
-  // border-style: solid;
-  // border-color: pink;
-  // border-width: 1px;
+  border-style: solid;
+  border-color: pink;
+  border-width: 1px;
 }
 
 @media only screen and (min-width: 600px) {
