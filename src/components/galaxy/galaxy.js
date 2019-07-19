@@ -6,7 +6,6 @@ import { TwinkleStars } from '../galaxy/twinkleStars';
 import styles from "./galaxy.module.scss";
 
 
-
 const Layout = styled.div`
   position: fixed;
   top: 0;
@@ -18,23 +17,18 @@ const Layout = styled.div`
 `
 
 class Universe extends React.Component {
-  // baseScrollInstance = null;
 
   constructor(props){
     super(props);
     this.myRef = React.createRef();
-    // this.handleKeyDown = this.handleKeyDown.bind(this);
     this.state = {
       debug: false
     }
   }
 
-
   render() {
     return (
       <Layout
-        onKeyDown={this.keyDown}
-        onKeyUp={this.keyUp}
         ref={this.myRef}>
         {/* <svg viewBox="0 0 2000 1000" width="2000" height="1000"> */}
         <svg id={styles.svgCanvas} viewBox="0 0 2000 1000" width="100%" height="100%" preserveAspectRatio="xMinYMin slice">

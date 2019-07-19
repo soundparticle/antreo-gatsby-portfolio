@@ -31,8 +31,8 @@ module.exports = {
             subsets: [`latin`],
           },
           {
-            // family: `Monoton`,
-            // subsets: [`latin`],
+            family: `Monoton`,
+            subsets: [`latin`],
           },
         ],
       },
