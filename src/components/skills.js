@@ -5,27 +5,6 @@ import styles from './skills.module.scss';
 
 console.log(styles);
 
-// let w = window.innerWidth || document.documentElement.clientWidth || document.body.clientWidth;
-// let h = window.innerHeight || document.documentElement.clientHeight || document.body.clientHeight;
-// console.log('** viewport width', w);
-// console.log('** viewport height', h);
-
-// let hoverWin = document.getElementById('embedId');
-// let view = document.getElementById('skillsWrapper');
-
-// console.log('view', view);
-
-// let hoverWinSpecs;
-// let winSpecs;
-// let hoverWinBorderLeft;
-// let hoverWinBorderRight;
-
-// if (hoverWin) {
-//   hoverWinSpecs = hoverWin.getBoundingClientRect();
-//   winSpecs = view.getBoundingClientRect();
-//   hoverWinBorderLeft = hoverWinSpecs.left;
-//   hoverWinBorderRight = hoverWinSpecs.right;
-// }
 
 let optionsCursorTrueWithMargin = {
   followCursor: true,
@@ -33,11 +12,6 @@ let optionsCursorTrueWithMargin = {
   shiftY: -120,
 }
 
-// onmousemove = function(e){
-//     let xCord = e.clientX;
-//     console.log('>> xCord Inside', xCord); 
-
-// }
 
 export default () =>
 

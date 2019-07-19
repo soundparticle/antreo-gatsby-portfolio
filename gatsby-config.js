@@ -19,10 +19,6 @@ module.exports = {
       options: {
         fonts: [
           {
-            family: `Monoton`,
-            subsets: [`latin`],
-          },
-          {
             family: `Candal`,
             subsets: [`latin`],
           },
@@ -32,6 +28,10 @@ module.exports = {
           },
           {
             family: `Oswald`,
+            subsets: [`latin`],
+          },
+          {
+            family: `Monoton`,
             subsets: [`latin`],
           },
         ],
