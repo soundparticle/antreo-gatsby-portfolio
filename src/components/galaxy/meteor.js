@@ -34,7 +34,7 @@ const Orbit = styled.g`
 const MeteorShape = styled.circle`
   fill:white;
   transform-origin: ${({radius}) => radius}px 0;
-  ${ ({animationReset}) => animationReset!== true ? css`
+  ${ ({animationReset}) => animationReset !== true ? css`
     animation:
       5s ${meteorOrbitAnimation} 1 linear both,
       5s ${meteorGlow} 1 cubic-bezier(0.175, 0.885, 0.32, 1.275) both;
@@ -70,12 +70,12 @@ export class Meteor extends React.Component {
   }
 
   render() {
-    const { radius = 100, x = 0, rotate = 0, reverse = false, debug = false } = this.props;
+    const { radius = 100, x = 0, y = 0, rotate = 0, reverse = false, debug = false } = this.props;
     const { animationReset } = this.state;
 
     return (
-      <g transform={`translate(${x}, ${y}, rotate(${rotate})`}>
-        {debug ? <circle cx="0" r={radius} fill='yellow' fillOpacity="0.1"/> : null }
+      <g transform={`translate(${x}, ${y}) rotate(${rotate})`}>
+        {debug ? <circle cx="0" cy="0" r={radius} fill='yellow' fillOpacity="0.1"/> : null }
         {debug ? (<path
           d={`M-${radius} 0 A ${radius} ${radius}, 0, 0, 1, 0 -${radius}`}
           stroke="red"  strokeWidth="1" fill="none"/>) : null }

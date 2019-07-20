@@ -1,6 +1,7 @@
 import React from 'react';
 import { STAR_COORDS } from '../galaxy/starCoords';
 import styled from 'styled-components';
+import { Meteors } from './meteors'
 import { TwinkleStars } from '../galaxy/twinkleStars';
 
 import styles from "./galaxy.module.scss";
@@ -33,7 +34,7 @@ class Universe extends React.Component {
         {/* <svg viewBox="0 0 2000 1000" width="2000" height="1000"> */}
         <svg id={styles.svgCanvas} viewBox="0 0 2000 1000" width="100%" height="100%" preserveAspectRatio="xMinYMin slice">
           <TwinkleStars stars={STAR_COORDS} debug={this.state.debug} />
-          {/* <MeteorShower debug={this.state.debug} /> */}
+          <Meteors debug={this.state.debug} />
         </svg>
       </Layout>
     )

@@ -30,7 +30,7 @@ export class Meteors extends React.Component {
 
     const minDelay = 5000;
     const maxDelay = 10000;
-    const nextTickTimeout = minDelay + Math.random() * (maxDelay = minDelay);
+    const nextTickTimeout = minDelay + Math.random() * (maxDelay - minDelay);
 
     this.timeRef = setTimeout(this.next, nextTickTimeout);
   }
