@@ -10,8 +10,7 @@ export class Meteors extends React.Component {
     this.state = {
       activeMeteorIndex: 0
     }
-
-    // this.next = this,next.bind(this);
+    this.next = this.next.bind(this);
   }
 
   next() {
