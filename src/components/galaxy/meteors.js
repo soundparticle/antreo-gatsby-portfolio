@@ -12,11 +12,23 @@ export class Meteors extends React.Component {
     }
     this.next = this.next.bind(this);
   }
+  
+  componentDidMount() {
+    this.next();
+    // window.addEventListener("click", this.handleGlobalMouseClick);
+  }
 
+  componentWillUnmount() {
+    clearTimeout(this.timerRef);
+    // window.removeEventListener("click", this.handleGlobalMouseClick);
+  }
+
+  // console.log('*** METEOR_DATA.length', METEOR_DATA);
   next() {
     clearTimeout(this.timerRef);
 
     const availableCount = METEOR_DATA.length;
+
     let newIndex = Math.round(Math.random() * availableCount);
 
     if(newIndex === this.state.activeMeteorIndex) {
@@ -53,4 +65,4 @@ export class Meteors extends React.Component {
       )
     }
   }
-}
+};

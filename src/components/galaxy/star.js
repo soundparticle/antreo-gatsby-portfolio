@@ -48,7 +48,6 @@ const mapDepthToColor = depth => {
   const colors = ['hotpink', 'blue', 'green', 'yellow', 'brown']
   return colors[depth];
 }
-console.log('*** Depth2Color', mapDepthToColor);
 
 export const Star = ({x, y, animationOffset, duration, brightness, depth = 1, debug }) => (
   <g transform={`translate(${x} ${y})`}>
