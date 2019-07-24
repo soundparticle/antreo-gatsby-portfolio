@@ -1,13 +1,14 @@
-import React from "react";
-import { Link } from "gatsby";
-import Header from "../components/header";
-import PortfolioSection from "../components/portfolioSection";
-import Skills from "../components/skills";
+/* eslint-disable react/display-name */
+import React from 'react';
+import { Link } from 'gatsby';
+import Header from '../components/header';
+import PortfolioSection from '../components/portfolioSection';
+import Skills from '../components/skills';
 import Galaxy from '../components/galaxy/galaxy';
 
-import styles from "./index.module.scss";
+import styles from './index.module.scss';
 
-console.log(styles)
+console.log(styles);
 
 export default () => (
   <div className={styles.appContainer}>
@@ -24,4 +25,4 @@ export default () => (
       </div>
     </main>
   </div>  
-)
+);

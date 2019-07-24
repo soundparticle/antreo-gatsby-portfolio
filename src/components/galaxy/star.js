@@ -19,7 +19,7 @@ const pulseAnimation = keyframes`
   100% {
     transform: scale3d(1, 1, 1);
   }
-`
+`;
 
 const glowingAnimation = keyframes`
   0% {
@@ -29,12 +29,12 @@ const glowingAnimation = keyframes`
   100% {
     opacity: calc(var(--star-brightness, 1) * 0.5);
   }
-`
+`;
 
 const StarShape = styled.circle`
-  --star-brightness: ${ ({brightness}) => brightness};
-  --star-animation-delay:  ${ ({animationOffset}) => animationOffset};
-  --star-animation-duration:  ${ ({duration}) => duration};
+  --star-brightness: ${ ({ brightness }) => brightness};
+  --star-animation-delay:  ${ ({ animationOffset }) => animationOffset};
+  --star-animation-duration:  ${ ({ duration }) => duration};
   --star-animation-glow-duration: 10000ms;
 
   animation:
@@ -42,14 +42,14 @@ const StarShape = styled.circle`
     ${glowingAnimation} var(--star-animation-glow-duration, 1000ms) infinite alternate backwards;
 
   animation-delay: var(--star-animation-delay, 0);
-`
+`;
 
 const mapDepthToColor = depth => {
-  const colors = ['hotpink', 'blue', 'green', 'yellow', 'brown']
+  const colors = ['hotpink', 'blue', 'green', 'yellow', 'brown'];
   return colors[depth];
-}
+};
 
-export const Star = ({x, y, animationOffset, duration, brightness, depth = 1, debug }) => (
+export const Star = ({ x, y, animationOffset, duration, brightness, depth = 1, debug }) => (
   <g transform={`translate(${x} ${y})`}>
     <StarShape
       cx="0" cy="0" r={debug ? 10 : 1}
@@ -59,4 +59,4 @@ export const Star = ({x, y, animationOffset, duration, brightness, depth = 1, de
       brightness={brightness.toFixed(2)}
     />
   </g>
-)
+);

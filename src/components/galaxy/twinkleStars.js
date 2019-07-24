@@ -2,7 +2,7 @@ import React from 'react';
 import { Star } from './star';
 
 
-export const TwinkleStars = ({ stars, debug}) => (
+export const TwinkleStars = ({ stars, debug }) => (
   <g>
     { stars.map((coord, index) => {
       const offset = index * 100 + 500 * Math.random();
@@ -18,7 +18,7 @@ export const TwinkleStars = ({ stars, debug}) => (
           duration={duration}
           brightness={brightness} 
         />
-      )
+      );
     })}
   </g>
-)
+);
