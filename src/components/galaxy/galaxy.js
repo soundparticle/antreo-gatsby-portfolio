@@ -1,10 +1,10 @@
 import React from 'react';
 import { STAR_COORDS } from '../galaxy/starCoords';
 import styled from 'styled-components';
-import { Meteors } from './meteors'
+import { Meteors } from './meteors';
 import { TwinkleStars } from '../galaxy/twinkleStars';
 
-import styles from "./galaxy.module.scss";
+import styles from './galaxy.module.scss';
 
 
 const Layout = styled.div`
@@ -15,7 +15,7 @@ const Layout = styled.div`
   bottom: 0;
   z-index: -1;
   pointer-events: none;
-`
+`;
 
 class Universe extends React.Component {
 
@@ -24,7 +24,7 @@ class Universe extends React.Component {
     this.myRef = React.createRef();
     this.state = {
       debug: false
-    }
+    };
   }
 
   render() {
@@ -36,7 +36,7 @@ class Universe extends React.Component {
           <Meteors debug={this.state.debug} />
         </svg>
       </Layout>
-    )
+    );
   }
 }
 export default Universe;

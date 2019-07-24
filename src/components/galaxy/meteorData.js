@@ -28,4 +28,4 @@ export const METEOR_DATA = [
   {
     radius: 450, x: 1600, y:700, rotate: -30, reverse: true
   }
-]
+];

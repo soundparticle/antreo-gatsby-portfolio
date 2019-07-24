@@ -9,18 +9,16 @@ export class Meteors extends React.Component {
     super(props);
     this.state = {
       activeMeteorIndex: 0
-    }
+    };
     this.next = this.next.bind(this);
   }
   
   componentDidMount() {
     this.next();
-    // window.addEventListener("click", this.handleGlobalMouseClick);
   }
-
+  
   componentWillUnmount() {
     clearTimeout(this.timerRef);
-    // window.removeEventListener("click", this.handleGlobalMouseClick);
   }
 
   // console.log('*** METEOR_DATA.length', METEOR_DATA);
@@ -37,7 +35,7 @@ export class Meteors extends React.Component {
 
     this.setState({
       activeMeteorIndex: newIndex
-    })
+    });
 
     const minDelay = 5000;
     const maxDelay = 10000;
@@ -47,11 +45,11 @@ export class Meteors extends React.Component {
   }
 
   render() {
-    const {activeMeteorIndex} = this.state;
+    const { activeMeteorIndex } = this.state;
     const meteor = METEOR_DATA[activeMeteorIndex];
-    const {debug} = this.props;
+    const { debug } = this.props;
 
-    if (debug === false) {
+    if(debug === false) {
       return <Meteor {...meteor} debug={false} />;
     } else {
       return (
@@ -62,7 +60,7 @@ export class Meteors extends React.Component {
             ))
           }
         </g>
-      )
+      );
     }
   }
-};
+}

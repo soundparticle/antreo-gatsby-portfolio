@@ -1,3 +1,4 @@
+/* eslint-disable quotes */
 module.exports = {
   plugins: [
     `gatsby-plugin-sass`,
@@ -37,7 +38,5 @@ module.exports = {
         ],
       },
     }
-
-  
   ],
-}
+};
