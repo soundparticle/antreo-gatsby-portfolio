@@ -34,6 +34,7 @@ class Universe extends React.Component {
         <svg id={styles.svgCanvas} viewBox="0 0 2000 1000" width="100%" height="180px" preserveAspectRatio="xMinYMin slice">
           <TwinkleStars stars={STAR_COORDS} debug={this.state.debug} />
           <Meteors debug={this.state.debug} />
+          <Meteors debug={this.state.debug} />
         </svg>
       </Layout>
     );
