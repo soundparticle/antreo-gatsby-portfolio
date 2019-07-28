@@ -17,6 +17,7 @@ const Layout = styled.div`
   pointer-events: none;
 `;
 
+
 class Universe extends React.Component {
 
   constructor(props){
@@ -32,6 +33,7 @@ class Universe extends React.Component {
       <Layout
         ref={this.myRef}>
         <svg id={styles.svgCanvas} viewBox="0 0 2000 1000" width="100%" height="180px" preserveAspectRatio="xMinYMin slice">
+          
           <TwinkleStars stars={STAR_COORDS} debug={this.state.debug} />
           <Meteors debug={this.state.debug} />
           <Meteors debug={this.state.debug} />
