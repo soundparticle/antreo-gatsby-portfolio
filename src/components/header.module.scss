@@ -5,6 +5,7 @@
 
 .headerContainer {
   display: block;
+  // position: fixed;
 }
 
 h1 {
@@ -12,6 +13,7 @@ h1 {
   // font-family: 'Monoton', cursive;
   // font-family: Bookman, Copperplate, Copperplate Gothic Light;
   font-size: 42px;
+  // position: fixed;
   -webkit-text-stroke: .5px black;
   font-style: italic;
   text-shadow: -4px 2px 0px rgb(179, 205, 50);

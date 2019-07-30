@@ -1,6 +1,6 @@
 /* eslint-disable react/display-name */
 import React from 'react';
-import styles from './header.module.css';
+import styles from './header.module.scss';
 // console.log(styles);
 
 export default () => 
