@@ -11,7 +11,7 @@ export class Meteors extends React.Component {
       activeMeteorIndex: 0
     };
     this.next = this.next.bind(this);
-    this.handleGlobalMouseClick = this.handleGlobalMouseClick.bind(this);
+    // this.handleGlobalMouseClick = this.handleGlobalMouseClick.bind(this);
   }
   
   handleGlobalMouseClick() {
@@ -20,12 +20,12 @@ export class Meteors extends React.Component {
 
   componentDidMount() {
     // this.next();
-    window.addEventListener('click', this.handleGlobalMouseClick);
+    // window.addEventListener('click', this.handleGlobalMouseClick);
   }
   
   componentWillUnmount() {
     clearTimeout(this.timerRef);
-    window.removeEventListener('click', this.handleGlobalMouseClick);
+    // window.removeEventListener('click', this.handleGlobalMouseClick);
   }
 
   next() {

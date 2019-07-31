@@ -109,18 +109,12 @@ html {
   background-position: center;
   background-size: cover;
   height: 100%;
-  overflow: hidden;
+  overflow: auto;
   margin: 0;
   max-width: 100%;
   overflow-x: hidden;
 }
 
-.glow {
-  font-size: 80px;
-  color: rgb(103, 242, 245);
-  text-align: center;
-  animation: glow 1s ease-in-out infinite alternate;
-}
 
 .linkWrapper {
   display: flex;
@@ -128,13 +122,14 @@ html {
   align-items: center;
   width: 100%;
   height: 40px;
-  // border-top: rgb(221, 0, 255);
-  border-top:  rgb(10, 250, 186);
+  border-top: rgb(221, 0, 255);
+  // border-top:  rgb(10, 250, 186);
   border-bottom:  rgb(10, 250, 186);
   border-style: solid;
-  border-width: 1px;
+  border-width: 2px;
   background-color: rgba(244, 245, 219, 0.2);
 }
+
 
 #link {
   font-family: Bookman, Copperplate, Copperplate Gothic Light;
@@ -144,6 +139,13 @@ html {
   height: 30px;
   font-weight: bold;
   color: rgb(250, 243, 46);
+}
+
+.glow {
+  font-size: 80px;
+  color: rgb(103, 242, 245);
+  text-align: center;
+  animation: glow 1s ease-in-out infinite alternate;
 }
 
 .shootingStar {
