@@ -13,7 +13,6 @@ export default class Trigger extends Component {
 
   constructor(props) {
     super(props);
-    // this.triggerContainer = React.createRef();
     this.state = {
       styles: {}
     };
@@ -21,8 +20,6 @@ export default class Trigger extends Component {
 
   componentDidMount() {
     let childStyles = this.refs.triggerContainer.children[0].style;
-    // let childStyles = triggerContainer.children[0].style;
-    // console.log('** childStyles', childStyles);
     this.setState({
       styles: {
         width: childStyles.width,
@@ -42,7 +39,6 @@ export default class Trigger extends Component {
         onTouchStart={this.onTouchStart.bind(this)}
         onTouchEnd={this.onTouchEnd.bind(this)}
         ref='triggerContainer'
-        // ref={this.triggerContainer}
         style={styles}
       >
         {this.props.children.props.children}
