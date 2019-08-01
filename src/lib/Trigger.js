@@ -13,6 +13,9 @@ export default class Trigger extends Component {
 
   constructor(props) {
     super(props);
+    this.triggerContainer = React.createRef();
+    console.log('** triggerContainer', this.triggerContainer);
+    // const triggerContainer = React.createRef();
     this.state = {
       styles: {}
     };
