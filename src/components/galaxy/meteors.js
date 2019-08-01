@@ -14,12 +14,12 @@ export class Meteors extends React.Component {
     // this.handleGlobalMouseClick = this.handleGlobalMouseClick.bind(this);
   }
   
-  handleGlobalMouseClick() {
-    this.next();
-  }
+  // handleGlobalMouseClick() {
+  //   this.next();
+  // }
 
   componentDidMount() {
-    // this.next();
+    this.next();
     // window.addEventListener('click', this.handleGlobalMouseClick);
   }
   
