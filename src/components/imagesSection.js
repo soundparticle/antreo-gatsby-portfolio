@@ -29,7 +29,6 @@ export default () => (
     }
     render={data => (
       <div className={styles.images}>
-        {/* try giving height or width attributes to match anchor to img */}
         <a href="https://github.com/team-denim" className={styles.imageLinks} id={styles.link1} target="_blank" rel="noopener noreferrer">
           <img src={data.allContentfulAntreoPortfolio.edges[0].node.imageLinks[0].file.url} alt="Alchemy Companion App screenshot"/>
         </a>

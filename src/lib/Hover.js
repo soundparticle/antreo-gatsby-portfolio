@@ -10,7 +10,7 @@ export default class Hover extends Component {
     getCursorPos: PropTypes.func
   };
 
-  render () {
+  render() {
     const { styles } = this.props.children.props;
     return (
       <div
@@ -21,22 +21,22 @@ export default class Hover extends Component {
       >
         {this.props.children.props.children}
       </div>
-    )
+    );
   }
 
-  onMouseOver () {
+  onMouseOver() {
     const { setVisibility } = this.props.children.props;
     setVisibility(true);
   }
 
-  onMouseOut () {
+  onMouseOut() {
     const { setVisibility } = this.props.children.props;
     // TODO: change setInvisibility back to false!!!!
     // setVisibility(false);
     setVisibility(false);
   }
 
-  onMouseMove (e) {
+  onMouseMove(e) {
     const { getCursorPos } = this.props.children.props;
     getCursorPos(e);
   }

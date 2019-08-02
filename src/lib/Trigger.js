@@ -1,3 +1,5 @@
+/* eslint-disable react/no-string-refs */
+/* change refs away from using string refs */
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 
@@ -7,17 +9,20 @@ export default class Trigger extends Component {
     children: PropTypes.object,
     setVisibility: PropTypes.func,
     getCursorPos: PropTypes.func
-  }
+  };
 
-  constructor (props) {
+  constructor(props) {
     super(props);
+    // this.triggerContainer = React.createRef();
+    // console.log('** triggerContainer', this.triggerContainer);
+    // const triggerContainer = React.createRef();
     this.state = {
       styles: {}
-    }
+    };
   }
 
-  componentDidMount () {
-    let childStyles = this.refs.triggerContainer.children[0].style
+  componentDidMount() {
+    let childStyles = this.refs.triggerContainer.children[0].style;
     this.setState({
       styles: {
         width: childStyles.width,
@@ -27,8 +32,8 @@ export default class Trigger extends Component {
     });
   }
 
-  render () {
-    const { styles } = this.state
+  render() {
+    const { styles } = this.state;
     return (
       <div
         onMouseOver={this.onMouseOver.bind(this)}
@@ -44,27 +49,27 @@ export default class Trigger extends Component {
     );
   }
 
-  onMouseOver () {
+  onMouseOver() {
     const { setVisibility } = this.props.children.props;
     setVisibility(true);
   }
 
-  onMouseOut () {
+  onMouseOut() {
     const { setVisibility } = this.props.children.props;
     setVisibility(false);
   }
 
-  onMouseMove (e) {
+  onMouseMove(e) {
     const { getCursorPos } = this.props.children.props;
     getCursorPos(e);
   }
 
-  onTouchStart () {
+  onTouchStart() {
     const { setVisibility } = this.props.children.props;
     setVisibility(true);
   }
 
-  onTouchEnd () {
+  onTouchEnd() {
     const { setVisibility } = this.props.children.props;
     setVisibility(false);
   }

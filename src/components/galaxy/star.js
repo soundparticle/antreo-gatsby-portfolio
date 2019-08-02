@@ -5,7 +5,7 @@ import styled, { keyframes } from 'styled-components';
 
 const pulseAnimation = keyframes`
   0% {
-    transform: scale(1, 1, 1);
+    transform: scale3d(1, 1, 1);
   }
 
   30% {
@@ -38,8 +38,8 @@ const StarShape = styled.circle`
   --star-animation-glow-duration: 10000ms;
 
   animation:
-    ${pulseAnimation} var(--star-animation-duration, 1000ms) infinite backwards,
-    ${glowingAnimation} var(--star-animation-glow-duration, 1000ms) infinite alternate backwards;
+    ${pulseAnimation} var(--star-animation-duration, 3000ms) infinite backwards,
+    ${glowingAnimation} var(--star-animation-glow-duration, 5000ms) infinite alternate backwards;
 
   animation-delay: var(--star-animation-delay, 0);
 `;
