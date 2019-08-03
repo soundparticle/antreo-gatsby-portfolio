@@ -1,6 +1,5 @@
 /* eslint-disable quotes */
 module.exports = {
-  pathPrefix: "/antreo-gatsby-portfolio/",
   plugins: [
     `gatsby-plugin-sass`,
     {
