@@ -4,8 +4,6 @@ import React from 'react';
 import ReactHover from './ReactHover';
 
 import styles from './skills.module.scss';
-// console.log(styles);
-
 
 
 let optionsCursorTrueWithMargin = {

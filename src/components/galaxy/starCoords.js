@@ -405,4 +405,3 @@ export const STAR_COORDS = [
     'depth': 1,
   },
 ];
-

@@ -23,89 +23,8 @@
   }
 }
 
-@keyframes shining {
-  // 0% {
-  //   width: 0;
-  // }
-  // 50% {
-  //   width: 30px;
-  // }
-  // 100% {
-  //   width: 0;
-  // }
-}
-
-@keyframes shooting {
-  // 0% {
-  //   transform: translateX(0);
-  // }
-  // 100% {
-  //   transform: translateX(300px);
-  // }
-}
-
-@keyframes sky {
-  // 0% {
-  //   transform: rotate(45deg);
-  // }
-  // 100% {
-  //   transform: rotate(45 + 360deg);
-  // }
-}
-
-@keyframes pulse {
-  // 0% {
-  //   transform: scale3d(1, 1, 1);
-  // }
-
-  // 30% {
-  //   transform: scale3d(1.2, 1.2, 1.2);
-  // }
-
-  // 70% {
-  //   transform: scale3d(0.2, 0.2, 0.2);
-  // }
-
-  // 100% {
-  //   transform: scale3d(1, 1, 1);
-  // }
-}
-
-@keyframes glowing {
-  // 0% {
-  //   opacity: var(--star-brightness, 1);
-  // }
-
-  // 100% {
-  //   opacity: calc(var(--star-brightness, 1) * 0.5);
-  // }
-}
-
-@keyframes orbitAnimation {
-  // 0% {
-  //   transform: translate(-125px, 0) rotate3d(0, 0, 1, 360deg);
-  // }
-  // 100% {
-  //   transform: translate(-125px, 0) rotate3d(0, 0, 1, 270deg);
-  // }
-}
-
-@keyframes shootStarGlow {
-  // 0% {
-  //   opacity: 0
-  // }
-
-  // 50%, 50% {
-  //   opacity: 1;
-  // }
-  // 100% {
-  //   opacity: 0;
-  // }
-}
-
 html {
   background: url("../assets/vintage-lines-vert-dark-exposure.jpg") no-repeat center center fixed;
-  // background: black;
   background-position: center;
   background-size: cover;
   height: 100%;
@@ -114,7 +33,6 @@ html {
   max-width: 100%;
   overflow-x: hidden;
 }
-
 
 .linkWrapper {
   display: flex;
@@ -128,7 +46,6 @@ html {
   border-width: 2px;
   background-color: rgba(244, 245, 219, 0.2);
 }
-
 
 #link {
   font-family: Bookman, Copperplate, Copperplate Gothic Light;
@@ -147,13 +64,6 @@ html {
   animation: glow 1s ease-in-out infinite alternate;
 }
 
-.shootingStar {
-  fill: white;
-  // transform-origin: 125px 0;
-  // animation: 5s orbitAnimation infinite linear, 5s shootStarGlow infinite;
-}
-
-
 @media only screen and (min-width: 768px) {
   * {
     box-sizing: border-box;
@@ -161,7 +71,6 @@ html {
   
   html {
     background: url("../assets/vintage-lines-vert-dark-exposure.jpg") no-repeat center center fixed;
-    // background: black;
     background-position: center;
     background-size: cover;
   }

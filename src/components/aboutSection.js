@@ -1,7 +1,6 @@
 /* eslint-disable react/display-name */
 import React from 'react';
 import styles from './aboutSection.module.css';
-// console.log(styles);
 
 export default () =>
   <div className={styles.aboutSection}>
