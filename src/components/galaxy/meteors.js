@@ -25,7 +25,6 @@ export class Meteors extends React.Component {
     clearTimeout(this.timerRef);
     
     const availableCount = METEOR_DATA.length;
-    // Math.round may not be necessary here
     let newIndex = Math.round(Math.random() * availableCount);
     console.log('* * newIndex', newIndex);
     console.log('*** current activeMeteorIndex', this.state.activeMeteorIndex);

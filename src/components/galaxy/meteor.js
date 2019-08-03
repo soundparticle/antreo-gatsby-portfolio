@@ -2,7 +2,6 @@ import React from 'react';
 import styled, { keyframes, css } from 'styled-components';
 
 // TODO: Make sure all meteors are being rendered on the screen
-// TODO: Try adding a moving satellite
 const meteorOrbitAnimation = props => keyframes`
   0% {
     transform: translate(${ `${-props.radius}px` }, 0) rotate3d(0, 0, 1, ${ props.reverse ? '360deg' : '270deg' });

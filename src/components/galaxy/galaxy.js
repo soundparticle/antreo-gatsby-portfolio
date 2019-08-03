@@ -4,8 +4,6 @@ import styled from 'styled-components';
 import { Meteors } from './meteors';
 import { TwinkleStars } from '../galaxy/twinkleStars';
 
-import styles from './galaxy.module.scss';
-
 
 const Layout = styled.div`
   position: fixed;
@@ -32,7 +30,7 @@ class Universe extends React.Component {
     return (
       <Layout
         ref={this.myRef}>
-        <svg id={styles.svgCanvas} viewBox="0 0 2000 1000" width="100%" height="180px" preserveAspectRatio="xMinYMin slice">
+        <svg viewBox="0 0 2000 1000" width="100%" height="180px" preserveAspectRatio="xMinYMin slice">
           <TwinkleStars stars={STAR_COORDS} debug={this.state.debug} />
           <Meteors debug={this.state.debug} />
         </svg>

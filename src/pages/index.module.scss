@@ -34,7 +34,6 @@ html {
   overflow-x: hidden;
 }
 
-
 .linkWrapper {
   display: flex;
   justify-content: center;
@@ -47,7 +46,6 @@ html {
   border-width: 2px;
   background-color: rgba(244, 245, 219, 0.2);
 }
-
 
 #link {
   font-family: Bookman, Copperplate, Copperplate Gothic Light;
@@ -65,7 +63,6 @@ html {
   text-align: center;
   animation: glow 1s ease-in-out infinite alternate;
 }
-
 
 @media only screen and (min-width: 768px) {
   * {

@@ -70,8 +70,6 @@ class ReactHover extends Component {
     if(flag) {
       updatedStyles = { ...hoverComponentStyle, display: 'block' };
     } else {
-      // TODO: set display back to none!!!!!
-      // display should be: none
       updatedStyles = { ...hoverComponentStyle, display: 'none' };
     }
     this.setState({

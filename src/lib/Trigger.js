@@ -1,5 +1,5 @@
 /* eslint-disable react/no-string-refs */
-/* change refs away from using string refs */
+/* TODO: Consider changing refs away from using string refs */
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 
@@ -13,9 +13,6 @@ export default class Trigger extends Component {
 
   constructor(props) {
     super(props);
-    // this.triggerContainer = React.createRef();
-    // console.log('** triggerContainer', this.triggerContainer);
-    // const triggerContainer = React.createRef();
     this.state = {
       styles: {}
     };
