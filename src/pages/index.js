@@ -8,7 +8,6 @@ import Galaxy from '../components/galaxy/galaxy';
 
 import styles from './index.module.scss';
 
-// console.log(styles);
 // TODO: Try having the project title appear over image link onHover?
 export default () => (
   <div className={styles.appContainer}>
