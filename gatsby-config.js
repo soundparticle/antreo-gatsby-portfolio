@@ -1,5 +1,6 @@
 /* eslint-disable quotes */
 module.exports = {
+  pathPrefix: "/antreo-gatsby-portfolio/",
   plugins: [
     `gatsby-plugin-sass`,
     {
@@ -29,10 +30,6 @@ module.exports = {
           },
           {
             family: `Oswald`,
-            subsets: [`latin`],
-          },
-          {
-            family: `Monoton`,
             subsets: [`latin`],
           },
         ],
