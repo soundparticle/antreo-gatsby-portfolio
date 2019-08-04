@@ -1,19 +1,16 @@
-import React from "react";
-import styles from "./header.module.css"
-console.log(styles)
+/* eslint-disable react/display-name */
+import React from 'react';
+import styles from './header.module.scss';
 
-export default props => 
+export default () => 
 
-<header className={styles.headerContainer}>
-    <h1 className={styles.headerOne}>
-      {props.headerText1}
-    </h1>
-    <h2>
-      {props.headerText2}
-    </h2>
-    <h3>
-      {props.headerText3}
-    </h3>
-  <hgroup>
-  </hgroup>
-</header>
+  <header className={styles.headerContainer}>
+    
+    <div id={styles.headerPair}>
+      <h1 className={styles.headerOne}>ANTREO PUKAY</h1>
+      <h2 className={styles.headerTwo}>Full-Stack Developer</h2>
+      <h3 className={styles.headerThree}>Acrosswalker at yahoo.com</h3>
+    </div>
+    <hgroup>
+    </hgroup>
+  </header>;
