@@ -31,10 +31,6 @@ module.exports = {
             family: `Oswald`,
             subsets: [`latin`],
           },
-          {
-            family: `Monoton`,
-            subsets: [`latin`],
-          },
         ],
       },
     }
