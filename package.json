@@ -30,5 +30,6 @@
     "typography-theme-grand-view": "^0.15.10",
     "typography-theme-lawton": "^0.15.10",
     "typography-theme-stow-lake": "^0.15.10"
+    "typography-theme-bootstrap": "^0.16.7"
   }
 }
