@@ -26,8 +26,6 @@ export class Meteors extends React.Component {
     
     const availableCount = METEOR_DATA.length;
     let newIndex = Math.round(Math.random() * availableCount);
-    // console.log('* * newIndex', newIndex);
-    // console.log('*** current activeMeteorIndex', this.state.activeMeteorIndex);
     
     if(newIndex === this.state.activeMeteorIndex) {
       newIndex = (newIndex + 1) % availableCount;
@@ -42,14 +40,12 @@ export class Meteors extends React.Component {
     const nextTickTimeout = minDelay + Math.random() * (maxDelay - minDelay);
     
     this.timerRef = setTimeout(this.next, nextTickTimeout);
-    // console.log('*** this.timerRef', this.timerRef);
   }
 
   render() {
     const { activeMeteorIndex } = this.state;
     const meteor = METEOR_DATA[activeMeteorIndex];
     const { debug } = this.props;
-    // console.log('debug', debug);
 
     if(debug === false) {
       return <Meteor {...meteor} debug={false} />;
