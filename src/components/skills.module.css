@@ -3,8 +3,29 @@
           box-sizing: border-box;
 }
 
+@-webkit-keyframes rot {
+  from {
+    -webkit-transform: rotate(0deg) translate3d(-3px) rotate(0deg);
+            transform: rotate(0deg) translate3d(-3px) rotate(0deg);
+  }
+  to {
+    -webkit-transform: rotate(360deg) translate3d(-3px) rotate(-360deg);
+            transform: rotate(360deg) translate3d(-3px) rotate(-360deg);
+  }
+}
+
+@keyframes rot {
+  from {
+    -webkit-transform: rotate(0deg) translate3d(-3px) rotate(0deg);
+            transform: rotate(0deg) translate3d(-3px) rotate(0deg);
+  }
+  to {
+    -webkit-transform: rotate(360deg) translate3d(-3px) rotate(-360deg);
+            transform: rotate(360deg) translate3d(-3px) rotate(-360deg);
+  }
+}
+
 section {
-  font-family: Bookman, Copperplate, Copperplate Gothic Light;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -12,14 +33,12 @@ section {
       justify-content: space-around;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  margin-left: 5px;
-  margin-right: 5px;
+  margin-left: 20px;
+  margin-right: 20px;
 }
 
-h5 {
-  color: #54d6fd;
-  font-size: 18px;
-  text-align: center;
+a {
+  text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
 }
 
 .skillsContainer {
@@ -29,33 +48,113 @@ h5 {
   -webkit-box-pack: space-evenly;
       -ms-flex-pack: space-evenly;
           justify-content: space-evenly;
+  padding-top: 80px;
+  padding-bottom: 40px;
 }
 
-button {
-  display: inline-block;
+.skills {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: relative;
   text-align: center;
-  font-size: 16px;
+  font-size: 15px;
   border-radius: 10%;
   padding: 5px;
-  color: #54b4fd;
+  margin: 2px;
   border-style: solid;
-  border-color: #cacd32;
-  border-width: 1px;
+  border-color: #b3cd32;
+  border-width: 1.2px;
   background-color: #2b002b;
+  -webkit-transition: all 1.2s ease-in-out;
+  transition: all 1.2s ease-in-out;
 }
 
-button:hover {
-  outline: none;
-  border-color: #9ecaed;
+.skills:hover {
+  z-index: 10;
+  border-style: none;
+  background-color: rgba(244, 245, 219, 0.25);
+  border: none;
   -webkit-box-shadow: 0 0 30px #9ecaed;
           box-shadow: 0 0 30px #9ecaed;
 }
 
-button:focus {
+.skills:focus {
   outline: none;
   border-color: #9ecaed;
   -webkit-box-shadow: 0 0 30px #faf32e;
           box-shadow: 0 0 30px #faf32e;
+}
+
+.skillWrapper {
+  display: inline-block;
+  width: 100%;
+  height: 100%;
+}
+
+.skillWrapper:hover {
+  border-color: #9ecaed;
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+}
+
+.embedWindow {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  width: 150px;
+  height: 100px;
+  margin-right: 100vw;
+  -webkit-box-shadow: 0 0 30px #010c14;
+          box-shadow: 0 0 30px #010c14;
+}
+
+.embedWindow:before, .embedWindow:after {
+  content: '';
+  position: absolute;
+  opacity: 0;
+  -webkit-transition: opacity 2.2s ease-in-out;
+  transition: opacity 2.2s ease-in-out;
+}
+
+.embedWindow:hover:before {
+  opacity: 1;
+}
+
+embed {
+  width: inherit;
+  height: inherit;
+  border: solid;
+  border-radius: 10px;
+  border-width: 1px;
+  border-radius: inherit;
+  border-color: #0afaa6;
+}
+
+a {
+  color: #7dc6fe;
+  text-decoration: none;
+  font-style: italic;
+  display: block;
+  border-width: fill;
+  border-radius: 10px;
+}
+
+a:hover {
+  color: #54b4fd;
+}
+
+a:hover + .preview, .preview:hover {
+  display: block;
+  width: 100%;
+  border-radius: 10px;
+  z-index: 100;
 }
 
 @media only screen and (min-width: 746px) {
@@ -71,9 +170,6 @@ button:focus {
   section {
     font-family: Bookman, Copperplate, Copperplate Gothic Light;
     display: block;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
   }
@@ -84,9 +180,10 @@ button:focus {
     -webkit-box-pack: space-evenly;
         -ms-flex-pack: space-evenly;
             justify-content: space-evenly;
-    margin-left: 150px;
-    margin-right: 150px;
-    padding-bottom: 30px;
+    margin-left: 300px;
+    margin-right: 300px;
+    padding-top: 50px;
+    padding-bottom: 40px;
   }
 }
 /*# sourceMappingURL=skills.module.css.map */

@@ -26,6 +26,5 @@
     "styled-components": "^4.3.2",
     "typography": "^0.16.17",
     "typography-theme-bootstrap": "^0.16.7"
-  },
-  "devDependencies": {}
+  }
 }
