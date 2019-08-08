@@ -41,13 +41,15 @@ a {
   display: flex;
   position: relative;
   text-align: center;
-  font-size: 16px;
+  font-size: 15px;
   border-radius: 10%;
+  padding: 5px;
+
   margin: 2px;
   padding: 5px;
   border-style: solid;
   border-color: rgb(179, 205, 50);
-  border-width: 1px;
+  border-width: 1.2px;
   background-color: rgb(43, 0, 43);
   transition: all 1.2s ease-in-out; 
 
@@ -111,8 +113,12 @@ embed {
   border-color: rgb(10, 250, 166);}
 
 a {
-  color: rgb(84, 180, 253);
+  color: rgb(125, 198, 254);
+  text-decoration: none;
+  font-style: italic;
   display: block;
+  // text-decoration: none;
+
   border-width: fill;
   text-decoration: none;
   font-style: italic;
