@@ -23,15 +23,15 @@ h6 {
 p {
   font-size: 10pt;
   color: rgb(84, 180, 253); 
-  margin-left: 35px;
-  margin-right: 35px;
+  margin-left: 55px;
+  margin-right: 55px;
 }
 
 @media only screen and (min-width: 768px) {
   p {
     font-size: 12pt;
     color: rgb(84, 180, 253); 
-    margin-left: 150px;
-    margin-right: 150px;
+    margin-left: 300px;
+    margin-right: 300px;
   }
 }
