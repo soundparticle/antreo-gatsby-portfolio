@@ -1,5 +1,9 @@
 {
   "name": "antreo-portfolio",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/soundparticle/antreo-gatsby-portfolio"
+  },
   "description": "Antreo Web Developer Portfolio",
   "license": "MIT",
   "scripts": {
