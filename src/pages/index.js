@@ -10,7 +10,7 @@ import styles from './index.module.scss';
 
 // TODO: Try having the project title appear over image link onHover?
 export default () => (
-  <div className={styles.appContainer}>
+  <div>
     <Galaxy />
     <Header />
     <div className={styles.linkWrapper}>
