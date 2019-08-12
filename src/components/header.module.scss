@@ -39,15 +39,20 @@ h2 {
 .headerThree {
   display: block;
   text-align: center;
-  font-family: 'Oswald', 'Times New Roman', Times, serif;
-  font-style:  italic;
-  font-weight:  bold;
-  font-size: 16px;
+  font-family:  Bookman, sans-serif, 'Times New Roman', Times;
+  text-shadow:
+		-.5px -.5px 0 #000,
+		.5px -.5px 0 #000,
+		-.5px .5px 0 #000,
+		.5px .5px 0 #000;
   color: rgb(84, 180, 253);
+
+  font-style:  italic;
+  font-size: 15px;
   margin: 0;
   line-height: 15px;
   margin-top: 60px;
-  margin-bottom: 3px;
+  margin-bottom: 10px;
 }
 
 @media only screen and (min-width: 600px) {

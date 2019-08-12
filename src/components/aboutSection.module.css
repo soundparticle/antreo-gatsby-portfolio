@@ -13,7 +13,8 @@ h6 {
   font-size: 15px;
   text-align: center;
   text-align: center;
-  font-family: 'Oswald', 'Times New Roman', Times, serif;
+  // font-family: 'Oswald', 'Times New Roman', Times, serif;
+  font-family: Bookman, Copperplate, Copperplate Gothic Light;
   font-style:  italic;
   font-weight: bolder;
   color: rgb(179, 205, 50);
@@ -23,7 +24,7 @@ h6 {
   background-color: rgba(43, 0, 43, 0.8);
   border-radius: 45px;
   overflow: auto;
-  max-width: 80%;
+  max-width: 90%;
   padding-top: 0px;
   padding-bottom: 20vw;
   margin-top: 50px;
@@ -32,12 +33,12 @@ h6 {
 }
 
 p {
-  font-size: 13pt;
+  font-size: 15pt;
   color:   #54b4fd;
   font-style:  italic;
   line-height: 25px;
-  margin-left: 55px;
-  margin-right: 55px;
+  margin-left: 44px;
+  margin-right: 44px;
 }
 
 @media only screen and (min-width: 768px) {
