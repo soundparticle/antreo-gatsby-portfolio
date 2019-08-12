@@ -2,9 +2,15 @@
   box-sizing: border-box;
 }
 
+.aboutSectionWrapper {
+  display: flex;
+  justify-content: center;
+}
+
 h6 {
   display: flex;
   flex-direction: column;
+  font-size: 15px;
   text-align: center;
   text-align: center;
   font-family: 'Oswald', 'Times New Roman', Times, serif;
@@ -14,24 +20,38 @@ h6 {
 }
 
 .about-section {
-  background-color: rgb(43, 0, 43);
+  background-color: rgba(43, 0, 43, 0.8);
+  border-radius: 45px;
   overflow: auto;
+  max-width: 80%;
   padding-top: 0px;
-  padding-bottom: 480px;
+  padding-bottom: 20vw;
+  margin-top: 50px;
+  margin-bottom: 30px;
+  z-index: 1;
 }
 
 p {
-  font-size: 10pt;
+  font-size: 12pt;
+  font-style:  italic;
+  line-height: 25px;
   color: rgb(84, 180, 253); 
   margin-left: 55px;
   margin-right: 55px;
 }
 
 @media only screen and (min-width: 768px) {
+
+  .about-section {
+    padding-bottom: 10vw;
+    max-width: 70%;
+    padding-bottom: 5vw;
+  }
+
   p {
     font-size: 12pt;
     color: rgb(84, 180, 253); 
-    margin-left: 300px;
-    margin-right: 300px;
+    margin-left: 55px;
+    margin-right: 55px;
   }
 }

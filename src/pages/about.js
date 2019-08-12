@@ -15,6 +15,11 @@ export default () => (
     <div className={styles.linkWrapper}>
       <Link to="/" id={styles.link} className={styles.glow}>Home</Link>    
     </div>
-    <AboutSection/> 
+
+    <main>
+      <div className={styles.pageContainer}>        
+        <AboutSection/> 
+      </div>
+    </main>
   </div>
 );
