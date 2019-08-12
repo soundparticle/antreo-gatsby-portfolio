@@ -32,10 +32,10 @@ h6 {
 }
 
 p {
-  font-size: 12pt;
+  font-size: 13pt;
+  color:   #54b4fd;
   font-style:  italic;
   line-height: 25px;
-  color: rgb(84, 180, 253); 
   margin-left: 55px;
   margin-right: 55px;
 }
@@ -49,8 +49,6 @@ p {
   }
 
   p {
-    font-size: 12pt;
-    color: rgb(84, 180, 253); 
     margin-left: 55px;
     margin-right: 55px;
   }

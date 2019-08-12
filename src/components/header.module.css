@@ -40,7 +40,9 @@ h2 {
 .headerThree {
   display: block;
   text-align: center;
-  font-family: 'Oswald', 'Times New Roman', Times, serif;
+  // font-family: 'Oswald', 'Times New Roman', Times, serif;
+  font-family: 'Mr Dafoe', cursive;
+
   font-style: italic;
   font-weight: bold;
   font-size: 15px;
@@ -48,7 +50,7 @@ h2 {
   margin: 0;
   line-height: 15px;
   margin-top: 60px;
-  margin-bottom: 1px;
+  margin-bottom: 2px;
 }
 
 @media only screen and (min-width: 600px) {
