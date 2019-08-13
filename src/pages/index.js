@@ -1,3 +1,4 @@
+/*TODO: Try having the project title appear over image link onHover? */
 /* eslint-disable react/display-name */
 import React from 'react';
 import { Link } from 'gatsby';
@@ -8,7 +9,6 @@ import Galaxy from '../components/galaxy/galaxy';
 
 import styles from './index.module.scss';
 
-// TODO: Try having the project title appear over image link onHover?
 export default () => (
   <div>
     <Galaxy />
