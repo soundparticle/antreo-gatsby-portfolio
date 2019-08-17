@@ -7,5 +7,6 @@ import ImagesSection from '../components/imagesSection';
 export default () =>
 
   <div className={styles.portfolioContainer}>
+    <h4>Projects</h4>
     <ImagesSection imagesSectionText="image link tiles here"/>
   </div>;
