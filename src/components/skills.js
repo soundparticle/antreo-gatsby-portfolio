@@ -18,6 +18,7 @@ export default () =>
   <section>
     {/* consider creating a skills array to populate button skills */}
     <div className={styles.skillsBackground}>
+      <h4>Skills</h4>
       <section className={styles.skillsContainer} id="skillsWrapper">
         {/* AGILE */}
         <ReactHover options={optionsCursorTrueWithMargin}>
