@@ -4,7 +4,6 @@ import backArrow from '../assets/back-arrow.png';
 
 import styles from './404.module.scss';
 
-
 class FourOhFour extends React.Component {
   render() {
     return (
