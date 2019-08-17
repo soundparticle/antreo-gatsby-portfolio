@@ -5,7 +5,6 @@ import styles from './404.module.scss';
 class FourOhFour extends React.Component {
   render() {
     return (
-      <div >
       <div>
         <h1>Oh no...page not found!</h1>
         <Link to="/">
