@@ -2,7 +2,7 @@ import React from 'react';
 import { Link } from 'gatsby';
 import backArrow from '../assets/back-arrow.png'; 
 
-import styles from './404.module.css';
+import styles from './404.module.scss';
 
 class FourOhFour extends React.Component {
   render() {
