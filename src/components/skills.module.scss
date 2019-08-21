@@ -37,8 +37,8 @@ a {
 .skillsContainer {
   display: flex;
   justify-content: space-evenly;
-  padding-top: 80px;
-  padding-bottom: 40px;
+  padding-top: 10px;
+  padding-bottom: 60px;
 }
 
 .skills {
@@ -163,8 +163,8 @@ a:hover + .preview, .preview:hover {
     justify-content: space-evenly;
     margin-left: 120px;
     margin-right: 120px;
-    padding-top: 50px;
-    padding-bottom: 40px;
+    padding-top: 10px;
+    padding-bottom: 60px;
   }
 }
 
