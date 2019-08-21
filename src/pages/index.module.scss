@@ -69,6 +69,18 @@ body {
   animation: glow 1s ease-in-out infinite alternate;
 }
 
+.socialContainer {
+  display: flex;
+  justify-content: flex-end;
+  // margin: 0;
+  position: static;
+}
+
+#gh {
+  height: 40px;
+  border: none;
+}
+
 @media only screen and (min-width: 768px) {
   * {
     box-sizing: border-box;
