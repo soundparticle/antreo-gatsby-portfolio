@@ -21,6 +21,12 @@ export default () => (
         <a>
           <img src={github} id={styles.gh}></img>
         </a>    
+        <a>
+          <img src={github} id={styles.gh}></img>
+        </a>    
+        <a>
+          <img src={github} id={styles.gh}></img>
+        </a>    
       </section>
     </div>
 
