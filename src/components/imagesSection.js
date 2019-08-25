@@ -28,7 +28,7 @@ export default () => (
     }
     render={data => (
       <div className={styles.images}>
-        <a href="https://github.com/team-denim" className={styles.imageLinks} id={styles.link1} target="_blank" rel="noopener noreferrer">
+        <a href="https://alchemy-companion.herokuapp.com/#/" className={styles.imageLinks} id={styles.link1} target="_blank" rel="noopener noreferrer">
           <img src={data.allContentfulAntreoPortfolio.edges[0].node.imageLinks[0].file.url} alt="Alchemy Companion App screenshot"/>
         </a>
         <a href="https://github.com/soundparticle/budget-tracker" className={styles.imageLinks} id={styles.link2} target="_blank" rel="noopener noreferrer">
