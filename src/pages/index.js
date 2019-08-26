@@ -5,8 +5,8 @@ import Header from '../components/header';
 import PortfolioSection from '../components/portfolioSection';
 import Skills from '../components/skills';
 import Galaxy from '../components/galaxy/galaxy';
+import SocialNav from '../components/socialNav';
 
-import github from '../assets/icons8-github-100.png';
 
 import styles from './index.module.scss';
 
@@ -17,17 +17,7 @@ export default () => (
     <Header />
     <div className={styles.linkWrapper}>
       <Link to="/about/" id={styles.link} className={styles.glow}>About</Link>
-      <section className={styles.socialContainer}>
-        <a>
-          <img src={github} id={styles.gh}></img>
-        </a>    
-        <a>
-          <img src={github} id={styles.gh}></img>
-        </a>    
-        <a>
-          <img src={github} id={styles.gh}></img>
-        </a>    
-      </section>
+      <SocialNav />
     </div>
 
     <main>
