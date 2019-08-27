@@ -5,6 +5,8 @@ import Header from '../components/header';
 import PortfolioSection from '../components/portfolioSection';
 import Skills from '../components/skills';
 import Galaxy from '../components/galaxy/galaxy';
+import SocialNav from '../components/socialNav';
+
 
 import styles from './index.module.scss';
 
@@ -14,7 +16,8 @@ export default () => (
     <Galaxy />
     <Header />
     <div className={styles.linkWrapper}>
-      <Link to="/about/" id={styles.link} className={styles.glow}>About</Link>    
+      <Link to="/about/" id={styles.link} className={styles.glow}>About</Link>
+      <SocialNav />
     </div>
 
     <main>

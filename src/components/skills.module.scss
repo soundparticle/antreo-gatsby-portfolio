@@ -1,6 +1,6 @@
 
 // USE translate3d or scale3d for all transformations!!! ...so GPU handles transformations.
-// translate3d() is a property of transform.
+
 * {
   box-sizing: border-box;
 }
@@ -121,8 +121,6 @@ a {
   text-decoration: none;
   font-style: italic;
   display: block;
-  // text-decoration: none;
-
   border-width: fill;
   text-decoration: none;
   font-style: italic;

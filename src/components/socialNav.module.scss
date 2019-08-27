@@ -1,0 +1,27 @@
+
+* {
+  box-sizing: border-box;
+}
+
+.socialWrapper {
+  display: inline-grid;
+  grid-template-columns: 100%;
+}
+
+.socialContainer {
+  grid-column: 1;
+  display: inline-flex;
+  justify-content: flex-end;
+  flex-wrap: nowrap;
+  position: static;
+}
+
+.socialLinks {
+  height: 32px;
+  border: none;
+  border-radius: none;
+  padding: 3px 3px 3px;
+}
+
+@media only screen and (min-width: 768px) {
+}
