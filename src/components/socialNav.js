@@ -1,6 +1,7 @@
-/* eslint-disable react/display-name */
-import React from 'react';
 
+/* eslint-disable react/display-name */
+
+import React from 'react';
 
 import linkedIn from '../assets/linkedin.svg';
 import github from '../assets/github_1249974.svg';
@@ -10,7 +11,6 @@ import styles from './socialNav.module.scss';
 
 
 export default () => 
-
   <div className={styles.socialWrapper}>
     <section className={styles.socialContainer}>
       <a href="https://www.linkedin.com/in/antreo-pukay/">
