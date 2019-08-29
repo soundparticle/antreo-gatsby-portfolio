@@ -6,6 +6,7 @@ import PortfolioSection from '../components/portfolioSection';
 import Skills from '../components/skills';
 import Galaxy from '../components/galaxy/galaxy';
 import SocialNav from '../components/socialNav';
+import Footer from '../components/footer';
 
 
 import styles from './index.module.scss';
@@ -26,5 +27,7 @@ export default () => (
         <Skills />
       </div>
     </main>
+
+    <Footer />
   </div>  
 );
