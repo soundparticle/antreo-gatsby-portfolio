@@ -7,9 +7,15 @@
   display: block;
 }
 
+#headersWrapper {
+  margin-left: 4px;
+  margin-right: 4px;
+}
+
+
 h1 {
   font-family: 'Candal', Bookman, Copperplate, Copperplate Gothic Light;
-  font-size: 44px;
+  font-size: 37px;
   -webkit-text-stroke: .5px black;
   font-style: italic;
   text-shadow: -4px 2px 0px rgb(179, 205, 50);
@@ -22,16 +28,15 @@ h1 {
   padding-top: 35px;
 }
 
-h2 {
-  position: relative;
-}
-
 .headerTwo {
+  position: relative;
+  display: inline-block;
+  white-space: nowrap;
   font-family: 'Mr Dafoe', cursive;
   color: rgb(179, 205, 50);
   font-size: 15px;
-  margin-left: 69vw;
-  margin-top: .5vw;
+  margin-left: 64vw;
+  top: -2.3vw;
   line-height: 0px;
   transform: rotate(-15deg);
 }
@@ -54,9 +59,14 @@ h2 {
   margin-bottom: 3px;
 }
 
+
 @media only screen and (min-width: 600px) {
   * {
     box-sizing: border-box;
+  }
+
+  .headerOne {
+    font-size: 44px;
   }
 
   .headerTwo {
@@ -64,7 +74,7 @@ h2 {
     color: rgb(179, 205, 50);
     font-size: 25px;
     margin-left: 59vw;
-    margin-top: -1vh;;
+    top: -3vw;
     line-height: 0px;
     transform:rotate(-15deg);
   }
@@ -79,9 +89,14 @@ h2 {
     box-sizing: border-box;
   }
 
+  .headerOne {
+    font-size: 48px;
+  }
+
   .headerTwo {
-    margin-left: 56vw;
-    margin-top: -2vh;; 
+    margin-left: 58vw;
+    top: -2.2vw;
+
   } 
   
   .headerThree {
@@ -95,8 +110,8 @@ h2 {
   }
 
   .headerTwo {
-    margin-left: 55vw;
-    margin-top: -4vh;; 
+    margin-left: 57vw;
+    top: -2vw;
   } 
   
   .headerThree {
@@ -110,8 +125,8 @@ h2 {
   }
 
   .headerTwo {
-    margin-left: 55vw;
-    margin-top: -4vh;; 
+    margin-left: 57vw;
+    top: -2vw;
   }
   
   .headerThree {
@@ -125,8 +140,8 @@ h2 {
   }
 
   .headerTwo {
-    margin-left: 54vw;
-    margin-top: -5vh;; 
+    margin-left: 56vw;
+    top: -2vw;
   } 
   
   .headerThree {
@@ -139,8 +154,8 @@ h2 {
   }
 
   .headerTwo {
-    margin-left: 54vw;
-    margin-top: -6vh;; 
+    margin-left: 55vw;
+    top: -1.5vw;
   } 
   
   .headerThree {
@@ -153,9 +168,13 @@ h2 {
     box-sizing: border-box;
   }
 
+  .headerOne {
+    font-size: 54px;
+  }
+
   .headerTwo {
-    margin-left: 54vw;
-    margin-top: -8vh;; 
+    margin-left: 56vw;
+    top: -1.2vw; 
   }  
 
   .headerThree {
