@@ -34,8 +34,8 @@ module.exports = {
         name: `Antreo Portfolio Site`,
         short_name: `Antreo Portfolio`,
         start_url: `/`,
-        background_color: `#6b37bf`,
-        theme_color: `#6b37bf`,
+        background_color: `#3d0b6b`,
+        theme_color: `#7736b2`,
         // Enables "Add to Homescreen" prompt and disables browser UI (including back button)
         // see https://developers.google.com/web/fundamentals/web-app-manifest/#display
         display: `standalone`,
