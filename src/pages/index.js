@@ -18,8 +18,8 @@ export default () => (
     <Header />
     <div className={styles.linkWrapper}>
       <Link to="/about/" id={styles.link} className={styles.glow}>About</Link>
-      <SocialNav />
     </div>
+    <SocialNav />
 
     <main>
       <div className={styles.pageContainer}>        

@@ -10,8 +10,9 @@
 #headersWrapper {
   margin-left: 4px;
   margin-right: 4px;
+  padding-top: 50px;
+  padding-bottom: 5px;
 }
-
 
 h1 {
   font-family: 'Candal', Bookman, Copperplate, Copperplate Gothic Light;
@@ -41,24 +42,6 @@ h1 {
   transform: rotate(-15deg);
 }
 
-.headerThree {
-  display: block;
-  text-align: center;
-  font-family: 'Oswald', 'Times New Roman', Times, serif;
-  font-style:  italic;
-  font-weight:  bold;
-  text-shadow: -.5px -.5px 0 #000,
-                .5px -.5px 0 #000,
-                -.5px .5px 0 #000,
-                .5px .5px 0 #000;
-  font-size: 16px;
-  color: rgb(84, 180, 253);
-  margin: 0;
-  line-height: 16px;
-  margin-top: 60px;
-  margin-bottom: 3px;
-}
-
 
 @media only screen and (min-width: 600px) {
   * {
@@ -78,10 +61,6 @@ h1 {
     line-height: 0px;
     transform:rotate(-15deg);
   }
-
-  .headerThree {
-    margin-top: 70px;
-  }
 }
 
 @media only screen and (min-width: 820px) {
@@ -96,12 +75,7 @@ h1 {
   .headerTwo {
     margin-left: 58vw;
     top: -2.2vw;
-
   } 
-  
-  .headerThree {
-    margin-top: 80px;
-  }
 }
 
 @media only screen and (min-width: 950px) {
@@ -112,11 +86,7 @@ h1 {
   .headerTwo {
     margin-left: 57vw;
     top: -2vw;
-  } 
-  
-  .headerThree {
-    margin-top: 100px;
-  }
+  }  
 }
 
 @media only screen and (min-width: 1100px) {
@@ -127,10 +97,6 @@ h1 {
   .headerTwo {
     margin-left: 57vw;
     top: -2vw;
-  }
-  
-  .headerThree {
-    margin-top: 110px;
   }
 }
 
@@ -143,10 +109,6 @@ h1 {
     margin-left: 56vw;
     top: -2vw;
   } 
-  
-  .headerThree {
-    margin-top: 110px;
-  }
 }
 @media only screen and (min-width: 1380px) {
   * {
@@ -157,10 +119,6 @@ h1 {
     margin-left: 55vw;
     top: -1.5vw;
   } 
-  
-  .headerThree {
-    margin-top: 110px;
-  }
 }
 
 @media only screen and (min-width: 1500px) {
@@ -176,8 +134,4 @@ h1 {
     margin-left: 56vw;
     top: -1.2vw; 
   }  
-
-  .headerThree {
-    margin-top: 120px;
-  }
 }
