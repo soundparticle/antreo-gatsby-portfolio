@@ -1,300 +1,162 @@
 /* eslint-disable react/display-name */
-/* TODO: Check button styling to prevent pushing other buttons onHover */
 
 import React from 'react';
-import ReactHover from './ReactHover';
+import ReactTooltip from 'react-tooltip';
 
 import styles from './skills.module.scss';
 
 
-let optionsCursorTrueWithMargin = {
-  followCursor: true,
-  shiftX: -75,
-  shiftY: -120,
-};
-
-
 export default () =>
 
-  <section>
+<section>
     {/* consider creating a skills array to populate button skills */}
     <div className={styles.skillsBackground}>
       <h4>Skills</h4>
       <section className={styles.skillsContainer} id="skillsWrapper">
         {/* AGILE */}
-        <ReactHover options={optionsCursorTrueWithMargin}>
-          <ReactHover.Trigger type='trigger'>
-            <button className={styles.skills}>        
-              <div className={styles.skillWrapper}>
-                <a className={styles.skillLinks} href="https://en.wikipedia.org/wiki/Agile_software_development">
-                Agile
-                </a>
-              </div>
-            </button>
-          </ReactHover.Trigger>
-          <ReactHover.Hover type='hover'>
-            <div >
-              <div className={styles.embedWindow} id="embedId">
-                <embed alt="Agile Software Development Wikipedia Entry" src="https://en.wikipedia.org/wiki/Agile_software_development"/>                
-              </div>
-            </div>
-          </ReactHover.Hover>
-        </ReactHover>       
+        <button className={styles.skills}>        
+          <div className={styles.skillWrapper}>
+            <ReactTooltip />  
+            <a data-tip="I am the Agile tooltip" className={styles.skillLinks}>
+            Agile
+            </a>
+          </div>
+        </button>
         {/* NODE */}
-        <ReactHover options={optionsCursorTrueWithMargin}>
-          <ReactHover.Trigger type='trigger'>
-            <button className={styles.skills}>
-              <div className={styles.skillWrapper}>
-                <a className={styles.skillLinks} href="https://nodejs.org/en/about/">
-                Node
-                </a>
-              </div>
-            </button>
-          </ReactHover.Trigger>
-          <ReactHover.Hover type='hover'>
-            <div className={styles.embedWindow} id="embedId">
-              <embed alt="NodeJS Website" src="https://nodejs.org/en/about/"/>                
-            </div>
-          </ReactHover.Hover>
-        </ReactHover>       
+        <button className={styles.skills}>
+          <div className={styles.skillWrapper}>
+            <ReactTooltip />
+            <a data-tip="I am the Node tooltip" className={styles.skillLinks}>
+            Node
+            </a>
+          </div>
+        </button>
         {/* VUE */}
-        <ReactHover options={optionsCursorTrueWithMargin}>
-          <ReactHover.Trigger type='trigger'>
-            <button className={styles.skills}>
-              <div className={styles.skillWrapper}>
-                <a className={styles.skillLinks} href="https://vuejs.org/v2/guide/">
-                Vue
-                </a>
-              </div>
-            </button>
-          </ReactHover.Trigger>
-          <ReactHover.Hover type='hover'>
-            <div className={styles.embedWindow} id="embedId">
-              <embed alt="VueJS Website" src="https://vuejs.org/v2/guide/"/>                
-            </div>
-          </ReactHover.Hover>
-        </ReactHover>       
+        <button className={styles.skills}>
+          <div className={styles.skillWrapper}>
+            <ReactTooltip />  
+            <a data-tip="I am the Vue tooltip" className={styles.skillLinks}>
+            Vue
+            </a>
+          </div>
+        </button>
         {/* React */}
-        <ReactHover options={optionsCursorTrueWithMargin}>
-          <ReactHover.Trigger type='trigger'>
-            <button className={styles.skills}>
-              <div className={styles.skillWrapper}>
-                <a className={styles.skillLinks} href="https://en.wikipedia.org/wiki/React_(JavaScript_library)">
-                React
-                </a>
-              </div>
-            </button>
-          </ReactHover.Trigger>
-          <ReactHover.Hover type='hover'>
-            <div className={styles.embedWindow} id="embedId">
-              <embed alt="React Wikipedia Entry" src="https://en.wikipedia.org/wiki/React_(JavaScript_library)"/>                
-            </div>
-          </ReactHover.Hover>
-        </ReactHover>     
+        <button className={styles.skills}>
+          <div className={styles.skillWrapper}>
+            <ReactTooltip />  
+            <a data-tip="I am the React tooltip" className={styles.skillLinks}>
+            React
+            </a>
+          </div>
+        </button>
         {/* Redux */}
-        <ReactHover options={optionsCursorTrueWithMargin}>
-          <ReactHover.Trigger type='trigger'>
-            <button className={styles.skills}>
-              <div className={styles.skillWrapper}>
-                <a className={styles.skillLinks} href="https://redux.js.org/">
-                Redux
-                </a>
-              </div>
-            </button>
-          </ReactHover.Trigger>
-          <ReactHover.Hover type='hover'>
-            <div className={styles.embedWindow} id="embedId">
-              <embed alt="Redux Website" src="https://redux.js.org/"/>                
-            </div>
-          </ReactHover.Hover>
-        </ReactHover>     
+        <button className={styles.skills}>
+          <div className={styles.skillWrapper}>
+            <ReactTooltip />  
+            <a data-tip="I am the Redux tooltip" className={styles.skillLinks}>
+            Redux
+            </a>
+          </div>
+        </button>
         {/* Express */}
-        <ReactHover options={optionsCursorTrueWithMargin}>
-          <ReactHover.Trigger type='trigger'>
-            <button className={styles.skills}>
-              <div className={styles.skillWrapper}>
-                <a className={styles.skillLinks} href="https://expressjs.com/">
-                Express
-                </a>
-              </div>
-            </button>
-          </ReactHover.Trigger>
-          <ReactHover.Hover type='hover'>
-            <div className={styles.embedWindow} id="embedId">
-              <embed alt="Redux Website" src="https://expressjs.com/"/>                
-            </div>
-          </ReactHover.Hover>
-        </ReactHover>  
+        <button className={styles.skills}>
+          <div className={styles.skillWrapper}>
+            <ReactTooltip />  
+            <a data-tip="I am the Express tooltip" className={styles.skillLinks}>
+            Express
+            </a>
+          </div>
+        </button>
         {/* Javascript    */}
-        <ReactHover options={optionsCursorTrueWithMargin}>
-          <ReactHover.Trigger type='trigger'>
-            <button className={styles.skills}>
-              <div className={styles.skillWrapper}>
-                <a className={styles.skillLinks} href="https://en.wikipedia.org/wiki/JavaScript">
-                Javascript
-                </a>
-              </div>
-            </button>
-          </ReactHover.Trigger>
-          <ReactHover.Hover type='hover'>
-            <div className={styles.embedWindow} id="embedId">
-              <embed alt="Javascript Wikipedia entry" src="https://en.wikipedia.org/wiki/JavaScript"/>                
-            </div>
-          </ReactHover.Hover>
-        </ReactHover>  
+        <button className={styles.skills}>
+          <div className={styles.skillWrapper}>
+            <ReactTooltip />  
+            <a data-tip="I am the Javascript tooltip" className={styles.skillLinks}>
+            Javascript
+            </a>
+          </div>
+        </button>
         {/* HTML */}
-        <ReactHover options={optionsCursorTrueWithMargin}>
-          <ReactHover.Trigger type='trigger'>
-            <button className={styles.skills}>
-              <div className={styles.skillWrapper}>
-                <a className={styles.skillLinks} href="https://en.wikipedia.org/wiki/JavaScript">
-                HTML5
-                </a>
-              </div>
-            </button>
-          </ReactHover.Trigger>
-          <ReactHover.Hover type='hover'>
-            <div className={styles.embedWindow} id="embedId">
-              <embed alt="Javascript Wikipedia entry" src="https://en.wikipedia.org/wiki/JavaScript"/>                
-            </div>
-          </ReactHover.Hover>
-        </ReactHover>  
+        <button className={styles.skills}>
+          <div className={styles.skillWrapper}>
+            <ReactTooltip />  
+            <a data-tip="I am the HTML5 tooltip" className={styles.skillLinks}>
+            HTML5
+            </a>
+          </div>
+        </button>
         {/* CSS */}
-        <ReactHover options={optionsCursorTrueWithMargin}>
-          <ReactHover.Trigger type='trigger'>
-            <button className={styles.skills}>
-              <div className={styles.skillWrapper}>
-                <a className={styles.skillLinks} href="https://en.wikipedia.org/wiki/Cascading_Style_Sheets">
-                CSS3
-                </a>
-              </div>
-            </button>
-          </ReactHover.Trigger>
-          <ReactHover.Hover type='hover'>
-            <div className={styles.embedWindow} id="embedId">
-              <embed alt="CSS Wikipedia entry" src="https://en.wikipedia.org/wiki/Cascading_Style_Sheets"/>                
-            </div>
-          </ReactHover.Hover>
-        </ReactHover>  
+        <button className={styles.skills}>
+          <div className={styles.skillWrapper}>
+            <ReactTooltip />  
+            <a data-tip="I am the CSS3 tooltip" className={styles.skillLinks}>
+            CSS3
+            </a>
+          </div>
+        </button>
         {/* MONGO */}
-        <ReactHover options={optionsCursorTrueWithMargin}>
-          <ReactHover.Trigger type='trigger'>
-            <button className={styles.skills}>
-              <div className={styles.skillWrapper}>
-                <a className={styles.skillLinks} href="https://en.wikipedia.org/wiki/MongoDB">
-                MongoDB
-                </a>
-              </div>
-            </button>
-          </ReactHover.Trigger>
-          <ReactHover.Hover type='hover'>
-            <div className={styles.embedWindow} id="embedId">
-              <embed alt="MongoDB Wikipedia Entry" src="https://en.wikipedia.org/wiki/MongoDB"/>                
-            </div>
-          </ReactHover.Hover>
-        </ReactHover>  
+        <button className={styles.skills}>
+          <div className={styles.skillWrapper}>
+            <ReactTooltip />  
+            <a data-tip="I am the MongoDB tooltip" className={styles.skillLinks}>
+            MongoDB
+            </a>
+          </div>
+        </button>
         {/* Mongoose */}
-        <ReactHover options={optionsCursorTrueWithMargin}>
-          <ReactHover.Trigger type='trigger'>
-            <button className={styles.skills}>
-              <div className={styles.skillWrapper}>
-                <a className={styles.skillLinks} href="https://www.freecodecamp.org/news/introduction-to-mongoose-for-mongodb-d2a7aa593c57/">
-                Mongoose
-                </a>
-              </div>
-            </button>
-          </ReactHover.Trigger>
-          <ReactHover.Hover type='hover'>
-            <div className={styles.embedWindow} id="embedId">
-              <embed alt="Introduction to Mongoose from FreeCodeCamp.org" src="https://www.freecodecamp.org/news/introduction-to-mongoose-for-mongodb-d2a7aa593c57/"/>                
-            </div>
-          </ReactHover.Hover>
-        </ReactHover>  
+        <button className={styles.skills}>
+          <div className={styles.skillWrapper}>
+            <ReactTooltip />  
+            <a data-tip="I am the Mongoose tooltip" className={styles.skillLinks}>
+            Mongoose
+            </a>
+          </div>
+        </button>
         {/* PostgresQL */}
-        <ReactHover options={optionsCursorTrueWithMargin}>
-          <ReactHover.Trigger type='trigger'>
-            <button className={styles.skills}>
-              <div className={styles.skillWrapper}>
-                <a className={styles.skillLinks} href="https://en.wikipedia.org/wiki/PostgreSQL">
-                PostgresQL
-                </a>
-              </div>
-            </button>
-          </ReactHover.Trigger>
-          <ReactHover.Hover type='hover'>
-            <div className={styles.embedWindow} id="embedId">
-              <embed alt="PostgresQL Wikipedia entry" src="https://en.wikipedia.org/wiki/PostgreSQL"/>                
-            </div>
-          </ReactHover.Hover>
-        </ReactHover>  
+        <button className={styles.skills}>
+          <div className={styles.skillWrapper}>
+            <ReactTooltip />  
+            <a data-tip="I am the PostgresQL tooltip" className={styles.skillLinks}>
+            PostgresQL
+            </a>
+          </div>
+        </button>
         {/* TDD */}
-        <ReactHover options={optionsCursorTrueWithMargin}>
-          <ReactHover.Trigger type='trigger'>
-            <button className={styles.skills}>
-              <div className={styles.skillWrapper}>
-                <a className={styles.skillLinks} href="https://en.wikipedia.org/wiki/Test-driven_development">
-                TDD
-                </a>
-              </div>
-            </button>
-          </ReactHover.Trigger>
-          <ReactHover.Hover type='hover'>
-            <div className={styles.embedWindow} id="embedId">
-              <embed alt="PostgresQL Wikipedia entry" src="https://en.wikipedia.org/wiki/Test-driven_development"/>                
-            </div>
-          </ReactHover.Hover>
-        </ReactHover>  
+        <button className={styles.skills}>
+          <div className={styles.skillWrapper}>
+            <ReactTooltip />  
+            <a data-tip="I am the TDD tooltip" className={styles.skillLinks}>
+            TDD
+            </a>
+          </div>
+        </button>
         {/* Jest */}
-        <ReactHover options={optionsCursorTrueWithMargin}>
-          <ReactHover.Trigger type='trigger'>
-            <button className={styles.skills}>
-              <div className={styles.skillWrapper}>
-                <a className={styles.skillLinks} href="https://jestjs.io/">
-                Jest
-                </a>
-              </div>
-            </button>
-          </ReactHover.Trigger>
-          <ReactHover.Hover type='hover'>
-            <div className={styles.embedWindow} id="embedId">
-              <embed alt="Jest" src="https://jestjs.io/"/>                
-            </div>
-          </ReactHover.Hover>
-        </ReactHover>  
+        <button className={styles.skills}>
+          <div className={styles.skillWrapper}>
+            <ReactTooltip />  
+            <a data-tip="I am the Jest tooltip" className={styles.skillLinks}>
+            Jest
+            </a>
+          </div>
+        </button>
         {/* Mocha */}
-        <ReactHover options={optionsCursorTrueWithMargin}>
-          <ReactHover.Trigger type='trigger'>
-            <button className={styles.skills}>
-              <div className={styles.skillWrapper}>
-                <a className={styles.skillLinks} href="https://en.wikipedia.org/wiki/Mocha_(JavaScript_framework)">
-                Mocha
-                </a>
-              </div>
-            </button>
-          </ReactHover.Trigger>
-          <ReactHover.Hover type='hover'>
-            <div className={styles.embedWindow} id="embedId">
-              <embed alt="Mocha Wikipedia Entry" src="https://en.wikipedia.org/wiki/Mocha_(JavaScript_framework)"/>                
-            </div>
-          </ReactHover.Hover>
-        </ReactHover>  
+        <button className={styles.skills}>
+          <div className={styles.skillWrapper}>
+            <ReactTooltip />  
+            <a data-tip="I am the Mocha tooltip" className={styles.skillLinks}>
+            Mocha
+            </a>
+          </div>
+        </button>
         {/* QUnit */}
-        <ReactHover options={optionsCursorTrueWithMargin}>
-          <ReactHover.Trigger type='trigger'>
-            <button className={styles.skills}>
-              <div className={styles.skillWrapper}>
-                <a className={styles.skillLinks} href="https://qunitjs.com/">
-                QUnit
-                </a>
-              </div>
-            </button>
-          </ReactHover.Trigger>
-          <ReactHover.Hover type='hover'>
-            <div className={styles.embedWindow} id="embedId">
-              <embed alt="QUnit Website" src="https://qunitjs.com/"/>                
-            </div>
-          </ReactHover.Hover>
-        </ReactHover>  
+        <button className={styles.skills}>
+          <div className={styles.skillWrapper}>
+            <ReactTooltip />  
+            <a data-tip="I am the QUnit tooltip" className={styles.skillLinks}>
+            QUnit
+            </a>
+          </div>
+        </button>
       </section>
     </div>
   </section>;
