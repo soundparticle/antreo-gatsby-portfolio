@@ -23,6 +23,7 @@
   }
 }
 
+
 .images {
   display: flex;
   justify-content: center;
@@ -52,10 +53,10 @@
     opacity: 0;
     background: linear-gradient(45deg, #fb0094, #0000ff, #00ff00,#ffff00, #ff0000, #fb0094, 
       #0000ff, #00ff00,#ffff00, #ff0000);
-    background-size: 400%;
-    width: calc(100% + 4px);
-    height: calc(100% + 4px);
-    filter: blur(50px);
+      background-size: 400%;
+      width: calc(100% + 4px);
+      height: calc(100% + 4px);
+      filter: blur(50px);
     z-index: -1;
     transition: opacity 2.2s ease-out;      
     animation: steam 80s linear infinite;
@@ -67,6 +68,66 @@
       opacity: 1;
     }
   }
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 100%;
+  position: relative;
+  margin: auto;
+  overflow: hidden;
+}
+
+.content .contentOverlay {
+  background: rgba(0,0,0,0.7);
+  // border-color: green;
+  // border-style: solid;
+  position: absolute;
+  height: 110%;
+  width: 110%;
+  // left: 0;
+  // top: 0;
+  // bottom: 0;
+  // right: 0;
+  opacity: 1;
+  transition: all 0.5s ease-in-out 0s;
+}
+
+.content:hover .contentOverlay {
+  opacity: 1;
+}
+
+.overlayDetails {
+  position: absolute;
+  text-align: center;
+  padding-left: 1em;
+  padding-right: 1em;
+  width: 100%;
+  top: 50%;
+  left: 50%;
+  opacity: 1;
+  transform: translate(-50%, -50%);
+  transition: all 0.3s ease-in-out 0s;
+}
+
+.content:hover .overlayDetails{
+  top: 50%;
+  left: 50%;
+  opacity: .9;
+}
+
+.overlayDetails h6 {
+  color: white;
+  font-family: Bookman, Copperplate, Copperplate Gothic Light;
+  font-size: 13px;
+  padding-top: 20px;
+  font-family: 'Open Sans';
+}
+
+#fadeInTop {
+  top: 20%;
 }
 
 #link1 {
