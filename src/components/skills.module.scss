@@ -85,37 +85,6 @@ a {
   border-radius: 10px;
 }
 
-.embedWindow {
-  display: flex;
-  justify-content: center;
-  align-content: center;
-  width: 150px;
-  height: 100px;
-  margin-right: 100vw;
-  box-shadow: 0 0 30px #010c14;
-  &:before, &:after {
-    content: '';
-    position: absolute;
-    opacity: 0;
-    transition: opacity 2.2s ease-in-out;
-  }
-  &:hover {
-    &:before {
-      opacity: 1;
-    }
-  } 
-
-}
-
-embed {
-  width: inherit;
-  height: inherit;
-  border: solid;
-  border-radius: 10px;
-  border-width: 1px;
-  border-radius: inherit;
-  border-color: rgb(10, 250, 166);}
-
 a {
   color: rgb(125, 198, 254);
   text-decoration: none;

@@ -30,15 +30,14 @@ export default () => (
       <div className={styles.images}>
         <a href="hhttps://alchemy-companion.herokuapp.com/#/" className={styles.imageLinks} id={styles.link1} target="_blank" rel="noopener noreferrer">
           <div className={styles.content}>
-            <div className={styles.contentOverlay}>
-              <div className={styles.overlayDetails} id={styles.fadeInTop}>
-                <h6>Resource sharing App for students</h6>
-                <ul className={styles.overlayList} style={{ listStyleType: 'none', color: 'white' }}>
-                  <li>Javascript</li>
-                  <li>iTunes API</li>
-                  <li>CSS</li>
-                </ul>
-              </div>
+            <div className={styles.contentOverlay}></div>
+            <div className={styles.overlayDetails} id={styles.fadeInTop}>
+              <h6>Resource sharing App for students</h6>
+              <ul className={styles.overlayList}>
+                <li>Javascript</li>
+                <li>PostgresQL</li>
+                <li>VueJS</li>
+              </ul>
             </div>
             <img className={styles.portfolioImages} src={data.allContentfulAntreoPortfolio.edges[0].node.imageLinks[0].file.url} alt="Alchemy Companion App screenshot"/>
           </div>

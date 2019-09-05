@@ -81,18 +81,21 @@
 }
 
 .content .contentOverlay {
-  background: rgba(0,0,0,0.7);
-  // border-color: green;
+  // border-color: orange;
   // border-style: solid;
+
+  background: rgba(0,0,0,0.8);
   position: absolute;
   height: 110%;
   width: 110%;
-  // left: 0;
-  // top: 0;
-  // bottom: 0;
-  // right: 0;
-  opacity: 1;
-  transition: all 0.5s ease-in-out 0s;
+
+  left: 0;
+  top: 0;
+  bottom: 0;
+  right: 0;
+
+  opacity: 0;
+  transition: all 0.7s ease-in-out 0s;
 }
 
 .content:hover .contentOverlay {
@@ -107,28 +110,53 @@
   width: 100%;
   top: 50%;
   left: 50%;
-  opacity: 1;
+  opacity: 0;
   transform: translate(-50%, -50%);
-  transition: all 0.3s ease-in-out 0s;
+  transition: all 0.6s ease-in-out 0s;
 }
 
 .content:hover .overlayDetails{
   top: 50%;
   left: 50%;
-  opacity: .9;
+  opacity: 1;
 }
 
 .overlayDetails h6 {
-  color: white;
-  font-family: Bookman, Copperplate, Copperplate Gothic Light;
-  font-size: 13px;
-  padding-top: 20px;
+  // border-color: green;
+  // border-style: solid;
+
   font-family: 'Open Sans';
+  // font-family: Bookman, Copperplate, Copperplate Gothic Light;
+  letter-spacing: 0.15em;
+  font-size: 9px;
+  font-weight: 100;
+  margin: 0;
 }
 
-#fadeInTop {
-  top: 20%;
+.overlayList {
+  // border-color: red;
+  // border-style: solid;
+  
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+  padding-top: 5px;
 }
+
+.overlayList li {
+  font-family: 'Open Sans';
+  font-size: 10px;
+  // font-weight: 100;
+  // text-align: center;
+  list-style-type: disc;
+  text-indent: -8px;
+}
+
+ li {
+   margin-right: 20px;
+ }
 
 #link1 {
   animation: MoveUpDown 11.5s infinite ease-in-out;
