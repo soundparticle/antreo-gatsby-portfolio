@@ -23,7 +23,6 @@
   }
 }
 
-
 .images {
   display: flex;
   justify-content: center;
@@ -141,9 +140,9 @@
   text-indent: -8px;
 }
 
- li {
-   margin-right: 20px;
- }
+li {
+  margin-right: 20px;
+}
 
 #link1 {
   animation: MoveUpDown 11.5s infinite ease-in-out;
@@ -174,7 +173,6 @@
   border-width: 1px;
   background-color: rgba(43, 0, 43, 0.2);
   box-shadow: 20px 80px 60px -25px rgb(43, 32, 48);
-
 }
 
 @media only screen and (min-width: 768px) {

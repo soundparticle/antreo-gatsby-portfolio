@@ -48,7 +48,6 @@ a {
   font-size: 15px;
   border-radius: 10%;
   padding: 5px;
-
   margin: 2px;
   padding: 5px;
   border-style: solid;
@@ -56,7 +55,6 @@ a {
   border-width: 1.2px;
   background-color: rgb(43, 0, 43);
   transition: all 1.2s ease-in-out; 
-
   &:hover {
     z-index: 10;
     border-style: none;
@@ -94,7 +92,6 @@ a {
   text-decoration: none;
   font-style: italic;
   border-radius: 10px;
-
   &:hover {
     color: rgb(84, 180, 253);
   }
@@ -137,5 +134,4 @@ a:hover + .preview, .preview:hover {
     margin-left: 300px;
     margin-right: 300px;
   }
-
 }

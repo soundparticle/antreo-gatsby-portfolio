@@ -1,8 +1,6 @@
-
 /* eslint-disable react/display-name */
 
 import React from 'react';
-
 import linkedIn from '../assets/linkedin.svg';
 import github from '../assets/github_1249974.svg';
 import twitter from '../assets/Twitter_Logo_Blue.svg';
