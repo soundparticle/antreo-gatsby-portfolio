@@ -44,7 +44,7 @@ export default () => (
             <img className={styles.portfolioImages} src={data.allContentfulAntreoPortfolio.edges[0].node.imageLinks[0].file.url} alt="Alchemy Companion App screenshot"/>
           </div>
         </a>
-        <a href="https://github.com/soundparticle/budget-tracker" className={styles.imageLinks} id={styles.link2} target="_blank" rel="noopener noreferrer">
+        <a href="https://track-your-budget.netlify.com/" className={styles.imageLinks} id={styles.link2} target="_blank" rel="noopener noreferrer">
           <div className={styles.content}>
             <div className={styles.contentOverlay}></div>
             <div className={styles.overlayDetails} id={styles.fadeInTop}>
